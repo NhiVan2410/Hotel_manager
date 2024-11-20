@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    public class Room
+    public class Receptionist1 : Employee1
     {
-        public int RoomID { get; set; }
-    }
+        public string Shift { get; set; } // Như kia ca làm á
+      }
 }
