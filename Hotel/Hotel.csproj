@@ -58,6 +58,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Guest1.cs" />
+    <Compile Include="GuestService.cs" />
     <Compile Include="HotelDb.cs">
       <DependentUpon>HotelDb.dbml</DependentUpon>
     </Compile>
@@ -73,6 +74,7 @@
     <Compile Include="Receptionist1.cs" />
     <Compile Include="Reservations1.cs" />
     <Compile Include="ReservationService1.cs" />
+    <Compile Include="ReservationServiceManager.cs" />
     <Compile Include="Room1.cs" />
     <Compile Include="RoomSevrice.cs" />
     <Compile Include="Service1.cs" />
