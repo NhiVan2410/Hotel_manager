@@ -73,6 +73,7 @@
     <Compile Include="Reservations1.cs" />
     <Compile Include="ReservationService1.cs" />
     <Compile Include="Room1.cs" />
+    <Compile Include="RoomSevrice.cs" />
     <Compile Include="Service1.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
