@@ -29,7 +29,7 @@ namespace Hotel
                 ServiceID = serviceId,
                 Quantity = quantity,
                 CreatedAt = DateTime.Now,
-                IsDeleted = 1 // false
+                IsDeleted = 0 // false
             };
 
             _context.ReservationServices.InsertOnSubmit(reservationService);

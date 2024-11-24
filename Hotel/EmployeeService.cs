@@ -105,7 +105,7 @@ namespace Hotel
                 var employee = context.Employees.FirstOrDefault(e => e.EmployeeID == employeeId);
                 if (employee != null)
                 {
-                    employee.IsDeleted = 0; // đúng
+                    employee.IsDeleted = 1; // đúng
                     employee.UpdatedAt = DateTime.Now;
                     context.SubmitChanges();
                 }

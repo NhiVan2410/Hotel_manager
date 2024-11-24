@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    public class Employee1
-    {
-        public int EmployeeID { get; set; }
+    public class Employee1 
+    {   
+        public int EmployeeID { get; set; } 
         public string Name { get; set; }
         public string Position { get; set; }
         public string Password { get; set; }

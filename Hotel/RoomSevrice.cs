@@ -66,7 +66,7 @@ namespace Hotel
                 var room = context.Rooms.FirstOrDefault(r => r.RoomID == roomId);
                 if (room != null)
                 {
-                    room.IsDeleted = 0;          // Đánh dấu phòng đã bị xóa
+                    room.IsDeleted = 1;          // Đánh dấu phòng đã bị xóa
                     room.UpdatedAt = DateTime.Now; // Cập nhật thời gian bị xóa
 
                     context.SubmitChanges();
