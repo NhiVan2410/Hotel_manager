@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    public class Employee1 
+    public class Employee1 : Person1
     {   
-        public int EmployeeID { get; set; } 
-        public string Name { get; set; }
         public string Position { get; set; }
         public string Password { get; set; }
         public string ContactInfo { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
         public bool IsDeleted { get; set; }
     }
 
