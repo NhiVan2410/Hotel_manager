@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="HotelDb.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -113,6 +114,15 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\302f5c5de2452a7921d51f370ef4dc7c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-5-star-golden-yellow-stars-green-vector-png-image_12484612.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

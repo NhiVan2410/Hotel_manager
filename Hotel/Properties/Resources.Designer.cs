@@ -73,6 +73,16 @@ namespace Hotel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _302f5c5de2452a7921d51f370ef4dc7c {
+            get {
+                object obj = ResourceManager.GetObject("302f5c5de2452a7921d51f370ef4dc7c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _9689e526b6e6b1ac527e8e436d797dbb {
             get {
                 object obj = ResourceManager.GetObject("9689e526b6e6b1ac527e8e436d797dbb", resourceCulture);
@@ -146,6 +156,26 @@ namespace Hotel.Properties {
         internal static System.Drawing.Bitmap icons8_search_hotel_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-search-hotel-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_star_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-star-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_5_star_golden_yellow_stars_green_vector_png_image_12484612 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-5-star-golden-yellow-stars-green-vector-png-image_12484612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
