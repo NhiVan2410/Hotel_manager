@@ -17,7 +17,7 @@ namespace Hotel
 
         public List<Guest> GetAllGuests()
         {
-            return _context.Guests.Where(g => g.IsDeleted == false).ToList();
+            return _context.Guests.Where(g => g.IsDeleted == 0).ToList();
         }
 
         public void AddGuest(Guest guest)
@@ -28,10 +28,10 @@ namespace Hotel
 
         public void DeleteGuest(int guestId)
         {
-            var guest = _context.Guests.FirstOrDefault(g => g.GuestID == guestId);
+            var guest = _context.Guests.FirstOrDefault(g => g.ID == guestId);
             if (guest != null)
             {
-                guest.IsDeleted = true;
+                guest.IsDeleted = 1;
                 _context.SubmitChanges();
             }
         }

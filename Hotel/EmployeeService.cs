@@ -102,7 +102,7 @@ namespace Hotel
         {
             using (var context = new HotelDbContext())
             {
-                var employee = context.Employees.FirstOrDefault(e => e.EmployeeID == employeeId);
+                var employee = context.Employees.FirstOrDefault(e => e.ID == employeeId);
                 if (employee != null)
                 {
                     employee.IsDeleted = 1; // đúng

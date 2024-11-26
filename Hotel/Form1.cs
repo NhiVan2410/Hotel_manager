@@ -16,5 +16,11 @@ namespace Hotel
         {
             InitializeComponent();
         }
+
+        private void LnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
+        }
     }
 }
