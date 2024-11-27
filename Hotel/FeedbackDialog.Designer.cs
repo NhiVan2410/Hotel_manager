@@ -43,16 +43,17 @@
             this.LblFeedBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.LblFeedBack.Location = new System.Drawing.Point(131, 240);
             this.LblFeedBack.Name = "LblFeedBack";
-            this.LblFeedBack.Size = new System.Drawing.Size(183, 36);
+            this.LblFeedBack.Size = new System.Drawing.Size(128, 25);
             this.LblFeedBack.TabIndex = 0;
             this.LblFeedBack.Text = "FeedBack : ";
             this.LblFeedBack.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TxtFeedBack
             // 
-            this.TxtFeedBack.Location = new System.Drawing.Point(376, 240);
+            this.TxtFeedBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 80F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFeedBack.Location = new System.Drawing.Point(364, 205);
             this.TxtFeedBack.Name = "TxtFeedBack";
-            this.TxtFeedBack.Size = new System.Drawing.Size(354, 30);
+            this.TxtFeedBack.Size = new System.Drawing.Size(354, 128);
             this.TxtFeedBack.TabIndex = 1;
             // 
             // BtnSave
@@ -60,7 +61,7 @@
             this.BtnSave.BackColor = System.Drawing.Color.Linen;
             this.BtnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnSave.Location = new System.Drawing.Point(163, 409);
+            this.BtnSave.Location = new System.Drawing.Point(200, 398);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(207, 37);
             this.BtnSave.TabIndex = 2;
@@ -72,7 +73,7 @@
             this.BtnCancel.BackColor = System.Drawing.Color.Linen;
             this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnCancel.Location = new System.Drawing.Point(541, 409);
+            this.BtnCancel.Location = new System.Drawing.Point(618, 398);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(207, 37);
             this.BtnCancel.TabIndex = 2;
@@ -83,7 +84,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Beige;
+            this.label1.ForeColor = System.Drawing.Color.LightYellow;
             this.label1.Image = global::Hotel.Properties.Resources.icons8_heart_48;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.label1.Location = new System.Drawing.Point(80, 18);
@@ -97,7 +98,7 @@
             // 
             // FeedbackDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Hotel.Properties.Resources._7a86fbeeb9b812b527f0e07d5ff3f0c1;
             this.ClientSize = new System.Drawing.Size(991, 563);

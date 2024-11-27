@@ -99,6 +99,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Hotel_ManagerDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Hotel_ManagerDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Manager1.cs" />
     <Compile Include="Person1.cs" />
     <Compile Include="Program.cs" />
@@ -189,6 +214,61 @@
     </None>
     <None Include="Hotel_ManagerDataSet3.xss">
       <DependentUpon>Hotel_ManagerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet41.xsc">
+      <DependentUpon>Hotel_ManagerDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet41.xss">
+      <DependentUpon>Hotel_ManagerDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet5.xsc">
+      <DependentUpon>Hotel_ManagerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet5.xss">
+      <DependentUpon>Hotel_ManagerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet6.xsc">
+      <DependentUpon>Hotel_ManagerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet6.xss">
+      <DependentUpon>Hotel_ManagerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet7.xsc">
+      <DependentUpon>Hotel_ManagerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet7.xss">
+      <DependentUpon>Hotel_ManagerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet8.xsc">
+      <DependentUpon>Hotel_ManagerDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet8.xss">
+      <DependentUpon>Hotel_ManagerDataSet8.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
