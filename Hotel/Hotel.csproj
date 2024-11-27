@@ -63,17 +63,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Guest.cs">
+    <Compile Include="Guest1.cs" />
+    <Compile Include="GuestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Guest.Designer.cs">
-      <DependentUpon>Guest.cs</DependentUpon>
+    <Compile Include="GuestForm.Designer.cs">
+      <DependentUpon>GuestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Guest1.cs" />
     <Compile Include="GuestService.cs" />
     <Compile Include="HotelDb.cs">
       <DependentUpon>HotelDb.dbml</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="HotelDb.designer.cs">
       <AutoGen>True</AutoGen>
@@ -123,8 +122,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Guest.resx">
-      <DependentUpon>Guest.cs</DependentUpon>
+    <EmbeddedResource Include="GuestForm.resx">
+      <DependentUpon>GuestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
