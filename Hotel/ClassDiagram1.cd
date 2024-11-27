@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hotel.Person1" Collapsed="true">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAiACAACAAQAQAAAAQAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Person1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Employee1" Collapsed="true">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAIAAAAAAAACAAAAAQAAAAA=</HashCode>
+      <FileName>Employee1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Guest1" Collapsed="true">
+    <Position X="1.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAA=</HashCode>
+      <FileName>Guest1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Manager1" Collapsed="true">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Receptionist1" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Receptionist1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

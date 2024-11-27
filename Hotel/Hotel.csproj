@@ -51,21 +51,54 @@
     <Compile Include="BookingService.cs" />
     <Compile Include="Employee1.cs" />
     <Compile Include="EmployeeService.cs" />
+    <Compile Include="FeedbackDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackDialog.Designer.cs">
+      <DependentUpon>FeedbackDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Guest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest.Designer.cs">
+      <DependentUpon>Guest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Guest1.cs" />
     <Compile Include="GuestService.cs" />
     <Compile Include="HotelDb.cs">
       <DependentUpon>HotelDb.dbml</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="HotelDb.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HotelDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="Manager1.cs" />
     <Compile Include="Person1.cs" />
@@ -84,8 +117,14 @@
     <Compile Include="Room1.cs" />
     <Compile Include="RoomSevrice.cs" />
     <Compile Include="Service1.cs" />
+    <EmbeddedResource Include="FeedbackDialog.resx">
+      <DependentUpon>FeedbackDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest.resx">
+      <DependentUpon>Guest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +146,50 @@
     </None>
     <None Include="HotelDb.dbml.layout">
       <DependentUpon>HotelDb.dbml</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet.xsc">
+      <DependentUpon>Hotel_ManagerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet.xss">
+      <DependentUpon>Hotel_ManagerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet1.xsc">
+      <DependentUpon>Hotel_ManagerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet1.xss">
+      <DependentUpon>Hotel_ManagerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet2.xsc">
+      <DependentUpon>Hotel_ManagerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet2.xss">
+      <DependentUpon>Hotel_ManagerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet3.xsc">
+      <DependentUpon>Hotel_ManagerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet3.xss">
+      <DependentUpon>Hotel_ManagerDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -132,6 +215,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngtree-5-star-golden-yellow-stars-green-vector-png-image_12484612.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\895511f8982ed7edc1c06bfd8236940d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22f0413df5c98706f8b43b6bff45055b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4296d917d1c1a51a5616c450e7567795.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-installing-updates-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3a56784c78231a76959f22cd02bc68d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-neighbor-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aea3013e3c66280a50d37ff741d47eb7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-view-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check-mark-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2ecf9b191b582f7cdd650c624ca14bad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-booking-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-feedback-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7a86fbeeb9b812b527f0e07d5ff3f0c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-heart-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b84517d81f7ee3cb0ceff696c74e91b5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b84517d81f7ee3cb0ceff696c74e91b51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-services-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
