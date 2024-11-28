@@ -31,9 +31,9 @@ namespace Hotel
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabRequestServices = new System.Windows.Forms.TabControl();
             this.PageCustomerInformation = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -92,7 +92,6 @@ namespace Hotel
             this.LblBooking = new System.Windows.Forms.Label();
             this.PageViewRoom = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BtnAvliableRooms = new System.Windows.Forms.Button();
             this.DataViewRoomList = new System.Windows.Forms.DataGridView();
             this.roomIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -560,14 +559,14 @@ namespace Hotel
             this.DataBookingList.AutoGenerateColumns = false;
             this.DataBookingList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.DataBookingList.BackgroundColor = System.Drawing.Color.OldLace;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataBookingList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataBookingList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataBookingList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataBookingList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.reservationIDDataGridViewTextBoxColumn,
@@ -577,15 +576,15 @@ namespace Hotel
             this.checkInDateDataGridViewTextBoxColumn,
             this.checkOutDateDataGridViewTextBoxColumn});
             this.DataBookingList.DataSource = this.reservationsBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle11.NullValue = null;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataBookingList.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle5.NullValue = null;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataBookingList.DefaultCellStyle = dataGridViewCellStyle5;
             this.DataBookingList.Location = new System.Drawing.Point(219, 488);
             this.DataBookingList.Name = "DataBookingList";
             this.DataBookingList.RowHeadersVisible = false;
@@ -791,7 +790,6 @@ namespace Hotel
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.BtnAvliableRooms);
             this.groupBox3.Controls.Add(this.DataViewRoomList);
             this.groupBox3.Controls.Add(this.LblViewRoom);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -800,21 +798,6 @@ namespace Hotel
             this.groupBox3.Size = new System.Drawing.Size(1182, 801);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
-            // 
-            // BtnAvliableRooms
-            // 
-            this.BtnAvliableRooms.AutoSize = true;
-            this.BtnAvliableRooms.BackColor = System.Drawing.Color.Cornsilk;
-            this.BtnAvliableRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAvliableRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnAvliableRooms.Image = global::Hotel.Properties.Resources.icons8_check_mark_48;
-            this.BtnAvliableRooms.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BtnAvliableRooms.Location = new System.Drawing.Point(456, 526);
-            this.BtnAvliableRooms.Name = "BtnAvliableRooms";
-            this.BtnAvliableRooms.Size = new System.Drawing.Size(276, 54);
-            this.BtnAvliableRooms.TabIndex = 1;
-            this.BtnAvliableRooms.Text = "Available Rooms";
-            this.BtnAvliableRooms.UseVisualStyleBackColor = false;
             // 
             // DataViewRoomList
             // 
@@ -829,16 +812,16 @@ namespace Hotel
             this.isAvailableDataGridViewTextBoxColumn});
             this.DataViewRoomList.DataSource = this.roomBindingSource;
             this.DataViewRoomList.GridColor = System.Drawing.Color.Cornsilk;
-            this.DataViewRoomList.Location = new System.Drawing.Point(137, 198);
+            this.DataViewRoomList.Location = new System.Drawing.Point(142, 211);
             this.DataViewRoomList.Name = "DataViewRoomList";
             this.DataViewRoomList.RowHeadersVisible = false;
             this.DataViewRoomList.RowHeadersWidth = 68;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataViewRoomList.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataViewRoomList.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DataViewRoomList.RowTemplate.Height = 28;
             this.DataViewRoomList.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataViewRoomList.Size = new System.Drawing.Size(919, 287);
+            this.DataViewRoomList.Size = new System.Drawing.Size(919, 469);
             this.DataViewRoomList.TabIndex = 2;
             // 
             // roomIDDataGridViewTextBoxColumn1
@@ -882,7 +865,7 @@ namespace Hotel
             this.LblViewRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.LblViewRoom.Image = global::Hotel.Properties.Resources.icons8_view_50__1_;
             this.LblViewRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblViewRoom.Location = new System.Drawing.Point(455, 31);
+            this.LblViewRoom.Location = new System.Drawing.Point(460, 44);
             this.LblViewRoom.Name = "LblViewRoom";
             this.LblViewRoom.Size = new System.Drawing.Size(277, 53);
             this.LblViewRoom.TabIndex = 0;
@@ -913,7 +896,7 @@ namespace Hotel
             this.BtnEditFeedBack.Name = "BtnEditFeedBack";
             this.BtnEditFeedBack.Size = new System.Drawing.Size(346, 64);
             this.BtnEditFeedBack.TabIndex = 2;
-            this.BtnEditFeedBack.Text = "Edit FeedBack";
+            this.BtnEditFeedBack.Text = "FeedBack";
             this.BtnEditFeedBack.UseVisualStyleBackColor = true;
             // 
             // DataBookingHistoryList
@@ -1226,7 +1209,6 @@ namespace Hotel
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet5)).EndInit();
             this.PageViewRoom.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataViewRoomList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet6)).EndInit();
@@ -1289,7 +1271,6 @@ namespace Hotel
         private System.Windows.Forms.Label LblBooking;
         private System.Windows.Forms.TabPage PageViewRoom;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button BtnAvliableRooms;
         private System.Windows.Forms.DataGridView DataViewRoomList;
         private System.Windows.Forms.Label LblViewRoom;
         private System.Windows.Forms.TabPage PageBookingHistory;
