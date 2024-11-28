@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Hotel/ManagerForm.cs
+/Hotel/ManagerForm.Designer.cs
+/Hotel/ManagerForm.resx
