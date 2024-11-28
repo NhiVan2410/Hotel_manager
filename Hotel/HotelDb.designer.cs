@@ -33,12 +33,6 @@ namespace Hotel
     partial void InsertRoom(Room instance);
     partial void UpdateRoom(Room instance);
     partial void DeleteRoom(Room instance);
-    partial void InsertReservationService(ReservationService instance);
-    partial void UpdateReservationService(ReservationService instance);
-    partial void DeleteReservationService(ReservationService instance);
-    partial void InsertService(Service instance);
-    partial void UpdateService(Service instance);
-    partial void DeleteService(Service instance);
     partial void InsertPerson(Person instance);
     partial void UpdatePerson(Person instance);
     partial void DeletePerson(Person instance);
@@ -51,6 +45,12 @@ namespace Hotel
     partial void InsertReservation(Reservation instance);
     partial void UpdateReservation(Reservation instance);
     partial void DeleteReservation(Reservation instance);
+    partial void InsertService(Service instance);
+    partial void UpdateService(Service instance);
+    partial void DeleteService(Service instance);
+    partial void InsertReservationService(ReservationService instance);
+    partial void UpdateReservationService(ReservationService instance);
+    partial void DeleteReservationService(ReservationService instance);
     #endregion
 		
 		public HotelDbContext() : 
@@ -91,22 +91,6 @@ namespace Hotel
 			}
 		}
 		
-		public System.Data.Linq.Table<ReservationService> ReservationServices
-		{
-			get
-			{
-				return this.GetTable<ReservationService>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Service> Services
-		{
-			get
-			{
-				return this.GetTable<Service>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Person> Persons
 		{
 			get
@@ -136,6 +120,22 @@ namespace Hotel
 			get
 			{
 				return this.GetTable<Reservation>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Service> Services
+		{
+			get
+			{
+				return this.GetTable<Service>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ReservationService> ReservationServices
+		{
+			get
+			{
+				return this.GetTable<ReservationService>();
 			}
 		}
 	}
@@ -371,504 +371,6 @@ namespace Hotel
 		{
 			this.SendPropertyChanging();
 			entity.Room = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ReservationServices")]
-	public partial class ReservationService : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _ReservationServiceID;
-		
-		private System.Nullable<int> _ReservationID;
-		
-		private System.Nullable<int> _ServiceID;
-		
-		private System.Nullable<int> _Quantity;
-		
-		private System.Nullable<System.DateTime> _CreatedAt;
-		
-		private System.Nullable<System.DateTime> _UpdatedAt;
-		
-		private System.Nullable<int> _IsDeleted;
-		
-		private EntityRef<Service> _Service;
-		
-		private EntityRef<Reservation> _Reservation;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnReservationServiceIDChanging(int value);
-    partial void OnReservationServiceIDChanged();
-    partial void OnReservationIDChanging(System.Nullable<int> value);
-    partial void OnReservationIDChanged();
-    partial void OnServiceIDChanging(System.Nullable<int> value);
-    partial void OnServiceIDChanged();
-    partial void OnQuantityChanging(System.Nullable<int> value);
-    partial void OnQuantityChanged();
-    partial void OnCreatedAtChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedAtChanged();
-    partial void OnUpdatedAtChanging(System.Nullable<System.DateTime> value);
-    partial void OnUpdatedAtChanged();
-    partial void OnIsDeletedChanging(System.Nullable<int> value);
-    partial void OnIsDeletedChanged();
-    #endregion
-		
-		public ReservationService()
-		{
-			this._Service = default(EntityRef<Service>);
-			this._Reservation = default(EntityRef<Reservation>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReservationServiceID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int ReservationServiceID
-		{
-			get
-			{
-				return this._ReservationServiceID;
-			}
-			set
-			{
-				if ((this._ReservationServiceID != value))
-				{
-					this.OnReservationServiceIDChanging(value);
-					this.SendPropertyChanging();
-					this._ReservationServiceID = value;
-					this.SendPropertyChanged("ReservationServiceID");
-					this.OnReservationServiceIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReservationID", DbType="Int")]
-		public System.Nullable<int> ReservationID
-		{
-			get
-			{
-				return this._ReservationID;
-			}
-			set
-			{
-				if ((this._ReservationID != value))
-				{
-					if (this._Reservation.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnReservationIDChanging(value);
-					this.SendPropertyChanging();
-					this._ReservationID = value;
-					this.SendPropertyChanged("ReservationID");
-					this.OnReservationIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServiceID", DbType="Int")]
-		public System.Nullable<int> ServiceID
-		{
-			get
-			{
-				return this._ServiceID;
-			}
-			set
-			{
-				if ((this._ServiceID != value))
-				{
-					if (this._Service.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnServiceIDChanging(value);
-					this.SendPropertyChanging();
-					this._ServiceID = value;
-					this.SendPropertyChanged("ServiceID");
-					this.OnServiceIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Quantity", DbType="Int")]
-		public System.Nullable<int> Quantity
-		{
-			get
-			{
-				return this._Quantity;
-			}
-			set
-			{
-				if ((this._Quantity != value))
-				{
-					this.OnQuantityChanging(value);
-					this.SendPropertyChanging();
-					this._Quantity = value;
-					this.SendPropertyChanged("Quantity");
-					this.OnQuantityChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedAt", DbType="Date")]
-		public System.Nullable<System.DateTime> CreatedAt
-		{
-			get
-			{
-				return this._CreatedAt;
-			}
-			set
-			{
-				if ((this._CreatedAt != value))
-				{
-					this.OnCreatedAtChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedAt = value;
-					this.SendPropertyChanged("CreatedAt");
-					this.OnCreatedAtChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedAt", DbType="Date")]
-		public System.Nullable<System.DateTime> UpdatedAt
-		{
-			get
-			{
-				return this._UpdatedAt;
-			}
-			set
-			{
-				if ((this._UpdatedAt != value))
-				{
-					this.OnUpdatedAtChanging(value);
-					this.SendPropertyChanging();
-					this._UpdatedAt = value;
-					this.SendPropertyChanged("UpdatedAt");
-					this.OnUpdatedAtChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Int")]
-		public System.Nullable<int> IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this.OnIsDeletedChanging(value);
-					this.SendPropertyChanging();
-					this._IsDeleted = value;
-					this.SendPropertyChanged("IsDeleted");
-					this.OnIsDeletedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Service_ReservationService", Storage="_Service", ThisKey="ServiceID", OtherKey="ServiceID", IsForeignKey=true)]
-		public Service Service
-		{
-			get
-			{
-				return this._Service.Entity;
-			}
-			set
-			{
-				Service previousValue = this._Service.Entity;
-				if (((previousValue != value) 
-							|| (this._Service.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Service.Entity = null;
-						previousValue.ReservationServices.Remove(this);
-					}
-					this._Service.Entity = value;
-					if ((value != null))
-					{
-						value.ReservationServices.Add(this);
-						this._ServiceID = value.ServiceID;
-					}
-					else
-					{
-						this._ServiceID = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("Service");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Reservation_ReservationService", Storage="_Reservation", ThisKey="ReservationID", OtherKey="ReservationID", IsForeignKey=true)]
-		public Reservation Reservation
-		{
-			get
-			{
-				return this._Reservation.Entity;
-			}
-			set
-			{
-				Reservation previousValue = this._Reservation.Entity;
-				if (((previousValue != value) 
-							|| (this._Reservation.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Reservation.Entity = null;
-						previousValue.ReservationServices.Remove(this);
-					}
-					this._Reservation.Entity = value;
-					if ((value != null))
-					{
-						value.ReservationServices.Add(this);
-						this._ReservationID = value.ReservationID;
-					}
-					else
-					{
-						this._ReservationID = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("Reservation");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Services")]
-	public partial class Service : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _ServiceID;
-		
-		private string _ServiceName;
-		
-		private System.Nullable<decimal> _ServicePrice;
-		
-		private System.Nullable<System.DateTime> _CreatedAt;
-		
-		private System.Nullable<System.DateTime> _UpdatedAt;
-		
-		private System.Nullable<int> _IsDeleted;
-		
-		private EntitySet<ReservationService> _ReservationServices;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnServiceIDChanging(int value);
-    partial void OnServiceIDChanged();
-    partial void OnServiceNameChanging(string value);
-    partial void OnServiceNameChanged();
-    partial void OnServicePriceChanging(System.Nullable<decimal> value);
-    partial void OnServicePriceChanged();
-    partial void OnCreatedAtChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedAtChanged();
-    partial void OnUpdatedAtChanging(System.Nullable<System.DateTime> value);
-    partial void OnUpdatedAtChanged();
-    partial void OnIsDeletedChanging(System.Nullable<int> value);
-    partial void OnIsDeletedChanged();
-    #endregion
-		
-		public Service()
-		{
-			this._ReservationServices = new EntitySet<ReservationService>(new Action<ReservationService>(this.attach_ReservationServices), new Action<ReservationService>(this.detach_ReservationServices));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServiceID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int ServiceID
-		{
-			get
-			{
-				return this._ServiceID;
-			}
-			set
-			{
-				if ((this._ServiceID != value))
-				{
-					this.OnServiceIDChanging(value);
-					this.SendPropertyChanging();
-					this._ServiceID = value;
-					this.SendPropertyChanged("ServiceID");
-					this.OnServiceIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServiceName", DbType="NVarChar(100)")]
-		public string ServiceName
-		{
-			get
-			{
-				return this._ServiceName;
-			}
-			set
-			{
-				if ((this._ServiceName != value))
-				{
-					this.OnServiceNameChanging(value);
-					this.SendPropertyChanging();
-					this._ServiceName = value;
-					this.SendPropertyChanged("ServiceName");
-					this.OnServiceNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServicePrice", DbType="Decimal(10,2)")]
-		public System.Nullable<decimal> ServicePrice
-		{
-			get
-			{
-				return this._ServicePrice;
-			}
-			set
-			{
-				if ((this._ServicePrice != value))
-				{
-					this.OnServicePriceChanging(value);
-					this.SendPropertyChanging();
-					this._ServicePrice = value;
-					this.SendPropertyChanged("ServicePrice");
-					this.OnServicePriceChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedAt", DbType="Date")]
-		public System.Nullable<System.DateTime> CreatedAt
-		{
-			get
-			{
-				return this._CreatedAt;
-			}
-			set
-			{
-				if ((this._CreatedAt != value))
-				{
-					this.OnCreatedAtChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedAt = value;
-					this.SendPropertyChanged("CreatedAt");
-					this.OnCreatedAtChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedAt", DbType="Date")]
-		public System.Nullable<System.DateTime> UpdatedAt
-		{
-			get
-			{
-				return this._UpdatedAt;
-			}
-			set
-			{
-				if ((this._UpdatedAt != value))
-				{
-					this.OnUpdatedAtChanging(value);
-					this.SendPropertyChanging();
-					this._UpdatedAt = value;
-					this.SendPropertyChanged("UpdatedAt");
-					this.OnUpdatedAtChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Int")]
-		public System.Nullable<int> IsDeleted
-		{
-			get
-			{
-				return this._IsDeleted;
-			}
-			set
-			{
-				if ((this._IsDeleted != value))
-				{
-					this.OnIsDeletedChanging(value);
-					this.SendPropertyChanging();
-					this._IsDeleted = value;
-					this.SendPropertyChanged("IsDeleted");
-					this.OnIsDeletedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Service_ReservationService", Storage="_ReservationServices", ThisKey="ServiceID", OtherKey="ServiceID")]
-		public EntitySet<ReservationService> ReservationServices
-		{
-			get
-			{
-				return this._ReservationServices;
-			}
-			set
-			{
-				this._ReservationServices.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_ReservationServices(ReservationService entity)
-		{
-			this.SendPropertyChanging();
-			entity.Service = this;
-		}
-		
-		private void detach_ReservationServices(ReservationService entity)
-		{
-			this.SendPropertyChanging();
-			entity.Service = null;
 		}
 	}
 	
@@ -1539,6 +1041,8 @@ namespace Hotel
 		
 		private string _User;
 		
+		private EntitySet<ReservationService> _ReservationServices;
+		
 		private EntityRef<Person> _Person;
 		
     #region Extensibility Method Definitions
@@ -1573,6 +1077,7 @@ namespace Hotel
 		
 		public Guest()
 		{
+			this._ReservationServices = new EntitySet<ReservationService>(new Action<ReservationService>(this.attach_ReservationServices), new Action<ReservationService>(this.detach_ReservationServices));
 			this._Person = default(EntityRef<Person>);
 			OnCreated();
 		}
@@ -1821,6 +1326,19 @@ namespace Hotel
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Guest_ReservationService", Storage="_ReservationServices", ThisKey="ID", OtherKey="GuestID")]
+		public EntitySet<ReservationService> ReservationServices
+		{
+			get
+			{
+				return this._ReservationServices;
+			}
+			set
+			{
+				this._ReservationServices.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Person_Guest", Storage="_Person", ThisKey="ID", OtherKey="ID", IsForeignKey=true)]
 		public Person Person
 		{
@@ -1873,6 +1391,18 @@ namespace Hotel
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_ReservationServices(ReservationService entity)
+		{
+			this.SendPropertyChanging();
+			entity.Guest = this;
+		}
+		
+		private void detach_ReservationServices(ReservationService entity)
+		{
+			this.SendPropertyChanging();
+			entity.Guest = null;
 		}
 	}
 	
@@ -2268,6 +1798,617 @@ namespace Hotel
 		{
 			this.SendPropertyChanging();
 			entity.Reservation = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Services")]
+	public partial class Service : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ServiceID;
+		
+		private string _ServiceName;
+		
+		private System.Nullable<decimal> _ServicePrice;
+		
+		private System.Nullable<System.DateTime> _CreatedAt;
+		
+		private System.Nullable<System.DateTime> _UpdatedAt;
+		
+		private System.Nullable<int> _IsDeleted;
+		
+		private System.Nullable<int> _Quanity;
+		
+		private EntitySet<ReservationService> _ReservationServices;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnServiceIDChanging(int value);
+    partial void OnServiceIDChanged();
+    partial void OnServiceNameChanging(string value);
+    partial void OnServiceNameChanged();
+    partial void OnServicePriceChanging(System.Nullable<decimal> value);
+    partial void OnServicePriceChanged();
+    partial void OnCreatedAtChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedAtChanged();
+    partial void OnUpdatedAtChanging(System.Nullable<System.DateTime> value);
+    partial void OnUpdatedAtChanged();
+    partial void OnIsDeletedChanging(System.Nullable<int> value);
+    partial void OnIsDeletedChanged();
+    partial void OnQuanityChanging(System.Nullable<int> value);
+    partial void OnQuanityChanged();
+    #endregion
+		
+		public Service()
+		{
+			this._ReservationServices = new EntitySet<ReservationService>(new Action<ReservationService>(this.attach_ReservationServices), new Action<ReservationService>(this.detach_ReservationServices));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServiceID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ServiceID
+		{
+			get
+			{
+				return this._ServiceID;
+			}
+			set
+			{
+				if ((this._ServiceID != value))
+				{
+					this.OnServiceIDChanging(value);
+					this.SendPropertyChanging();
+					this._ServiceID = value;
+					this.SendPropertyChanged("ServiceID");
+					this.OnServiceIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServiceName", DbType="NVarChar(100)")]
+		public string ServiceName
+		{
+			get
+			{
+				return this._ServiceName;
+			}
+			set
+			{
+				if ((this._ServiceName != value))
+				{
+					this.OnServiceNameChanging(value);
+					this.SendPropertyChanging();
+					this._ServiceName = value;
+					this.SendPropertyChanged("ServiceName");
+					this.OnServiceNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServicePrice", DbType="Decimal(10,2)")]
+		public System.Nullable<decimal> ServicePrice
+		{
+			get
+			{
+				return this._ServicePrice;
+			}
+			set
+			{
+				if ((this._ServicePrice != value))
+				{
+					this.OnServicePriceChanging(value);
+					this.SendPropertyChanging();
+					this._ServicePrice = value;
+					this.SendPropertyChanged("ServicePrice");
+					this.OnServicePriceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedAt", DbType="Date")]
+		public System.Nullable<System.DateTime> CreatedAt
+		{
+			get
+			{
+				return this._CreatedAt;
+			}
+			set
+			{
+				if ((this._CreatedAt != value))
+				{
+					this.OnCreatedAtChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedAt = value;
+					this.SendPropertyChanged("CreatedAt");
+					this.OnCreatedAtChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedAt", DbType="Date")]
+		public System.Nullable<System.DateTime> UpdatedAt
+		{
+			get
+			{
+				return this._UpdatedAt;
+			}
+			set
+			{
+				if ((this._UpdatedAt != value))
+				{
+					this.OnUpdatedAtChanging(value);
+					this.SendPropertyChanging();
+					this._UpdatedAt = value;
+					this.SendPropertyChanged("UpdatedAt");
+					this.OnUpdatedAtChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Int")]
+		public System.Nullable<int> IsDeleted
+		{
+			get
+			{
+				return this._IsDeleted;
+			}
+			set
+			{
+				if ((this._IsDeleted != value))
+				{
+					this.OnIsDeletedChanging(value);
+					this.SendPropertyChanging();
+					this._IsDeleted = value;
+					this.SendPropertyChanged("IsDeleted");
+					this.OnIsDeletedChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Quanity", DbType="Int")]
+		public System.Nullable<int> Quanity
+		{
+			get
+			{
+				return this._Quanity;
+			}
+			set
+			{
+				if ((this._Quanity != value))
+				{
+					this.OnQuanityChanging(value);
+					this.SendPropertyChanging();
+					this._Quanity = value;
+					this.SendPropertyChanged("Quanity");
+					this.OnQuanityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Service_ReservationService", Storage="_ReservationServices", ThisKey="ServiceID", OtherKey="ServiceID")]
+		public EntitySet<ReservationService> ReservationServices
+		{
+			get
+			{
+				return this._ReservationServices;
+			}
+			set
+			{
+				this._ReservationServices.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_ReservationServices(ReservationService entity)
+		{
+			this.SendPropertyChanging();
+			entity.Service = this;
+		}
+		
+		private void detach_ReservationServices(ReservationService entity)
+		{
+			this.SendPropertyChanging();
+			entity.Service = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ReservationServices")]
+	public partial class ReservationService : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ReservationServiceID;
+		
+		private System.Nullable<int> _ReservationID;
+		
+		private System.Nullable<int> _ServiceID;
+		
+		private System.Nullable<int> _Quantity;
+		
+		private System.Nullable<System.DateTime> _CreatedAt;
+		
+		private System.Nullable<System.DateTime> _UpdatedAt;
+		
+		private System.Nullable<int> _IsDeleted;
+		
+		private System.Nullable<int> _GuestID;
+		
+		private System.Nullable<int> _Bill;
+		
+		private EntityRef<Guest> _Guest;
+		
+		private EntityRef<Reservation> _Reservation;
+		
+		private EntityRef<Service> _Service;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnReservationServiceIDChanging(int value);
+    partial void OnReservationServiceIDChanged();
+    partial void OnReservationIDChanging(System.Nullable<int> value);
+    partial void OnReservationIDChanged();
+    partial void OnServiceIDChanging(System.Nullable<int> value);
+    partial void OnServiceIDChanged();
+    partial void OnQuantityChanging(System.Nullable<int> value);
+    partial void OnQuantityChanged();
+    partial void OnCreatedAtChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedAtChanged();
+    partial void OnUpdatedAtChanging(System.Nullable<System.DateTime> value);
+    partial void OnUpdatedAtChanged();
+    partial void OnIsDeletedChanging(System.Nullable<int> value);
+    partial void OnIsDeletedChanged();
+    partial void OnGuestIDChanging(System.Nullable<int> value);
+    partial void OnGuestIDChanged();
+    partial void OnBillChanging(System.Nullable<int> value);
+    partial void OnBillChanged();
+    #endregion
+		
+		public ReservationService()
+		{
+			this._Guest = default(EntityRef<Guest>);
+			this._Reservation = default(EntityRef<Reservation>);
+			this._Service = default(EntityRef<Service>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReservationServiceID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ReservationServiceID
+		{
+			get
+			{
+				return this._ReservationServiceID;
+			}
+			set
+			{
+				if ((this._ReservationServiceID != value))
+				{
+					this.OnReservationServiceIDChanging(value);
+					this.SendPropertyChanging();
+					this._ReservationServiceID = value;
+					this.SendPropertyChanged("ReservationServiceID");
+					this.OnReservationServiceIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReservationID", DbType="Int")]
+		public System.Nullable<int> ReservationID
+		{
+			get
+			{
+				return this._ReservationID;
+			}
+			set
+			{
+				if ((this._ReservationID != value))
+				{
+					if (this._Reservation.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnReservationIDChanging(value);
+					this.SendPropertyChanging();
+					this._ReservationID = value;
+					this.SendPropertyChanged("ReservationID");
+					this.OnReservationIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServiceID", DbType="Int")]
+		public System.Nullable<int> ServiceID
+		{
+			get
+			{
+				return this._ServiceID;
+			}
+			set
+			{
+				if ((this._ServiceID != value))
+				{
+					if (this._Service.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnServiceIDChanging(value);
+					this.SendPropertyChanging();
+					this._ServiceID = value;
+					this.SendPropertyChanged("ServiceID");
+					this.OnServiceIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Quantity", DbType="Int")]
+		public System.Nullable<int> Quantity
+		{
+			get
+			{
+				return this._Quantity;
+			}
+			set
+			{
+				if ((this._Quantity != value))
+				{
+					this.OnQuantityChanging(value);
+					this.SendPropertyChanging();
+					this._Quantity = value;
+					this.SendPropertyChanged("Quantity");
+					this.OnQuantityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedAt", DbType="Date")]
+		public System.Nullable<System.DateTime> CreatedAt
+		{
+			get
+			{
+				return this._CreatedAt;
+			}
+			set
+			{
+				if ((this._CreatedAt != value))
+				{
+					this.OnCreatedAtChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedAt = value;
+					this.SendPropertyChanged("CreatedAt");
+					this.OnCreatedAtChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedAt", DbType="Date")]
+		public System.Nullable<System.DateTime> UpdatedAt
+		{
+			get
+			{
+				return this._UpdatedAt;
+			}
+			set
+			{
+				if ((this._UpdatedAt != value))
+				{
+					this.OnUpdatedAtChanging(value);
+					this.SendPropertyChanging();
+					this._UpdatedAt = value;
+					this.SendPropertyChanged("UpdatedAt");
+					this.OnUpdatedAtChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsDeleted", DbType="Int")]
+		public System.Nullable<int> IsDeleted
+		{
+			get
+			{
+				return this._IsDeleted;
+			}
+			set
+			{
+				if ((this._IsDeleted != value))
+				{
+					this.OnIsDeletedChanging(value);
+					this.SendPropertyChanging();
+					this._IsDeleted = value;
+					this.SendPropertyChanged("IsDeleted");
+					this.OnIsDeletedChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GuestID", DbType="Int")]
+		public System.Nullable<int> GuestID
+		{
+			get
+			{
+				return this._GuestID;
+			}
+			set
+			{
+				if ((this._GuestID != value))
+				{
+					if (this._Guest.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnGuestIDChanging(value);
+					this.SendPropertyChanging();
+					this._GuestID = value;
+					this.SendPropertyChanged("GuestID");
+					this.OnGuestIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bill", DbType="Int")]
+		public System.Nullable<int> Bill
+		{
+			get
+			{
+				return this._Bill;
+			}
+			set
+			{
+				if ((this._Bill != value))
+				{
+					this.OnBillChanging(value);
+					this.SendPropertyChanging();
+					this._Bill = value;
+					this.SendPropertyChanged("Bill");
+					this.OnBillChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Guest_ReservationService", Storage="_Guest", ThisKey="GuestID", OtherKey="ID", IsForeignKey=true)]
+		public Guest Guest
+		{
+			get
+			{
+				return this._Guest.Entity;
+			}
+			set
+			{
+				Guest previousValue = this._Guest.Entity;
+				if (((previousValue != value) 
+							|| (this._Guest.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Guest.Entity = null;
+						previousValue.ReservationServices.Remove(this);
+					}
+					this._Guest.Entity = value;
+					if ((value != null))
+					{
+						value.ReservationServices.Add(this);
+						this._GuestID = value.ID;
+					}
+					else
+					{
+						this._GuestID = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Guest");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Reservation_ReservationService", Storage="_Reservation", ThisKey="ReservationID", OtherKey="ReservationID", IsForeignKey=true)]
+		public Reservation Reservation
+		{
+			get
+			{
+				return this._Reservation.Entity;
+			}
+			set
+			{
+				Reservation previousValue = this._Reservation.Entity;
+				if (((previousValue != value) 
+							|| (this._Reservation.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Reservation.Entity = null;
+						previousValue.ReservationServices.Remove(this);
+					}
+					this._Reservation.Entity = value;
+					if ((value != null))
+					{
+						value.ReservationServices.Add(this);
+						this._ReservationID = value.ReservationID;
+					}
+					else
+					{
+						this._ReservationID = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Reservation");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Service_ReservationService", Storage="_Service", ThisKey="ServiceID", OtherKey="ServiceID", IsForeignKey=true)]
+		public Service Service
+		{
+			get
+			{
+				return this._Service.Entity;
+			}
+			set
+			{
+				Service previousValue = this._Service.Entity;
+				if (((previousValue != value) 
+							|| (this._Service.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Service.Entity = null;
+						previousValue.ReservationServices.Remove(this);
+					}
+					this._Service.Entity = value;
+					if ((value != null))
+					{
+						value.ReservationServices.Add(this);
+						this._ServiceID = value.ServiceID;
+					}
+					else
+					{
+						this._ServiceID = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Service");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 }
