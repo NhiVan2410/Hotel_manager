@@ -19,6 +19,7 @@ namespace Hotel
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public bool IsDeleted { get; set; } = false;
         public int FeedbackScore { get; set; }
+        public string Status { get; set; }
 
         //Kết nối guest và room
         public Guest1 Guest { get; set; }
