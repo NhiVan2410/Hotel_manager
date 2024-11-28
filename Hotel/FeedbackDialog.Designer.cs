@@ -46,9 +46,9 @@
             this.LblFeedBack.BackColor = System.Drawing.Color.Transparent;
             this.LblFeedBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFeedBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.LblFeedBack.Location = new System.Drawing.Point(196, 331);
+            this.LblFeedBack.Location = new System.Drawing.Point(140, 344);
             this.LblFeedBack.Name = "LblFeedBack";
-            this.LblFeedBack.Size = new System.Drawing.Size(236, 25);
+            this.LblFeedBack.Size = new System.Drawing.Size(344, 36);
             this.LblFeedBack.TabIndex = 0;
             this.LblFeedBack.Text = "Write Your FeedBack : ";
             this.LblFeedBack.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -58,7 +58,7 @@
             this.TxtFeedBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 80F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFeedBack.Location = new System.Drawing.Point(462, 283);
             this.TxtFeedBack.Name = "TxtFeedBack";
-            this.TxtFeedBack.Size = new System.Drawing.Size(354, 128);
+            this.TxtFeedBack.Size = new System.Drawing.Size(354, 189);
             this.TxtFeedBack.TabIndex = 1;
             // 
             // BtnSave
@@ -109,7 +109,7 @@
             this.LblFeedbackScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.LblFeedbackScore.Location = new System.Drawing.Point(195, 246);
             this.LblFeedbackScore.Name = "LblFeedbackScore";
-            this.LblFeedbackScore.Size = new System.Drawing.Size(191, 25);
+            this.LblFeedbackScore.Size = new System.Drawing.Size(275, 36);
             this.LblFeedbackScore.TabIndex = 4;
             this.LblFeedbackScore.Text = "FeedBack Score : ";
             this.LblFeedbackScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,7 +122,7 @@
             this.LblReservationID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.LblReservationID.Location = new System.Drawing.Point(196, 189);
             this.LblReservationID.Name = "LblReservationID";
-            this.LblReservationID.Size = new System.Drawing.Size(172, 25);
+            this.LblReservationID.Size = new System.Drawing.Size(252, 36);
             this.LblReservationID.TabIndex = 5;
             this.LblReservationID.Text = "Reservation ID : ";
             this.LblReservationID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,7 +141,7 @@
             0,
             0});
             this.NumFeedbackScore.Name = "NumFeedbackScore";
-            this.NumFeedbackScore.Size = new System.Drawing.Size(120, 23);
+            this.NumFeedbackScore.Size = new System.Drawing.Size(120, 30);
             this.NumFeedbackScore.TabIndex = 6;
             this.NumFeedbackScore.Value = new decimal(new int[] {
             1,
@@ -154,12 +154,12 @@
             this.CmbReservationIDFeedback.FormattingEnabled = true;
             this.CmbReservationIDFeedback.Location = new System.Drawing.Point(462, 189);
             this.CmbReservationIDFeedback.Name = "CmbReservationIDFeedback";
-            this.CmbReservationIDFeedback.Size = new System.Drawing.Size(120, 24);
+            this.CmbReservationIDFeedback.Size = new System.Drawing.Size(120, 33);
             this.CmbReservationIDFeedback.TabIndex = 7;
             // 
             // FeedbackDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Hotel.Properties.Resources._7a86fbeeb9b812b527f0e07d5ff3f0c1;
             this.ClientSize = new System.Drawing.Size(991, 563);

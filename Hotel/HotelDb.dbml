@@ -66,23 +66,6 @@
       <Association Name="Person_Employee" Member="Person" ThisKey="ID" OtherKey="ID" Type="Person" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Reservations" Member="Reservations">
-    <Type Name="Reservation">
-      <Column Name="ReservationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="GuestID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="RoomID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="BookingDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="CheckInDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="CheckOutDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Feedback" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FeedbackScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Reservation_ReservationService" Member="ReservationServices" ThisKey="ReservationID" OtherKey="ReservationID" Type="ReservationService" />
-      <Association Name="Room_Reservation" Member="Room" ThisKey="RoomID" OtherKey="RoomID" Type="Room" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.Guests" Member="Guests">
     <Type Name="Guest">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -98,6 +81,24 @@
       <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="[User]" Member="User" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
       <Association Name="Person_Guest" Member="Person" ThisKey="ID" OtherKey="ID" Type="Person" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Reservations" Member="Reservations">
+    <Type Name="Reservation">
+      <Column Name="ReservationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GuestID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoomID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BookingDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CheckInDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CheckOutDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Feedback" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FeedbackScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Association Name="Reservation_ReservationService" Member="ReservationServices" ThisKey="ReservationID" OtherKey="ReservationID" Type="ReservationService" />
+      <Association Name="Room_Reservation" Member="Room" ThisKey="RoomID" OtherKey="RoomID" Type="Room" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
