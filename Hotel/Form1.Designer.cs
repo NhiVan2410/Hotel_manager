@@ -80,7 +80,7 @@
             this.LnkRegister.LinkColor = System.Drawing.Color.OliveDrab;
             this.LnkRegister.Location = new System.Drawing.Point(198, 211);
             this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(116, 31);
+            this.LnkRegister.Size = new System.Drawing.Size(61, 17);
             this.LnkRegister.TabIndex = 4;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Register";
@@ -101,14 +101,14 @@
             // 
             this.TxtUserName.Location = new System.Drawing.Point(191, 68);
             this.TxtUserName.Name = "TxtUserName";
-            this.TxtUserName.Size = new System.Drawing.Size(227, 38);
+            this.TxtUserName.Size = new System.Drawing.Size(227, 23);
             this.TxtUserName.TabIndex = 4;
             // 
             // TxtPassWord
             // 
             this.TxtPassWord.Location = new System.Drawing.Point(191, 138);
             this.TxtPassWord.Name = "TxtPassWord";
-            this.TxtPassWord.Size = new System.Drawing.Size(227, 38);
+            this.TxtPassWord.Size = new System.Drawing.Size(227, 23);
             this.TxtPassWord.TabIndex = 4;
             // 
             // LblUserName
@@ -119,7 +119,7 @@
             this.LblUserName.Name = "LblUserName";
             this.LblUserName.Size = new System.Drawing.Size(167, 34);
             this.LblUserName.TabIndex = 4;
-            this.LblUserName.Text = "UserName : ";
+            this.LblUserName.Text = "UserName / Email : ";
             // 
             // LblPassWord
             // 
@@ -128,7 +128,7 @@
             this.LblPassWord.ForeColor = System.Drawing.Color.Olive;
             this.LblPassWord.Location = new System.Drawing.Point(18, 139);
             this.LblPassWord.Name = "LblPassWord";
-            this.LblPassWord.Size = new System.Drawing.Size(204, 37);
+            this.LblPassWord.Size = new System.Drawing.Size(105, 20);
             this.LblPassWord.TabIndex = 4;
             this.LblPassWord.Text = "PassWord : ";
             // 
@@ -193,7 +193,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::Hotel.Properties.Resources._302f5c5de2452a7921d51f370ef4dc7c;

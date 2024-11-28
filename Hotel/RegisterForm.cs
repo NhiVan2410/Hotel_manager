@@ -51,5 +51,15 @@ namespace Hotel
         {
 
         }
+
+        private void LblUserNameRegister_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

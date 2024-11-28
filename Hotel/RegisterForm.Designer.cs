@@ -55,6 +55,8 @@
             this.LblUserNameRegister = new System.Windows.Forms.Label();
             this.LblPassWordRegister = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.TxtSubmitPassWordRegister = new System.Windows.Forms.TextBox();
+            this.LblSubmitPassWordRegister = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.GrBxGenderRegister.SuspendLayout();
             this.SuspendLayout();
@@ -122,6 +124,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.TxtSubmitPassWordRegister);
+            this.groupBox1.Controls.Add(this.LblSubmitPassWordRegister);
             this.groupBox1.Controls.Add(this.TxtEmailRegister);
             this.groupBox1.Controls.Add(this.LblEmailRegister);
             this.groupBox1.Controls.Add(this.TxtAddressRegister);
@@ -140,13 +144,13 @@
             this.groupBox1.Controls.Add(this.LblPassWordRegister);
             this.groupBox1.Location = new System.Drawing.Point(280, 451);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(456, 393);
+            this.groupBox1.Size = new System.Drawing.Size(456, 444);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
             // TxtEmailRegister
             // 
-            this.TxtEmailRegister.Location = new System.Drawing.Point(192, 265);
+            this.TxtEmailRegister.Location = new System.Drawing.Point(192, 330);
             this.TxtEmailRegister.Name = "TxtEmailRegister";
             this.TxtEmailRegister.Size = new System.Drawing.Size(227, 20);
             this.TxtEmailRegister.TabIndex = 19;
@@ -156,7 +160,7 @@
             this.LblEmailRegister.AutoSize = true;
             this.LblEmailRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEmailRegister.ForeColor = System.Drawing.Color.Cornsilk;
-            this.LblEmailRegister.Location = new System.Drawing.Point(18, 262);
+            this.LblEmailRegister.Location = new System.Drawing.Point(18, 327);
             this.LblEmailRegister.Name = "LblEmailRegister";
             this.LblEmailRegister.Size = new System.Drawing.Size(68, 20);
             this.LblEmailRegister.TabIndex = 18;
@@ -164,7 +168,7 @@
             // 
             // TxtAddressRegister
             // 
-            this.TxtAddressRegister.Location = new System.Drawing.Point(192, 228);
+            this.TxtAddressRegister.Location = new System.Drawing.Point(192, 291);
             this.TxtAddressRegister.Name = "TxtAddressRegister";
             this.TxtAddressRegister.Size = new System.Drawing.Size(227, 20);
             this.TxtAddressRegister.TabIndex = 17;
@@ -174,7 +178,7 @@
             this.LblAddressRegister.AutoSize = true;
             this.LblAddressRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblAddressRegister.ForeColor = System.Drawing.Color.Cornsilk;
-            this.LblAddressRegister.Location = new System.Drawing.Point(18, 225);
+            this.LblAddressRegister.Location = new System.Drawing.Point(18, 288);
             this.LblAddressRegister.Name = "LblAddressRegister";
             this.LblAddressRegister.Size = new System.Drawing.Size(90, 20);
             this.LblAddressRegister.TabIndex = 16;
@@ -182,7 +186,7 @@
             // 
             // TxtPhoneNumberRegister
             // 
-            this.TxtPhoneNumberRegister.Location = new System.Drawing.Point(192, 190);
+            this.TxtPhoneNumberRegister.Location = new System.Drawing.Point(192, 249);
             this.TxtPhoneNumberRegister.Name = "TxtPhoneNumberRegister";
             this.TxtPhoneNumberRegister.Size = new System.Drawing.Size(227, 20);
             this.TxtPhoneNumberRegister.TabIndex = 15;
@@ -192,7 +196,7 @@
             this.LblPhoneNumberRegister.AutoSize = true;
             this.LblPhoneNumberRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPhoneNumberRegister.ForeColor = System.Drawing.Color.Cornsilk;
-            this.LblPhoneNumberRegister.Location = new System.Drawing.Point(18, 187);
+            this.LblPhoneNumberRegister.Location = new System.Drawing.Point(18, 246);
             this.LblPhoneNumberRegister.Name = "LblPhoneNumberRegister";
             this.LblPhoneNumberRegister.Size = new System.Drawing.Size(142, 20);
             this.LblPhoneNumberRegister.TabIndex = 14;
@@ -201,8 +205,8 @@
             // 
             // DTPickerRegister
             // 
-            this.DTPickerRegister.Location = new System.Drawing.Point(192, 152);
-            this.DTPickerRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DTPickerRegister.Location = new System.Drawing.Point(192, 206);
+            this.DTPickerRegister.Margin = new System.Windows.Forms.Padding(2);
             this.DTPickerRegister.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
             this.DTPickerRegister.Name = "DTPickerRegister";
             this.DTPickerRegister.Size = new System.Drawing.Size(227, 20);
@@ -213,7 +217,7 @@
             this.LblDateOfBirthRegister.AutoSize = true;
             this.LblDateOfBirthRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblDateOfBirthRegister.ForeColor = System.Drawing.Color.Cornsilk;
-            this.LblDateOfBirthRegister.Location = new System.Drawing.Point(18, 150);
+            this.LblDateOfBirthRegister.Location = new System.Drawing.Point(18, 204);
             this.LblDateOfBirthRegister.Name = "LblDateOfBirthRegister";
             this.LblDateOfBirthRegister.Size = new System.Drawing.Size(125, 20);
             this.LblDateOfBirthRegister.TabIndex = 12;
@@ -226,11 +230,12 @@
             this.GrBxGenderRegister.Controls.Add(this.RBtnOtherRegister);
             this.GrBxGenderRegister.Controls.Add(this.RBtnMaleRegister);
             this.GrBxGenderRegister.Controls.Add(this.RBtnFemaleRegister);
+            this.GrBxGenderRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrBxGenderRegister.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.GrBxGenderRegister.Location = new System.Drawing.Point(192, 107);
-            this.GrBxGenderRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GrBxGenderRegister.Location = new System.Drawing.Point(192, 157);
+            this.GrBxGenderRegister.Margin = new System.Windows.Forms.Padding(2);
             this.GrBxGenderRegister.Name = "GrBxGenderRegister";
-            this.GrBxGenderRegister.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GrBxGenderRegister.Padding = new System.Windows.Forms.Padding(2);
             this.GrBxGenderRegister.Size = new System.Drawing.Size(225, 26);
             this.GrBxGenderRegister.TabIndex = 11;
             this.GrBxGenderRegister.TabStop = false;
@@ -240,9 +245,9 @@
             this.RBtnOtherRegister.AutoSize = true;
             this.RBtnOtherRegister.ForeColor = System.Drawing.Color.Beige;
             this.RBtnOtherRegister.Location = new System.Drawing.Point(174, 8);
-            this.RBtnOtherRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RBtnOtherRegister.Margin = new System.Windows.Forms.Padding(2);
             this.RBtnOtherRegister.Name = "RBtnOtherRegister";
-            this.RBtnOtherRegister.Size = new System.Drawing.Size(51, 17);
+            this.RBtnOtherRegister.Size = new System.Drawing.Size(56, 17);
             this.RBtnOtherRegister.TabIndex = 10;
             this.RBtnOtherRegister.TabStop = true;
             this.RBtnOtherRegister.Text = "Other";
@@ -253,9 +258,9 @@
             this.RBtnMaleRegister.AutoSize = true;
             this.RBtnMaleRegister.ForeColor = System.Drawing.Color.Beige;
             this.RBtnMaleRegister.Location = new System.Drawing.Point(6, 8);
-            this.RBtnMaleRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RBtnMaleRegister.Margin = new System.Windows.Forms.Padding(2);
             this.RBtnMaleRegister.Name = "RBtnMaleRegister";
-            this.RBtnMaleRegister.Size = new System.Drawing.Size(48, 17);
+            this.RBtnMaleRegister.Size = new System.Drawing.Size(52, 17);
             this.RBtnMaleRegister.TabIndex = 8;
             this.RBtnMaleRegister.TabStop = true;
             this.RBtnMaleRegister.Text = "Male";
@@ -266,9 +271,9 @@
             this.RBtnFemaleRegister.AutoSize = true;
             this.RBtnFemaleRegister.ForeColor = System.Drawing.Color.Beige;
             this.RBtnFemaleRegister.Location = new System.Drawing.Point(87, 8);
-            this.RBtnFemaleRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RBtnFemaleRegister.Margin = new System.Windows.Forms.Padding(2);
             this.RBtnFemaleRegister.Name = "RBtnFemaleRegister";
-            this.RBtnFemaleRegister.Size = new System.Drawing.Size(59, 17);
+            this.RBtnFemaleRegister.Size = new System.Drawing.Size(65, 17);
             this.RBtnFemaleRegister.TabIndex = 9;
             this.RBtnFemaleRegister.TabStop = true;
             this.RBtnFemaleRegister.Text = "Female";
@@ -279,7 +284,7 @@
             this.LblGenderRegister.AutoSize = true;
             this.LblGenderRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblGenderRegister.ForeColor = System.Drawing.Color.Cornsilk;
-            this.LblGenderRegister.Location = new System.Drawing.Point(18, 113);
+            this.LblGenderRegister.Location = new System.Drawing.Point(18, 163);
             this.LblGenderRegister.Name = "LblGenderRegister";
             this.LblGenderRegister.Size = new System.Drawing.Size(84, 20);
             this.LblGenderRegister.TabIndex = 7;
@@ -290,7 +295,7 @@
             // 
             this.LnkRegister.AutoSize = true;
             this.LnkRegister.LinkColor = System.Drawing.Color.OliveDrab;
-            this.LnkRegister.Location = new System.Drawing.Point(198, 179);
+            this.LnkRegister.Location = new System.Drawing.Point(198, 216);
             this.LnkRegister.Name = "LnkRegister";
             this.LnkRegister.Size = new System.Drawing.Size(0, 13);
             this.LnkRegister.TabIndex = 4;
@@ -299,7 +304,7 @@
             // 
             this.BtnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnRegister.Location = new System.Drawing.Point(144, 313);
+            this.BtnRegister.Location = new System.Drawing.Point(141, 374);
             this.BtnRegister.Name = "BtnRegister";
             this.BtnRegister.Size = new System.Drawing.Size(181, 45);
             this.BtnRegister.TabIndex = 5;
@@ -315,7 +320,7 @@
             // 
             // TxtPassWordRegister
             // 
-            this.TxtPassWordRegister.Location = new System.Drawing.Point(192, 74);
+            this.TxtPassWordRegister.Location = new System.Drawing.Point(192, 77);
             this.TxtPassWordRegister.Name = "TxtPassWordRegister";
             this.TxtPassWordRegister.Size = new System.Drawing.Size(227, 20);
             this.TxtPassWordRegister.TabIndex = 4;
@@ -328,14 +333,15 @@
             this.LblUserNameRegister.Name = "LblUserNameRegister";
             this.LblUserNameRegister.Size = new System.Drawing.Size(167, 34);
             this.LblUserNameRegister.TabIndex = 4;
-            this.LblUserNameRegister.Text = "UserName : ";
+            this.LblUserNameRegister.Text = "Name : ";
+            this.LblUserNameRegister.Click += new System.EventHandler(this.LblUserNameRegister_Click);
             // 
             // LblPassWordRegister
             // 
             this.LblPassWordRegister.AutoSize = true;
             this.LblPassWordRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPassWordRegister.ForeColor = System.Drawing.Color.Cornsilk;
-            this.LblPassWordRegister.Location = new System.Drawing.Point(18, 75);
+            this.LblPassWordRegister.Location = new System.Drawing.Point(18, 78);
             this.LblPassWordRegister.Name = "LblPassWordRegister";
             this.LblPassWordRegister.Size = new System.Drawing.Size(105, 20);
             this.LblPassWordRegister.TabIndex = 4;
@@ -355,6 +361,25 @@
             this.label1.Text = "THE BEST LUXURY HOTEL\r\nIN DA NANG\r\n\r\n\r\nREGISTER\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // TxtSubmitPassWordRegister
+            // 
+            this.TxtSubmitPassWordRegister.Location = new System.Drawing.Point(192, 120);
+            this.TxtSubmitPassWordRegister.Name = "TxtSubmitPassWordRegister";
+            this.TxtSubmitPassWordRegister.Size = new System.Drawing.Size(227, 20);
+            this.TxtSubmitPassWordRegister.TabIndex = 20;
+            // 
+            // LblSubmitPassWordRegister
+            // 
+            this.LblSubmitPassWordRegister.AutoSize = true;
+            this.LblSubmitPassWordRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSubmitPassWordRegister.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LblSubmitPassWordRegister.Location = new System.Drawing.Point(18, 121);
+            this.LblSubmitPassWordRegister.Name = "LblSubmitPassWordRegister";
+            this.LblSubmitPassWordRegister.Size = new System.Drawing.Size(166, 20);
+            this.LblSubmitPassWordRegister.TabIndex = 21;
+            this.LblSubmitPassWordRegister.Text = "Submit PassWord : ";
+            this.LblSubmitPassWordRegister.Click += new System.EventHandler(this.label8_Click_2);
             // 
             // RegisterForm
             // 
@@ -413,5 +438,7 @@
         private System.Windows.Forms.TextBox TxtAddressRegister;
         private System.Windows.Forms.Label LblAddressRegister;
         private System.Windows.Forms.TextBox TxtPhoneNumberRegister;
+        private System.Windows.Forms.TextBox TxtSubmitPassWordRegister;
+        private System.Windows.Forms.Label LblSubmitPassWordRegister;
     }
 }
