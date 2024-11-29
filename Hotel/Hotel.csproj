@@ -165,6 +165,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Hotel_ManagerDataSet22.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Hotel_ManagerDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel_ManagerDataSet25.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Hotel_ManagerDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -435,6 +450,39 @@
     <None Include="Hotel_ManagerDataSet22.xss">
       <DependentUpon>Hotel_ManagerDataSet22.xsd</DependentUpon>
     </None>
+    <None Include="Hotel_ManagerDataSet23.xsc">
+      <DependentUpon>Hotel_ManagerDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet23.xss">
+      <DependentUpon>Hotel_ManagerDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet24.xsc">
+      <DependentUpon>Hotel_ManagerDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet24.xss">
+      <DependentUpon>Hotel_ManagerDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet25.xsc">
+      <DependentUpon>Hotel_ManagerDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel_ManagerDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel_ManagerDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel_ManagerDataSet25.xss">
+      <DependentUpon>Hotel_ManagerDataSet25.xsd</DependentUpon>
+    </None>
     <None Include="Hotel_ManagerDataSet3.xsc">
       <DependentUpon>Hotel_ManagerDataSet3.xsd</DependentUpon>
     </None>
@@ -608,6 +656,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-services-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3da2e338c11d88a9f3ea66625b2266a3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3ba829bf1eae7b9e2822c8c41333d18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-management-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7289886605e7feb613a7cacd38360849.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e4ae273b0703e72ae536339180d6f333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-submit-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a59289cfcee527e28e37b1abc5956136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receptionist-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
