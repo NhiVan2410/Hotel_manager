@@ -19,6 +19,8 @@ namespace Hotel
 
         private void ReceptionistForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'hotel_ManagerDataSet31.Reservations' table. You can move, or remove it, as needed.
+            this.reservationsTableAdapter1.Fill(this.hotel_ManagerDataSet31.Reservations);
             // TODO: This line of code loads data into the 'hotel_ManagerDataSet20.ReservationServices' table. You can move, or remove it, as needed.
             this.reservationServicesTableAdapter2.Fill(this.hotel_ManagerDataSet20.ReservationServices);
             // TODO: This line of code loads data into the 'hotel_ManagerDataSet19.ReservationServices' table. You can move, or remove it, as needed.
