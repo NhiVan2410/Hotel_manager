@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnLogout = new System.Windows.Forms.Button();
             this.LblReceptionistName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -89,34 +89,6 @@
             this.LblReservationManagement = new System.Windows.Forms.Label();
             this.PageShowBookingManagement = new System.Windows.Forms.TabPage();
             this.DataBookingManagement = new System.Windows.Forms.DataGridView();
-            this.LblBookingHistory = new System.Windows.Forms.Label();
-            this.PageRoomManagement = new System.Windows.Forms.TabPage();
-            this.PageServiceManagement = new System.Windows.Forms.TabPage();
-            this.employeesTableAdapter = new Hotel.Hotel_ManagerDataSet23TableAdapters.EmployeesTableAdapter();
-            this.guestsTableAdapter = new Hotel.Hotel_ManagerDataSet24TableAdapters.GuestsTableAdapter();
-            this.hotel_ManagerDataSet25 = new Hotel.Hotel_ManagerDataSet25();
-            this.reservationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reservationsTableAdapter = new Hotel.Hotel_ManagerDataSet25TableAdapters.ReservationsTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactInfoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.createdAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.updatedAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isDeletedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.createdAtDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.updatedAtDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isDeletedDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reservationIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -129,6 +101,32 @@
             this.isDeletedDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.feedbackScoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hotel_ManagerDataSet25 = new Hotel.Hotel_ManagerDataSet25();
+            this.LblBookingHistory = new System.Windows.Forms.Label();
+            this.PageRoomManagement = new System.Windows.Forms.TabPage();
+            this.PageServiceManagement = new System.Windows.Forms.TabPage();
+            this.employeesTableAdapter = new Hotel.Hotel_ManagerDataSet23TableAdapters.EmployeesTableAdapter();
+            this.guestsTableAdapter = new Hotel.Hotel_ManagerDataSet24TableAdapters.GuestsTableAdapter();
+            this.reservationsTableAdapter = new Hotel.Hotel_ManagerDataSet25TableAdapters.ReservationsTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contactInfoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.createdAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updatedAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isDeletedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.createdAtDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updatedAtDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isDeletedDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabBookingManagement.SuspendLayout();
             this.Dashboard.SuspendLayout();
             this.PageEmployeeManagement.SuspendLayout();
@@ -145,18 +143,18 @@
             this.PageEditManagement.SuspendLayout();
             this.PageShowBookingManagement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataBookingManagement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet25)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnLogout
             // 
             this.BtnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BtnLogout.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnLogout.Location = new System.Drawing.Point(989, 63);
-            this.BtnLogout.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnLogout.Location = new System.Drawing.Point(1978, 121);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnLogout.Name = "BtnLogout";
-            this.BtnLogout.Size = new System.Drawing.Size(57, 20);
+            this.BtnLogout.Size = new System.Drawing.Size(114, 38);
             this.BtnLogout.TabIndex = 11;
             this.BtnLogout.Text = "Log out";
             this.BtnLogout.UseVisualStyleBackColor = false;
@@ -164,20 +162,20 @@
             // LblReceptionistName
             // 
             this.LblReceptionistName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblReceptionistName.Location = new System.Drawing.Point(925, 32);
-            this.LblReceptionistName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblReceptionistName.Location = new System.Drawing.Point(1850, 62);
+            this.LblReceptionistName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblReceptionistName.Name = "LblReceptionistName";
-            this.LblReceptionistName.Size = new System.Drawing.Size(127, 14);
+            this.LblReceptionistName.Size = new System.Drawing.Size(254, 27);
             this.LblReceptionistName.TabIndex = 10;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1019, 49);
-            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label3.Location = new System.Drawing.Point(2038, 94);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.Size = new System.Drawing.Size(0, 26);
             this.label3.TabIndex = 9;
             // 
             // label1
@@ -186,10 +184,10 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(85, 51);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Location = new System.Drawing.Point(170, 98);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 31);
+            this.label1.Size = new System.Drawing.Size(391, 63);
             this.label1.TabIndex = 7;
             this.label1.Text = "Hotel && Resort";
             // 
@@ -203,21 +201,21 @@
             this.TabBookingManagement.Controls.Add(this.PageServiceManagement);
             this.TabBookingManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TabBookingManagement.ItemSize = new System.Drawing.Size(500, 34);
-            this.TabBookingManagement.Location = new System.Drawing.Point(81, 84);
-            this.TabBookingManagement.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TabBookingManagement.Location = new System.Drawing.Point(162, 162);
+            this.TabBookingManagement.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.TabBookingManagement.Name = "TabBookingManagement";
             this.TabBookingManagement.SelectedIndex = 0;
-            this.TabBookingManagement.Size = new System.Drawing.Size(969, 669);
+            this.TabBookingManagement.Size = new System.Drawing.Size(1938, 1287);
             this.TabBookingManagement.TabIndex = 8;
             // 
             // Dashboard
             // 
             this.Dashboard.Controls.Add(this.label7);
-            this.Dashboard.Location = new System.Drawing.Point(4, 38);
-            this.Dashboard.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Dashboard.Location = new System.Drawing.Point(8, 42);
+            this.Dashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Dashboard.Name = "Dashboard";
-            this.Dashboard.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.Dashboard.Size = new System.Drawing.Size(961, 627);
+            this.Dashboard.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Dashboard.Size = new System.Drawing.Size(1922, 1237);
             this.Dashboard.TabIndex = 6;
             this.Dashboard.Text = "Dashboard";
             this.Dashboard.UseVisualStyleBackColor = true;
@@ -228,10 +226,10 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Image = global::Hotel.Properties.Resources.icons8_neighbor_50;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(299, 27);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(598, 52);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(332, 37);
+            this.label7.Size = new System.Drawing.Size(664, 71);
             this.label7.TabIndex = 1;
             this.label7.Text = "Dashboard";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,11 +254,11 @@
             this.PageEmployeeManagement.Controls.Add(this.LblContactInfoManagement);
             this.PageEmployeeManagement.Controls.Add(this.LblPositionManagement);
             this.PageEmployeeManagement.Controls.Add(this.LblUserNameManagement);
-            this.PageEmployeeManagement.Location = new System.Drawing.Point(4, 38);
-            this.PageEmployeeManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.PageEmployeeManagement.Location = new System.Drawing.Point(8, 42);
+            this.PageEmployeeManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PageEmployeeManagement.Name = "PageEmployeeManagement";
-            this.PageEmployeeManagement.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.PageEmployeeManagement.Size = new System.Drawing.Size(961, 627);
+            this.PageEmployeeManagement.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PageEmployeeManagement.Size = new System.Drawing.Size(1922, 1237);
             this.PageEmployeeManagement.TabIndex = 7;
             this.PageEmployeeManagement.Text = "EmployeeManagement";
             this.PageEmployeeManagement.UseVisualStyleBackColor = true;
@@ -269,10 +267,10 @@
             // 
             this.BtnReceptionistManager.BackColor = System.Drawing.Color.Linen;
             this.BtnReceptionistManager.ForeColor = System.Drawing.Color.Maroon;
-            this.BtnReceptionistManager.Location = new System.Drawing.Point(611, 302);
-            this.BtnReceptionistManager.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnReceptionistManager.Location = new System.Drawing.Point(1191, 574);
+            this.BtnReceptionistManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnReceptionistManager.Name = "BtnReceptionistManager";
-            this.BtnReceptionistManager.Size = new System.Drawing.Size(119, 25);
+            this.BtnReceptionistManager.Size = new System.Drawing.Size(238, 48);
             this.BtnReceptionistManager.TabIndex = 29;
             this.BtnReceptionistManager.Text = "Receiptionist";
             this.BtnReceptionistManager.UseVisualStyleBackColor = false;
@@ -281,10 +279,10 @@
             // 
             this.BtnManager.BackColor = System.Drawing.Color.Linen;
             this.BtnManager.ForeColor = System.Drawing.Color.Maroon;
-            this.BtnManager.Location = new System.Drawing.Point(415, 302);
-            this.BtnManager.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnManager.Location = new System.Drawing.Point(799, 574);
+            this.BtnManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnManager.Name = "BtnManager";
-            this.BtnManager.Size = new System.Drawing.Size(106, 25);
+            this.BtnManager.Size = new System.Drawing.Size(212, 48);
             this.BtnManager.TabIndex = 28;
             this.BtnManager.Text = "Manager";
             this.BtnManager.UseVisualStyleBackColor = false;
@@ -292,10 +290,10 @@
             // LblFilterByManagement
             // 
             this.LblFilterByManagement.AutoSize = true;
-            this.LblFilterByManagement.Location = new System.Drawing.Point(261, 302);
-            this.LblFilterByManagement.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblFilterByManagement.Location = new System.Drawing.Point(491, 574);
+            this.LblFilterByManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblFilterByManagement.Name = "LblFilterByManagement";
-            this.LblFilterByManagement.Size = new System.Drawing.Size(72, 20);
+            this.LblFilterByManagement.Size = new System.Drawing.Size(148, 37);
             this.LblFilterByManagement.TabIndex = 27;
             this.LblFilterByManagement.Text = "Filter by :";
             // 
@@ -304,54 +302,54 @@
             this.BtnSearchManagement.ForeColor = System.Drawing.Color.Sienna;
             this.BtnSearchManagement.Image = global::Hotel.Properties.Resources.icons8_search_30;
             this.BtnSearchManagement.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.BtnSearchManagement.Location = new System.Drawing.Point(757, 34);
-            this.BtnSearchManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnSearchManagement.Location = new System.Drawing.Point(1514, 65);
+            this.BtnSearchManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSearchManagement.Name = "BtnSearchManagement";
-            this.BtnSearchManagement.Size = new System.Drawing.Size(96, 23);
+            this.BtnSearchManagement.Size = new System.Drawing.Size(192, 44);
             this.BtnSearchManagement.TabIndex = 26;
             this.BtnSearchManagement.Text = "Search";
             this.BtnSearchManagement.UseVisualStyleBackColor = true;
             // 
             // TxtEmployeeManagement
             // 
-            this.TxtEmployeeManagement.Location = new System.Drawing.Point(496, 34);
-            this.TxtEmployeeManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtEmployeeManagement.Location = new System.Drawing.Point(992, 65);
+            this.TxtEmployeeManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtEmployeeManagement.Name = "TxtEmployeeManagement";
-            this.TxtEmployeeManagement.Size = new System.Drawing.Size(225, 26);
+            this.TxtEmployeeManagement.Size = new System.Drawing.Size(446, 44);
             this.TxtEmployeeManagement.TabIndex = 25;
             // 
             // DataEmloyeeManagement
             // 
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataEmloyeeManagement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataEmloyeeManagement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DataEmloyeeManagement.AutoGenerateColumns = false;
+            this.DataEmloyeeManagement.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataEmloyeeManagement.BackgroundColor = System.Drawing.Color.PapayaWhip;
             this.DataEmloyeeManagement.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataEmloyeeManagement.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.positionDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
             this.contactInfoDataGridViewTextBoxColumn,
             this.createdAtDataGridViewTextBoxColumn,
             this.updatedAtDataGridViewTextBoxColumn,
             this.isDeletedDataGridViewTextBoxColumn});
             this.DataEmloyeeManagement.DataSource = this.employeesBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataEmloyeeManagement.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DataEmloyeeManagement.Location = new System.Drawing.Point(198, 345);
-            this.DataEmloyeeManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataEmloyeeManagement.DefaultCellStyle = dataGridViewCellStyle9;
+            this.DataEmloyeeManagement.Location = new System.Drawing.Point(284, 664);
+            this.DataEmloyeeManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DataEmloyeeManagement.Name = "DataEmloyeeManagement";
             this.DataEmloyeeManagement.RowHeadersVisible = false;
             this.DataEmloyeeManagement.RowHeadersWidth = 82;
             this.DataEmloyeeManagement.RowTemplate.Height = 33;
-            this.DataEmloyeeManagement.Size = new System.Drawing.Size(676, 263);
+            this.DataEmloyeeManagement.Size = new System.Drawing.Size(1352, 506);
             this.DataEmloyeeManagement.TabIndex = 24;
             // 
             // employeesBindingSource
@@ -370,10 +368,10 @@
             this.LblEmployeeManagement.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.LblEmployeeManagement.Image = global::Hotel.Properties.Resources.icons8_management_50;
             this.LblEmployeeManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblEmployeeManagement.Location = new System.Drawing.Point(90, 27);
-            this.LblEmployeeManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblEmployeeManagement.Location = new System.Drawing.Point(180, 52);
+            this.LblEmployeeManagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblEmployeeManagement.Name = "LblEmployeeManagement";
-            this.LblEmployeeManagement.Size = new System.Drawing.Size(389, 37);
+            this.LblEmployeeManagement.Size = new System.Drawing.Size(778, 71);
             this.LblEmployeeManagement.TabIndex = 23;
             this.LblEmployeeManagement.Text = "Employee Management";
             this.LblEmployeeManagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,9 +382,10 @@
             this.BtnEditManagement.ForeColor = System.Drawing.Color.Black;
             this.BtnEditManagement.Image = global::Hotel.Properties.Resources.icons8_edit_26;
             this.BtnEditManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEditManagement.Location = new System.Drawing.Point(515, 244);
+            this.BtnEditManagement.Location = new System.Drawing.Point(807, 475);
+            this.BtnEditManagement.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnEditManagement.Name = "BtnEditManagement";
-            this.BtnEditManagement.Size = new System.Drawing.Size(105, 32);
+            this.BtnEditManagement.Size = new System.Drawing.Size(210, 62);
             this.BtnEditManagement.TabIndex = 22;
             this.BtnEditManagement.Text = "Edit";
             this.BtnEditManagement.UseVisualStyleBackColor = false;
@@ -397,9 +396,10 @@
             this.BtnDeleteManagement.ForeColor = System.Drawing.Color.Black;
             this.BtnDeleteManagement.Image = global::Hotel.Properties.Resources.icons8_delete_24;
             this.BtnDeleteManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnDeleteManagement.Location = new System.Drawing.Point(713, 244);
+            this.BtnDeleteManagement.Location = new System.Drawing.Point(1203, 475);
+            this.BtnDeleteManagement.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnDeleteManagement.Name = "BtnDeleteManagement";
-            this.BtnDeleteManagement.Size = new System.Drawing.Size(105, 32);
+            this.BtnDeleteManagement.Size = new System.Drawing.Size(210, 62);
             this.BtnDeleteManagement.TabIndex = 7;
             this.BtnDeleteManagement.Text = " Delete ";
             this.BtnDeleteManagement.UseVisualStyleBackColor = false;
@@ -410,9 +410,10 @@
             this.BtnAddManagement.ForeColor = System.Drawing.Color.Black;
             this.BtnAddManagement.Image = global::Hotel.Properties.Resources.icons8_add_24;
             this.BtnAddManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAddManagement.Location = new System.Drawing.Point(312, 244);
+            this.BtnAddManagement.Location = new System.Drawing.Point(401, 475);
+            this.BtnAddManagement.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnAddManagement.Name = "BtnAddManagement";
-            this.BtnAddManagement.Size = new System.Drawing.Size(105, 32);
+            this.BtnAddManagement.Size = new System.Drawing.Size(210, 62);
             this.BtnAddManagement.TabIndex = 9;
             this.BtnAddManagement.Text = "Add ";
             this.BtnAddManagement.UseVisualStyleBackColor = false;
@@ -423,9 +424,11 @@
             this.GrBoxGenderManagement.Controls.Add(this.RadFemale);
             this.GrBoxGenderManagement.Controls.Add(this.RadMale);
             this.GrBoxGenderManagement.ForeColor = System.Drawing.SystemColors.Window;
-            this.GrBoxGenderManagement.Location = new System.Drawing.Point(436, 122);
+            this.GrBoxGenderManagement.Location = new System.Drawing.Point(872, 235);
+            this.GrBoxGenderManagement.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.GrBoxGenderManagement.Name = "GrBoxGenderManagement";
-            this.GrBoxGenderManagement.Size = new System.Drawing.Size(323, 35);
+            this.GrBoxGenderManagement.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GrBoxGenderManagement.Size = new System.Drawing.Size(646, 67);
             this.GrBoxGenderManagement.TabIndex = 21;
             this.GrBoxGenderManagement.TabStop = false;
             // 
@@ -434,9 +437,10 @@
             this.RadFemale.AutoSize = true;
             this.RadFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RadFemale.ForeColor = System.Drawing.Color.Black;
-            this.RadFemale.Location = new System.Drawing.Point(215, 14);
+            this.RadFemale.Location = new System.Drawing.Point(430, 27);
+            this.RadFemale.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.RadFemale.Name = "RadFemale";
-            this.RadFemale.Size = new System.Drawing.Size(99, 17);
+            this.RadFemale.Size = new System.Drawing.Size(181, 30);
             this.RadFemale.TabIndex = 6;
             this.RadFemale.TabStop = true;
             this.RadFemale.Text = "Receiptionist";
@@ -448,9 +452,10 @@
             this.RadMale.AutoSize = true;
             this.RadMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RadMale.ForeColor = System.Drawing.Color.Black;
-            this.RadMale.Location = new System.Drawing.Point(16, 14);
+            this.RadMale.Location = new System.Drawing.Point(32, 27);
+            this.RadMale.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.RadMale.Name = "RadMale";
-            this.RadMale.Size = new System.Drawing.Size(74, 17);
+            this.RadMale.Size = new System.Drawing.Size(135, 30);
             this.RadMale.TabIndex = 6;
             this.RadMale.TabStop = true;
             this.RadMale.Text = "Manager";
@@ -459,16 +464,18 @@
             // 
             // TxtContactInfoManagement
             // 
-            this.TxtContactInfoManagement.Location = new System.Drawing.Point(436, 180);
+            this.TxtContactInfoManagement.Location = new System.Drawing.Point(872, 346);
+            this.TxtContactInfoManagement.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TxtContactInfoManagement.Name = "TxtContactInfoManagement";
-            this.TxtContactInfoManagement.Size = new System.Drawing.Size(323, 26);
+            this.TxtContactInfoManagement.Size = new System.Drawing.Size(642, 44);
             this.TxtContactInfoManagement.TabIndex = 17;
             // 
             // TxtUserNameManagement
             // 
-            this.TxtUserNameManagement.Location = new System.Drawing.Point(436, 82);
+            this.TxtUserNameManagement.Location = new System.Drawing.Point(872, 158);
+            this.TxtUserNameManagement.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TxtUserNameManagement.Name = "TxtUserNameManagement";
-            this.TxtUserNameManagement.Size = new System.Drawing.Size(323, 26);
+            this.TxtUserNameManagement.Size = new System.Drawing.Size(642, 44);
             this.TxtUserNameManagement.TabIndex = 19;
             // 
             // LblContactInfoManagement
@@ -476,9 +483,10 @@
             this.LblContactInfoManagement.AutoSize = true;
             this.LblContactInfoManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblContactInfoManagement.ForeColor = System.Drawing.Color.Black;
-            this.LblContactInfoManagement.Location = new System.Drawing.Point(164, 182);
+            this.LblContactInfoManagement.Location = new System.Drawing.Point(328, 350);
+            this.LblContactInfoManagement.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LblContactInfoManagement.Name = "LblContactInfoManagement";
-            this.LblContactInfoManagement.Size = new System.Drawing.Size(124, 20);
+            this.LblContactInfoManagement.Size = new System.Drawing.Size(232, 37);
             this.LblContactInfoManagement.TabIndex = 11;
             this.LblContactInfoManagement.Text = "Contact Info : ";
             // 
@@ -487,9 +495,10 @@
             this.LblPositionManagement.AutoSize = true;
             this.LblPositionManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPositionManagement.ForeColor = System.Drawing.Color.Black;
-            this.LblPositionManagement.Location = new System.Drawing.Point(164, 133);
+            this.LblPositionManagement.Location = new System.Drawing.Point(328, 256);
+            this.LblPositionManagement.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LblPositionManagement.Name = "LblPositionManagement";
-            this.LblPositionManagement.Size = new System.Drawing.Size(88, 20);
+            this.LblPositionManagement.Size = new System.Drawing.Size(169, 37);
             this.LblPositionManagement.TabIndex = 13;
             this.LblPositionManagement.Text = "Position : ";
             // 
@@ -498,9 +507,10 @@
             this.LblUserNameManagement.AutoSize = true;
             this.LblUserNameManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUserNameManagement.ForeColor = System.Drawing.Color.Black;
-            this.LblUserNameManagement.Location = new System.Drawing.Point(164, 88);
+            this.LblUserNameManagement.Location = new System.Drawing.Point(328, 169);
+            this.LblUserNameManagement.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LblUserNameManagement.Name = "LblUserNameManagement";
-            this.LblUserNameManagement.Size = new System.Drawing.Size(70, 20);
+            this.LblUserNameManagement.Size = new System.Drawing.Size(137, 37);
             this.LblUserNameManagement.TabIndex = 15;
             this.LblUserNameManagement.Text = "Name : ";
             // 
@@ -514,11 +524,11 @@
             this.PageCustomerManagement.Controls.Add(this.TxtSearchManagement);
             this.PageCustomerManagement.Controls.Add(this.DataCustometManagement);
             this.PageCustomerManagement.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PageCustomerManagement.Location = new System.Drawing.Point(4, 38);
-            this.PageCustomerManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.PageCustomerManagement.Location = new System.Drawing.Point(8, 42);
+            this.PageCustomerManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PageCustomerManagement.Name = "PageCustomerManagement";
-            this.PageCustomerManagement.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.PageCustomerManagement.Size = new System.Drawing.Size(961, 627);
+            this.PageCustomerManagement.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PageCustomerManagement.Size = new System.Drawing.Size(1922, 1237);
             this.PageCustomerManagement.TabIndex = 5;
             this.PageCustomerManagement.Text = "Customer Management ";
             // 
@@ -529,10 +539,10 @@
             this.LblSearchManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSearchManagement.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LblSearchManagement.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.LblSearchManagement.Location = new System.Drawing.Point(199, 83);
-            this.LblSearchManagement.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblSearchManagement.Location = new System.Drawing.Point(398, 160);
+            this.LblSearchManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblSearchManagement.Name = "LblSearchManagement";
-            this.LblSearchManagement.Size = new System.Drawing.Size(128, 20);
+            this.LblSearchManagement.Size = new System.Drawing.Size(242, 37);
             this.LblSearchManagement.TabIndex = 4;
             this.LblSearchManagement.Text = "Search by ID : ";
             // 
@@ -542,10 +552,10 @@
             this.LblCustomerManagement.BackColor = System.Drawing.Color.Transparent;
             this.LblCustomerManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCustomerManagement.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LblCustomerManagement.Location = new System.Drawing.Point(331, 16);
-            this.LblCustomerManagement.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblCustomerManagement.Location = new System.Drawing.Point(662, 31);
+            this.LblCustomerManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCustomerManagement.Name = "LblCustomerManagement";
-            this.LblCustomerManagement.Size = new System.Drawing.Size(296, 31);
+            this.LblCustomerManagement.Size = new System.Drawing.Size(590, 63);
             this.LblCustomerManagement.TabIndex = 3;
             this.LblCustomerManagement.Text = "Customer Management";
             // 
@@ -555,26 +565,26 @@
             this.BtnSearchManagenment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.BtnSearchManagenment.Image = global::Hotel.Properties.Resources.icons8_search_30;
             this.BtnSearchManagenment.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSearchManagenment.Location = new System.Drawing.Point(680, 81);
-            this.BtnSearchManagenment.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnSearchManagenment.Location = new System.Drawing.Point(1360, 156);
+            this.BtnSearchManagenment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSearchManagenment.Name = "BtnSearchManagenment";
-            this.BtnSearchManagenment.Size = new System.Drawing.Size(109, 23);
+            this.BtnSearchManagenment.Size = new System.Drawing.Size(218, 44);
             this.BtnSearchManagenment.TabIndex = 2;
             this.BtnSearchManagenment.Text = "Search";
             this.BtnSearchManagenment.UseVisualStyleBackColor = false;
             // 
             // TxtSearchManagement
             // 
-            this.TxtSearchManagement.Location = new System.Drawing.Point(323, 81);
-            this.TxtSearchManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtSearchManagement.Location = new System.Drawing.Point(646, 156);
+            this.TxtSearchManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtSearchManagement.Name = "TxtSearchManagement";
-            this.TxtSearchManagement.Size = new System.Drawing.Size(315, 26);
+            this.TxtSearchManagement.Size = new System.Drawing.Size(626, 44);
             this.TxtSearchManagement.TabIndex = 1;
             // 
             // DataCustometManagement
             // 
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataCustometManagement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataCustometManagement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.DataCustometManagement.AutoGenerateColumns = false;
             this.DataCustometManagement.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataCustometManagement.BackgroundColor = System.Drawing.Color.Azure;
@@ -587,28 +597,27 @@
             this.phoneNumberDataGridViewTextBoxColumn,
             this.addressDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn1,
             this.createdAtDataGridViewTextBoxColumn1,
             this.updatedAtDataGridViewTextBoxColumn1,
             this.isDeletedDataGridViewTextBoxColumn1,
             this.userDataGridViewTextBoxColumn});
             this.DataCustometManagement.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DataCustometManagement.DataSource = this.guestsBindingSource;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataCustometManagement.DefaultCellStyle = dataGridViewCellStyle4;
-            this.DataCustometManagement.Location = new System.Drawing.Point(13, 139);
-            this.DataCustometManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataCustometManagement.DefaultCellStyle = dataGridViewCellStyle11;
+            this.DataCustometManagement.Location = new System.Drawing.Point(26, 267);
+            this.DataCustometManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DataCustometManagement.Name = "DataCustometManagement";
             this.DataCustometManagement.RowHeadersVisible = false;
             this.DataCustometManagement.RowHeadersWidth = 62;
             this.DataCustometManagement.RowTemplate.Height = 28;
-            this.DataCustometManagement.Size = new System.Drawing.Size(935, 484);
+            this.DataCustometManagement.Size = new System.Drawing.Size(1870, 931);
             this.DataCustometManagement.TabIndex = 0;
             // 
             // guestsBindingSource
@@ -628,11 +637,11 @@
             this.PageBookingManagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PageBookingManagement.Controls.Add(this.TabShowBookingManagement);
             this.PageBookingManagement.Controls.Add(this.LblBookingHistory);
-            this.PageBookingManagement.Location = new System.Drawing.Point(4, 38);
-            this.PageBookingManagement.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PageBookingManagement.Location = new System.Drawing.Point(8, 42);
+            this.PageBookingManagement.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.PageBookingManagement.Name = "PageBookingManagement";
-            this.PageBookingManagement.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.PageBookingManagement.Size = new System.Drawing.Size(961, 627);
+            this.PageBookingManagement.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.PageBookingManagement.Size = new System.Drawing.Size(1922, 1237);
             this.PageBookingManagement.TabIndex = 3;
             this.PageBookingManagement.Text = "BookingMN";
             // 
@@ -640,11 +649,11 @@
             // 
             this.TabShowBookingManagement.Controls.Add(this.PageEditManagement);
             this.TabShowBookingManagement.Controls.Add(this.PageShowBookingManagement);
-            this.TabShowBookingManagement.Location = new System.Drawing.Point(53, 114);
-            this.TabShowBookingManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TabShowBookingManagement.Location = new System.Drawing.Point(106, 219);
+            this.TabShowBookingManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TabShowBookingManagement.Name = "TabShowBookingManagement";
             this.TabShowBookingManagement.SelectedIndex = 0;
-            this.TabShowBookingManagement.Size = new System.Drawing.Size(841, 469);
+            this.TabShowBookingManagement.Size = new System.Drawing.Size(1682, 902);
             this.TabShowBookingManagement.TabIndex = 6;
             // 
             // PageEditManagement
@@ -661,11 +670,11 @@
             this.PageEditManagement.Controls.Add(this.TxtReservationManagement);
             this.PageEditManagement.Controls.Add(this.BtnEditStatusManagement);
             this.PageEditManagement.Controls.Add(this.LblReservationManagement);
-            this.PageEditManagement.Location = new System.Drawing.Point(4, 29);
-            this.PageEditManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.PageEditManagement.Location = new System.Drawing.Point(8, 51);
+            this.PageEditManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PageEditManagement.Name = "PageEditManagement";
-            this.PageEditManagement.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.PageEditManagement.Size = new System.Drawing.Size(833, 436);
+            this.PageEditManagement.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PageEditManagement.Size = new System.Drawing.Size(1666, 843);
             this.PageEditManagement.TabIndex = 0;
             this.PageEditManagement.Text = "Edit";
             this.PageEditManagement.UseVisualStyleBackColor = true;
@@ -676,10 +685,10 @@
             this.BtnUpdateManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnUpdateManagement.Image = global::Hotel.Properties.Resources.icons8_update_50;
             this.BtnUpdateManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnUpdateManagement.Location = new System.Drawing.Point(364, 346);
-            this.BtnUpdateManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnUpdateManagement.Location = new System.Drawing.Point(697, 665);
+            this.BtnUpdateManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnUpdateManagement.Name = "BtnUpdateManagement";
-            this.BtnUpdateManagement.Size = new System.Drawing.Size(152, 36);
+            this.BtnUpdateManagement.Size = new System.Drawing.Size(304, 69);
             this.BtnUpdateManagement.TabIndex = 13;
             this.BtnUpdateManagement.Text = "Update";
             this.BtnUpdateManagement.UseVisualStyleBackColor = true;
@@ -689,10 +698,10 @@
             this.DtpCheckInManagement.CustomFormat = "dd/MM/yyyy hh : mm : ss";
             this.DtpCheckInManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtpCheckInManagement.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtpCheckInManagement.Location = new System.Drawing.Point(335, 209);
-            this.DtpCheckInManagement.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.DtpCheckInManagement.Location = new System.Drawing.Point(652, 399);
+            this.DtpCheckInManagement.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.DtpCheckInManagement.Name = "DtpCheckInManagement";
-            this.DtpCheckInManagement.Size = new System.Drawing.Size(255, 23);
+            this.DtpCheckInManagement.Size = new System.Drawing.Size(506, 38);
             this.DtpCheckInManagement.TabIndex = 11;
             this.DtpCheckInManagement.Value = new System.DateTime(2024, 11, 28, 20, 0, 12, 0);
             // 
@@ -701,10 +710,10 @@
             this.DtpCheckOutManagement.CustomFormat = "dd/MM/yyyy hh : mm : ss";
             this.DtpCheckOutManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtpCheckOutManagement.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtpCheckOutManagement.Location = new System.Drawing.Point(335, 276);
-            this.DtpCheckOutManagement.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.DtpCheckOutManagement.Location = new System.Drawing.Point(652, 506);
+            this.DtpCheckOutManagement.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.DtpCheckOutManagement.Name = "DtpCheckOutManagement";
-            this.DtpCheckOutManagement.Size = new System.Drawing.Size(255, 23);
+            this.DtpCheckOutManagement.Size = new System.Drawing.Size(506, 38);
             this.DtpCheckOutManagement.TabIndex = 12;
             this.DtpCheckOutManagement.Value = new System.DateTime(2024, 11, 28, 20, 0, 12, 0);
             // 
@@ -712,10 +721,10 @@
             // 
             this.LblCheckOutManagement.AutoSize = true;
             this.LblCheckOutManagement.BackColor = System.Drawing.Color.Cornsilk;
-            this.LblCheckOutManagement.Location = new System.Drawing.Point(151, 265);
-            this.LblCheckOutManagement.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblCheckOutManagement.Location = new System.Drawing.Point(294, 509);
+            this.LblCheckOutManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCheckOutManagement.Name = "LblCheckOutManagement";
-            this.LblCheckOutManagement.Size = new System.Drawing.Size(80, 20);
+            this.LblCheckOutManagement.Size = new System.Drawing.Size(159, 37);
             this.LblCheckOutManagement.TabIndex = 10;
             this.LblCheckOutManagement.Text = "CheckOut";
             // 
@@ -723,29 +732,29 @@
             // 
             this.LblCheckInManagement.AutoSize = true;
             this.LblCheckInManagement.BackColor = System.Drawing.Color.Cornsilk;
-            this.LblCheckInManagement.Location = new System.Drawing.Point(147, 209);
-            this.LblCheckInManagement.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblCheckInManagement.Location = new System.Drawing.Point(294, 402);
+            this.LblCheckInManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCheckInManagement.Name = "LblCheckInManagement";
-            this.LblCheckInManagement.Size = new System.Drawing.Size(66, 20);
+            this.LblCheckInManagement.Size = new System.Drawing.Size(132, 37);
             this.LblCheckInManagement.TabIndex = 9;
             this.LblCheckInManagement.Text = "Checkin";
             // 
             // TxtRoomIDManagement
             // 
-            this.TxtRoomIDManagement.Location = new System.Drawing.Point(331, 158);
-            this.TxtRoomIDManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtRoomIDManagement.Location = new System.Drawing.Point(652, 282);
+            this.TxtRoomIDManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtRoomIDManagement.Name = "TxtRoomIDManagement";
-            this.TxtRoomIDManagement.Size = new System.Drawing.Size(310, 26);
+            this.TxtRoomIDManagement.Size = new System.Drawing.Size(616, 44);
             this.TxtRoomIDManagement.TabIndex = 8;
             // 
             // LblRoomIDManagement
             // 
             this.LblRoomIDManagement.AutoSize = true;
             this.LblRoomIDManagement.BackColor = System.Drawing.Color.Cornsilk;
-            this.LblRoomIDManagement.Location = new System.Drawing.Point(147, 160);
-            this.LblRoomIDManagement.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblRoomIDManagement.Location = new System.Drawing.Point(294, 289);
+            this.LblRoomIDManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRoomIDManagement.Name = "LblRoomIDManagement";
-            this.LblRoomIDManagement.Size = new System.Drawing.Size(73, 20);
+            this.LblRoomIDManagement.Size = new System.Drawing.Size(142, 37);
             this.LblRoomIDManagement.TabIndex = 7;
             this.LblRoomIDManagement.Text = "Room ID";
             // 
@@ -755,10 +764,10 @@
             this.BtnSubmitManagement.ForeColor = System.Drawing.Color.IndianRed;
             this.BtnSubmitManagement.Image = global::Hotel.Properties.Resources.icons8_submit_24;
             this.BtnSubmitManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSubmitManagement.Location = new System.Drawing.Point(353, 102);
-            this.BtnSubmitManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnSubmitManagement.Location = new System.Drawing.Point(1353, 178);
+            this.BtnSubmitManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSubmitManagement.Name = "BtnSubmitManagement";
-            this.BtnSubmitManagement.Size = new System.Drawing.Size(120, 25);
+            this.BtnSubmitManagement.Size = new System.Drawing.Size(240, 48);
             this.BtnSubmitManagement.TabIndex = 6;
             this.BtnSubmitManagement.Text = "Submit";
             this.BtnSubmitManagement.UseVisualStyleBackColor = true;
@@ -769,20 +778,20 @@
             this.BtnCancelManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnCancelManagement.Image = global::Hotel.Properties.Resources.icons8_cancel_24;
             this.BtnCancelManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCancelManagement.Location = new System.Drawing.Point(106, 346);
-            this.BtnCancelManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnCancelManagement.Location = new System.Drawing.Point(181, 665);
+            this.BtnCancelManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCancelManagement.Name = "BtnCancelManagement";
-            this.BtnCancelManagement.Size = new System.Drawing.Size(152, 36);
+            this.BtnCancelManagement.Size = new System.Drawing.Size(304, 69);
             this.BtnCancelManagement.TabIndex = 5;
             this.BtnCancelManagement.Text = "Cancel";
             this.BtnCancelManagement.UseVisualStyleBackColor = true;
             // 
             // TxtReservationManagement
             // 
-            this.TxtReservationManagement.Location = new System.Drawing.Point(331, 53);
-            this.TxtReservationManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtReservationManagement.Location = new System.Drawing.Point(652, 181);
+            this.TxtReservationManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtReservationManagement.Name = "TxtReservationManagement";
-            this.TxtReservationManagement.Size = new System.Drawing.Size(310, 26);
+            this.TxtReservationManagement.Size = new System.Drawing.Size(616, 44);
             this.TxtReservationManagement.TabIndex = 3;
             // 
             // BtnEditStatusManagement
@@ -791,10 +800,10 @@
             this.BtnEditStatusManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnEditStatusManagement.Image = global::Hotel.Properties.Resources.icons8_edit_26;
             this.BtnEditStatusManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEditStatusManagement.Location = new System.Drawing.Point(607, 346);
-            this.BtnEditStatusManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnEditStatusManagement.Location = new System.Drawing.Point(1183, 665);
+            this.BtnEditStatusManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnEditStatusManagement.Name = "BtnEditStatusManagement";
-            this.BtnEditStatusManagement.Size = new System.Drawing.Size(152, 36);
+            this.BtnEditStatusManagement.Size = new System.Drawing.Size(304, 69);
             this.BtnEditStatusManagement.TabIndex = 4;
             this.BtnEditStatusManagement.Text = "Edit Status";
             this.BtnEditStatusManagement.UseVisualStyleBackColor = true;
@@ -803,29 +812,29 @@
             // 
             this.LblReservationManagement.AutoSize = true;
             this.LblReservationManagement.BackColor = System.Drawing.Color.Cornsilk;
-            this.LblReservationManagement.Location = new System.Drawing.Point(147, 55);
-            this.LblReservationManagement.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblReservationManagement.Location = new System.Drawing.Point(294, 181);
+            this.LblReservationManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblReservationManagement.Name = "LblReservationManagement";
-            this.LblReservationManagement.Size = new System.Drawing.Size(111, 20);
+            this.LblReservationManagement.Size = new System.Drawing.Size(216, 37);
             this.LblReservationManagement.TabIndex = 2;
             this.LblReservationManagement.Text = "ReservationID";
             // 
             // PageShowBookingManagement
             // 
             this.PageShowBookingManagement.Controls.Add(this.DataBookingManagement);
-            this.PageShowBookingManagement.Location = new System.Drawing.Point(4, 29);
-            this.PageShowBookingManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.PageShowBookingManagement.Location = new System.Drawing.Point(8, 51);
+            this.PageShowBookingManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PageShowBookingManagement.Name = "PageShowBookingManagement";
-            this.PageShowBookingManagement.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.PageShowBookingManagement.Size = new System.Drawing.Size(833, 436);
+            this.PageShowBookingManagement.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PageShowBookingManagement.Size = new System.Drawing.Size(1666, 843);
             this.PageShowBookingManagement.TabIndex = 1;
             this.PageShowBookingManagement.Text = "Show";
             this.PageShowBookingManagement.UseVisualStyleBackColor = true;
             // 
             // DataBookingManagement
             // 
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataBookingManagement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataBookingManagement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
             this.DataBookingManagement.AutoGenerateColumns = false;
             this.DataBookingManagement.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataBookingManagement.BackgroundColor = System.Drawing.Color.LemonChiffon;
@@ -844,24 +853,131 @@
             this.feedbackScoreDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn});
             this.DataBookingManagement.DataSource = this.reservationsBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataBookingManagement.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataBookingManagement.DefaultCellStyle = dataGridViewCellStyle13;
             this.DataBookingManagement.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.DataBookingManagement.Location = new System.Drawing.Point(18, 51);
-            this.DataBookingManagement.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.DataBookingManagement.Location = new System.Drawing.Point(36, 98);
+            this.DataBookingManagement.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.DataBookingManagement.Name = "DataBookingManagement";
             this.DataBookingManagement.RowHeadersVisible = false;
             this.DataBookingManagement.RowHeadersWidth = 62;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataBookingManagement.RowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.DataBookingManagement.Size = new System.Drawing.Size(798, 302);
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataBookingManagement.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            this.DataBookingManagement.Size = new System.Drawing.Size(1596, 581);
             this.DataBookingManagement.TabIndex = 1;
+            // 
+            // reservationIDDataGridViewTextBoxColumn
+            // 
+            this.reservationIDDataGridViewTextBoxColumn.DataPropertyName = "ReservationID";
+            this.reservationIDDataGridViewTextBoxColumn.FillWeight = 132.1278F;
+            this.reservationIDDataGridViewTextBoxColumn.HeaderText = "ReservationID";
+            this.reservationIDDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.reservationIDDataGridViewTextBoxColumn.Name = "reservationIDDataGridViewTextBoxColumn";
+            this.reservationIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // guestIDDataGridViewTextBoxColumn
+            // 
+            this.guestIDDataGridViewTextBoxColumn.DataPropertyName = "GuestID";
+            this.guestIDDataGridViewTextBoxColumn.FillWeight = 100.354F;
+            this.guestIDDataGridViewTextBoxColumn.HeaderText = "GuestID";
+            this.guestIDDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.guestIDDataGridViewTextBoxColumn.Name = "guestIDDataGridViewTextBoxColumn";
+            // 
+            // roomIDDataGridViewTextBoxColumn
+            // 
+            this.roomIDDataGridViewTextBoxColumn.DataPropertyName = "RoomID";
+            this.roomIDDataGridViewTextBoxColumn.FillWeight = 101.7388F;
+            this.roomIDDataGridViewTextBoxColumn.HeaderText = "RoomID";
+            this.roomIDDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.roomIDDataGridViewTextBoxColumn.Name = "roomIDDataGridViewTextBoxColumn";
+            // 
+            // bookingDateDataGridViewTextBoxColumn
+            // 
+            this.bookingDateDataGridViewTextBoxColumn.DataPropertyName = "BookingDate";
+            this.bookingDateDataGridViewTextBoxColumn.FillWeight = 129.0948F;
+            this.bookingDateDataGridViewTextBoxColumn.HeaderText = "BookingDate";
+            this.bookingDateDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.bookingDateDataGridViewTextBoxColumn.Name = "bookingDateDataGridViewTextBoxColumn";
+            // 
+            // checkInDateDataGridViewTextBoxColumn
+            // 
+            this.checkInDateDataGridViewTextBoxColumn.DataPropertyName = "CheckInDate";
+            this.checkInDateDataGridViewTextBoxColumn.FillWeight = 107.5376F;
+            this.checkInDateDataGridViewTextBoxColumn.HeaderText = "CheckInDate";
+            this.checkInDateDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.checkInDateDataGridViewTextBoxColumn.Name = "checkInDateDataGridViewTextBoxColumn";
+            // 
+            // checkOutDateDataGridViewTextBoxColumn
+            // 
+            this.checkOutDateDataGridViewTextBoxColumn.DataPropertyName = "CheckOutDate";
+            this.checkOutDateDataGridViewTextBoxColumn.FillWeight = 109.6447F;
+            this.checkOutDateDataGridViewTextBoxColumn.HeaderText = "CheckOutDate";
+            this.checkOutDateDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.checkOutDateDataGridViewTextBoxColumn.Name = "checkOutDateDataGridViewTextBoxColumn";
+            // 
+            // feedbackDataGridViewTextBoxColumn
+            // 
+            this.feedbackDataGridViewTextBoxColumn.DataPropertyName = "Feedback";
+            this.feedbackDataGridViewTextBoxColumn.FillWeight = 86.58375F;
+            this.feedbackDataGridViewTextBoxColumn.HeaderText = "Feedback";
+            this.feedbackDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.feedbackDataGridViewTextBoxColumn.Name = "feedbackDataGridViewTextBoxColumn";
+            // 
+            // createdAtDataGridViewTextBoxColumn2
+            // 
+            this.createdAtDataGridViewTextBoxColumn2.DataPropertyName = "CreatedAt";
+            this.createdAtDataGridViewTextBoxColumn2.FillWeight = 86.58375F;
+            this.createdAtDataGridViewTextBoxColumn2.HeaderText = "CreatedAt";
+            this.createdAtDataGridViewTextBoxColumn2.MinimumWidth = 10;
+            this.createdAtDataGridViewTextBoxColumn2.Name = "createdAtDataGridViewTextBoxColumn2";
+            // 
+            // updatedAtDataGridViewTextBoxColumn2
+            // 
+            this.updatedAtDataGridViewTextBoxColumn2.DataPropertyName = "UpdatedAt";
+            this.updatedAtDataGridViewTextBoxColumn2.FillWeight = 86.58375F;
+            this.updatedAtDataGridViewTextBoxColumn2.HeaderText = "UpdatedAt";
+            this.updatedAtDataGridViewTextBoxColumn2.MinimumWidth = 10;
+            this.updatedAtDataGridViewTextBoxColumn2.Name = "updatedAtDataGridViewTextBoxColumn2";
+            // 
+            // isDeletedDataGridViewTextBoxColumn2
+            // 
+            this.isDeletedDataGridViewTextBoxColumn2.DataPropertyName = "IsDeleted";
+            this.isDeletedDataGridViewTextBoxColumn2.FillWeight = 86.58375F;
+            this.isDeletedDataGridViewTextBoxColumn2.HeaderText = "IsDeleted";
+            this.isDeletedDataGridViewTextBoxColumn2.MinimumWidth = 10;
+            this.isDeletedDataGridViewTextBoxColumn2.Name = "isDeletedDataGridViewTextBoxColumn2";
+            // 
+            // feedbackScoreDataGridViewTextBoxColumn
+            // 
+            this.feedbackScoreDataGridViewTextBoxColumn.DataPropertyName = "FeedbackScore";
+            this.feedbackScoreDataGridViewTextBoxColumn.FillWeight = 86.58375F;
+            this.feedbackScoreDataGridViewTextBoxColumn.HeaderText = "FeedbackScore";
+            this.feedbackScoreDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.feedbackScoreDataGridViewTextBoxColumn.Name = "feedbackScoreDataGridViewTextBoxColumn";
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.FillWeight = 86.58375F;
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            // 
+            // reservationsBindingSource
+            // 
+            this.reservationsBindingSource.DataMember = "Reservations";
+            this.reservationsBindingSource.DataSource = this.hotel_ManagerDataSet25;
+            // 
+            // hotel_ManagerDataSet25
+            // 
+            this.hotel_ManagerDataSet25.DataSetName = "Hotel_ManagerDataSet25";
+            this.hotel_ManagerDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // LblBookingHistory
             // 
@@ -870,31 +986,31 @@
             this.LblBookingHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.LblBookingHistory.Image = global::Hotel.Properties.Resources.icons8_booking_48__1_;
             this.LblBookingHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblBookingHistory.Location = new System.Drawing.Point(275, 57);
-            this.LblBookingHistory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblBookingHistory.Location = new System.Drawing.Point(550, 110);
+            this.LblBookingHistory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblBookingHistory.Name = "LblBookingHistory";
-            this.LblBookingHistory.Size = new System.Drawing.Size(371, 43);
+            this.LblBookingHistory.Size = new System.Drawing.Size(742, 83);
             this.LblBookingHistory.TabIndex = 0;
             this.LblBookingHistory.Text = "Booking Management";
             this.LblBookingHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PageRoomManagement
             // 
-            this.PageRoomManagement.Location = new System.Drawing.Point(4, 38);
-            this.PageRoomManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.PageRoomManagement.Location = new System.Drawing.Point(8, 42);
+            this.PageRoomManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PageRoomManagement.Name = "PageRoomManagement";
-            this.PageRoomManagement.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.PageRoomManagement.Size = new System.Drawing.Size(961, 627);
+            this.PageRoomManagement.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PageRoomManagement.Size = new System.Drawing.Size(1922, 1237);
             this.PageRoomManagement.TabIndex = 8;
             this.PageRoomManagement.Text = "RoomManagement";
             this.PageRoomManagement.UseVisualStyleBackColor = true;
             // 
             // PageServiceManagement
             // 
-            this.PageServiceManagement.Location = new System.Drawing.Point(4, 38);
-            this.PageServiceManagement.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.PageServiceManagement.Location = new System.Drawing.Point(8, 42);
+            this.PageServiceManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PageServiceManagement.Name = "PageServiceManagement";
-            this.PageServiceManagement.Size = new System.Drawing.Size(961, 627);
+            this.PageServiceManagement.Size = new System.Drawing.Size(1922, 1237);
             this.PageServiceManagement.TabIndex = 9;
             this.PageServiceManagement.Text = "ServiceManagement";
             this.PageServiceManagement.UseVisualStyleBackColor = true;
@@ -907,16 +1023,6 @@
             // 
             this.guestsTableAdapter.ClearBeforeFill = true;
             // 
-            // hotel_ManagerDataSet25
-            // 
-            this.hotel_ManagerDataSet25.DataSetName = "Hotel_ManagerDataSet25";
-            this.hotel_ManagerDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // reservationsBindingSource
-            // 
-            this.reservationsBindingSource.DataMember = "Reservations";
-            this.reservationsBindingSource.DataSource = this.hotel_ManagerDataSet25;
-            // 
             // reservationsTableAdapter
             // 
             this.reservationsTableAdapter.ClearBeforeFill = true;
@@ -928,7 +1034,6 @@
             this.iDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn.Width = 30;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -936,7 +1041,6 @@
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 70;
             // 
             // positionDataGridViewTextBoxColumn
             // 
@@ -944,14 +1048,6 @@
             this.positionDataGridViewTextBoxColumn.HeaderText = "Position";
             this.positionDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            this.positionDataGridViewTextBoxColumn.Width = 70;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
             // 
             // contactInfoDataGridViewTextBoxColumn
             // 
@@ -1038,14 +1134,6 @@
             this.emailDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
-            // passwordDataGridViewTextBoxColumn1
-            // 
-            this.passwordDataGridViewTextBoxColumn1.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn1.FillWeight = 101.9201F;
-            this.passwordDataGridViewTextBoxColumn1.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.passwordDataGridViewTextBoxColumn1.Name = "passwordDataGridViewTextBoxColumn1";
-            // 
             // createdAtDataGridViewTextBoxColumn1
             // 
             this.createdAtDataGridViewTextBoxColumn1.DataPropertyName = "CreatedAt";
@@ -1078,102 +1166,17 @@
             this.userDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.userDataGridViewTextBoxColumn.Name = "userDataGridViewTextBoxColumn";
             // 
-            // reservationIDDataGridViewTextBoxColumn
-            // 
-            this.reservationIDDataGridViewTextBoxColumn.DataPropertyName = "ReservationID";
-            this.reservationIDDataGridViewTextBoxColumn.FillWeight = 132.1278F;
-            this.reservationIDDataGridViewTextBoxColumn.HeaderText = "ReservationID";
-            this.reservationIDDataGridViewTextBoxColumn.Name = "reservationIDDataGridViewTextBoxColumn";
-            this.reservationIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // guestIDDataGridViewTextBoxColumn
-            // 
-            this.guestIDDataGridViewTextBoxColumn.DataPropertyName = "GuestID";
-            this.guestIDDataGridViewTextBoxColumn.FillWeight = 100.354F;
-            this.guestIDDataGridViewTextBoxColumn.HeaderText = "GuestID";
-            this.guestIDDataGridViewTextBoxColumn.Name = "guestIDDataGridViewTextBoxColumn";
-            // 
-            // roomIDDataGridViewTextBoxColumn
-            // 
-            this.roomIDDataGridViewTextBoxColumn.DataPropertyName = "RoomID";
-            this.roomIDDataGridViewTextBoxColumn.FillWeight = 101.7388F;
-            this.roomIDDataGridViewTextBoxColumn.HeaderText = "RoomID";
-            this.roomIDDataGridViewTextBoxColumn.Name = "roomIDDataGridViewTextBoxColumn";
-            // 
-            // bookingDateDataGridViewTextBoxColumn
-            // 
-            this.bookingDateDataGridViewTextBoxColumn.DataPropertyName = "BookingDate";
-            this.bookingDateDataGridViewTextBoxColumn.FillWeight = 129.0948F;
-            this.bookingDateDataGridViewTextBoxColumn.HeaderText = "BookingDate";
-            this.bookingDateDataGridViewTextBoxColumn.Name = "bookingDateDataGridViewTextBoxColumn";
-            // 
-            // checkInDateDataGridViewTextBoxColumn
-            // 
-            this.checkInDateDataGridViewTextBoxColumn.DataPropertyName = "CheckInDate";
-            this.checkInDateDataGridViewTextBoxColumn.FillWeight = 107.5376F;
-            this.checkInDateDataGridViewTextBoxColumn.HeaderText = "CheckInDate";
-            this.checkInDateDataGridViewTextBoxColumn.Name = "checkInDateDataGridViewTextBoxColumn";
-            // 
-            // checkOutDateDataGridViewTextBoxColumn
-            // 
-            this.checkOutDateDataGridViewTextBoxColumn.DataPropertyName = "CheckOutDate";
-            this.checkOutDateDataGridViewTextBoxColumn.FillWeight = 109.6447F;
-            this.checkOutDateDataGridViewTextBoxColumn.HeaderText = "CheckOutDate";
-            this.checkOutDateDataGridViewTextBoxColumn.Name = "checkOutDateDataGridViewTextBoxColumn";
-            // 
-            // feedbackDataGridViewTextBoxColumn
-            // 
-            this.feedbackDataGridViewTextBoxColumn.DataPropertyName = "Feedback";
-            this.feedbackDataGridViewTextBoxColumn.FillWeight = 86.58375F;
-            this.feedbackDataGridViewTextBoxColumn.HeaderText = "Feedback";
-            this.feedbackDataGridViewTextBoxColumn.Name = "feedbackDataGridViewTextBoxColumn";
-            // 
-            // createdAtDataGridViewTextBoxColumn2
-            // 
-            this.createdAtDataGridViewTextBoxColumn2.DataPropertyName = "CreatedAt";
-            this.createdAtDataGridViewTextBoxColumn2.FillWeight = 86.58375F;
-            this.createdAtDataGridViewTextBoxColumn2.HeaderText = "CreatedAt";
-            this.createdAtDataGridViewTextBoxColumn2.Name = "createdAtDataGridViewTextBoxColumn2";
-            // 
-            // updatedAtDataGridViewTextBoxColumn2
-            // 
-            this.updatedAtDataGridViewTextBoxColumn2.DataPropertyName = "UpdatedAt";
-            this.updatedAtDataGridViewTextBoxColumn2.FillWeight = 86.58375F;
-            this.updatedAtDataGridViewTextBoxColumn2.HeaderText = "UpdatedAt";
-            this.updatedAtDataGridViewTextBoxColumn2.Name = "updatedAtDataGridViewTextBoxColumn2";
-            // 
-            // isDeletedDataGridViewTextBoxColumn2
-            // 
-            this.isDeletedDataGridViewTextBoxColumn2.DataPropertyName = "IsDeleted";
-            this.isDeletedDataGridViewTextBoxColumn2.FillWeight = 86.58375F;
-            this.isDeletedDataGridViewTextBoxColumn2.HeaderText = "IsDeleted";
-            this.isDeletedDataGridViewTextBoxColumn2.Name = "isDeletedDataGridViewTextBoxColumn2";
-            // 
-            // feedbackScoreDataGridViewTextBoxColumn
-            // 
-            this.feedbackScoreDataGridViewTextBoxColumn.DataPropertyName = "FeedbackScore";
-            this.feedbackScoreDataGridViewTextBoxColumn.FillWeight = 86.58375F;
-            this.feedbackScoreDataGridViewTextBoxColumn.HeaderText = "FeedbackScore";
-            this.feedbackScoreDataGridViewTextBoxColumn.Name = "feedbackScoreDataGridViewTextBoxColumn";
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.FillWeight = 86.58375F;
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            // 
             // FormManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 681);
+            this.ClientSize = new System.Drawing.Size(2315, 1571);
             this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.LblReceptionistName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TabBookingManagement);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormManager";
             this.Text = "FormManager";
             this.Load += new System.EventHandler(this.FormManager_Load);
@@ -1197,8 +1200,8 @@
             this.PageEditManagement.PerformLayout();
             this.PageShowBookingManagement.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataBookingManagement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet25)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1267,26 +1270,6 @@
         private Hotel_ManagerDataSet25 hotel_ManagerDataSet25;
         private System.Windows.Forms.BindingSource reservationsBindingSource;
         private Hotel_ManagerDataSet25TableAdapters.ReservationsTableAdapter reservationsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn contactInfoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn createdAtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn updatedAtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn isDeletedDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn createdAtDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn updatedAtDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn isDeletedDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reservationIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn guestIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roomIDDataGridViewTextBoxColumn;
@@ -1299,5 +1282,23 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn isDeletedDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn feedbackScoreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contactInfoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn createdAtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn updatedAtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn isDeletedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn createdAtDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn updatedAtDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn isDeletedDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userDataGridViewTextBoxColumn;
     }
 }
