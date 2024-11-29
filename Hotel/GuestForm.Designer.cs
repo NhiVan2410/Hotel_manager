@@ -608,7 +608,7 @@ namespace Hotel
             // DataBookingGuest
             // 
             this.DataBookingGuest.AutoGenerateColumns = false;
-            this.DataBookingGuest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.DataBookingGuest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataBookingGuest.BackgroundColor = System.Drawing.Color.OldLace;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -652,7 +652,6 @@ namespace Hotel
             this.reservationIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.reservationIDDataGridViewTextBoxColumn.Name = "reservationIDDataGridViewTextBoxColumn";
             this.reservationIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.reservationIDDataGridViewTextBoxColumn.Width = 261;
             // 
             // guestIDDataGridViewTextBoxColumn
             // 
@@ -660,7 +659,6 @@ namespace Hotel
             this.guestIDDataGridViewTextBoxColumn.HeaderText = "GuestID";
             this.guestIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.guestIDDataGridViewTextBoxColumn.Name = "guestIDDataGridViewTextBoxColumn";
-            this.guestIDDataGridViewTextBoxColumn.Width = 178;
             // 
             // roomIDDataGridViewTextBoxColumn
             // 
@@ -668,7 +666,6 @@ namespace Hotel
             this.roomIDDataGridViewTextBoxColumn.HeaderText = "RoomID";
             this.roomIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.roomIDDataGridViewTextBoxColumn.Name = "roomIDDataGridViewTextBoxColumn";
-            this.roomIDDataGridViewTextBoxColumn.Width = 178;
             // 
             // bookingDateDataGridViewTextBoxColumn
             // 
@@ -676,7 +673,6 @@ namespace Hotel
             this.bookingDateDataGridViewTextBoxColumn.HeaderText = "BookingDate";
             this.bookingDateDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.bookingDateDataGridViewTextBoxColumn.Name = "bookingDateDataGridViewTextBoxColumn";
-            this.bookingDateDataGridViewTextBoxColumn.Width = 245;
             // 
             // checkInDateDataGridViewTextBoxColumn
             // 
@@ -684,7 +680,6 @@ namespace Hotel
             this.checkInDateDataGridViewTextBoxColumn.HeaderText = "CheckInDate";
             this.checkInDateDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.checkInDateDataGridViewTextBoxColumn.Name = "checkInDateDataGridViewTextBoxColumn";
-            this.checkInDateDataGridViewTextBoxColumn.Width = 245;
             // 
             // checkOutDateDataGridViewTextBoxColumn
             // 
@@ -692,7 +687,6 @@ namespace Hotel
             this.checkOutDateDataGridViewTextBoxColumn.HeaderText = "CheckOutDate";
             this.checkOutDateDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.checkOutDateDataGridViewTextBoxColumn.Name = "checkOutDateDataGridViewTextBoxColumn";
-            this.checkOutDateDataGridViewTextBoxColumn.Width = 271;
             // 
             // reservationsBindingSource
             // 
@@ -1033,6 +1027,7 @@ namespace Hotel
             // DataRequestServicesGuest
             // 
             this.DataRequestServicesGuest.AutoGenerateColumns = false;
+            this.DataRequestServicesGuest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataRequestServicesGuest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataRequestServicesGuest.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.reservationServiceIDDataGridViewTextBoxColumn,
@@ -1049,7 +1044,7 @@ namespace Hotel
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataRequestServicesGuest.DefaultCellStyle = dataGridViewCellStyle5;
             this.DataRequestServicesGuest.EnableHeadersVisualStyles = false;
-            this.DataRequestServicesGuest.Location = new System.Drawing.Point(716, 700);
+            this.DataRequestServicesGuest.Location = new System.Drawing.Point(296, 700);
             this.DataRequestServicesGuest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataRequestServicesGuest.Name = "DataRequestServicesGuest";
             this.DataRequestServicesGuest.RowHeadersVisible = false;
@@ -1057,7 +1052,7 @@ namespace Hotel
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataRequestServicesGuest.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DataRequestServicesGuest.RowTemplate.Height = 28;
-            this.DataRequestServicesGuest.Size = new System.Drawing.Size(779, 554);
+            this.DataRequestServicesGuest.Size = new System.Drawing.Size(1760, 554);
             this.DataRequestServicesGuest.TabIndex = 7;
             // 
             // reservationServiceIDDataGridViewTextBoxColumn
@@ -1067,7 +1062,6 @@ namespace Hotel
             this.reservationServiceIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.reservationServiceIDDataGridViewTextBoxColumn.Name = "reservationServiceIDDataGridViewTextBoxColumn";
             this.reservationServiceIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.reservationServiceIDDataGridViewTextBoxColumn.Width = 150;
             // 
             // reservationIDDataGridViewTextBoxColumn2
             // 
@@ -1075,7 +1069,6 @@ namespace Hotel
             this.reservationIDDataGridViewTextBoxColumn2.HeaderText = "ReservationID";
             this.reservationIDDataGridViewTextBoxColumn2.MinimumWidth = 8;
             this.reservationIDDataGridViewTextBoxColumn2.Name = "reservationIDDataGridViewTextBoxColumn2";
-            this.reservationIDDataGridViewTextBoxColumn2.Width = 150;
             // 
             // serviceIDDataGridViewTextBoxColumn
             // 
@@ -1083,7 +1076,6 @@ namespace Hotel
             this.serviceIDDataGridViewTextBoxColumn.HeaderText = "ServiceID";
             this.serviceIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.serviceIDDataGridViewTextBoxColumn.Name = "serviceIDDataGridViewTextBoxColumn";
-            this.serviceIDDataGridViewTextBoxColumn.Width = 150;
             // 
             // quantityDataGridViewTextBoxColumn
             // 
@@ -1091,7 +1083,6 @@ namespace Hotel
             this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
             this.quantityDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            this.quantityDataGridViewTextBoxColumn.Width = 150;
             // 
             // reservationServicesBindingSource1
             // 
@@ -1168,7 +1159,7 @@ namespace Hotel
             this.LblQuantityGuest.AutoSize = true;
             this.LblQuantityGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblQuantityGuest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.LblQuantityGuest.Location = new System.Drawing.Point(316, 478);
+            this.LblQuantityGuest.Location = new System.Drawing.Point(288, 475);
             this.LblQuantityGuest.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblQuantityGuest.Name = "LblQuantityGuest";
             this.LblQuantityGuest.Size = new System.Drawing.Size(193, 44);
