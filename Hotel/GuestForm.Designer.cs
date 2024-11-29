@@ -108,6 +108,8 @@ namespace Hotel
             this.LblBookingHistoryGuest = new System.Windows.Forms.Label();
             this.PageRequestServicesGuest = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.TxtReservationIDRS = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.DataRequestServicesGuest = new System.Windows.Forms.DataGridView();
             this.reservationServiceIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reservationIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -146,8 +148,27 @@ namespace Hotel
             this.BtnLogoutGF = new System.Windows.Forms.Button();
             this.LblRoleGF = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.PageViewRoomGuest = new System.Windows.Forms.TabPage();
+            this.LblViewRoomGuest = new System.Windows.Forms.Label();
+            this.CmbRoomTypeVR = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BtnSubmitVR = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.LblSubmitPassWordRegister = new System.Windows.Forms.Label();
+            this.LblAddressRegister = new System.Windows.Forms.Label();
+            this.LblPhoneNumberRegister = new System.Windows.Forms.Label();
+            this.LblDateOfBirthRegister = new System.Windows.Forms.Label();
+            this.LblGenderRegister = new System.Windows.Forms.Label();
+            this.LnkRegister = new System.Windows.Forms.LinkLabel();
+            this.LblUserNameRegister = new System.Windows.Forms.Label();
+            this.LblPassWordRegister = new System.Windows.Forms.Label();
+            this.LblNameRoom = new System.Windows.Forms.Label();
+            this.LblBedType = new System.Windows.Forms.Label();
+            this.LblAvailableRooms = new System.Windows.Forms.Label();
+            this.LblCapacityRoom = new System.Windows.Forms.Label();
+            this.LblAmenities = new System.Windows.Forms.Label();
+            this.LblBathroomType = new System.Windows.Forms.Label();
+            this.LblIncludedServices = new System.Windows.Forms.Label();
             this.TabGuest.SuspendLayout();
             this.PageCustomerInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -182,6 +203,8 @@ namespace Hotel
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagerDataSet9BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource)).BeginInit();
+            this.PageViewRoomGuest.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabGuest
@@ -189,9 +212,10 @@ namespace Hotel
             this.TabGuest.Controls.Add(this.PageCustomerInformation);
             this.TabGuest.Controls.Add(this.PageBookngGuest);
             this.TabGuest.Controls.Add(this.PageBookingHistoryGuest);
+            this.TabGuest.Controls.Add(this.PageViewRoomGuest);
             this.TabGuest.Controls.Add(this.PageRequestServicesGuest);
             this.TabGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TabGuest.Location = new System.Drawing.Point(338, 195);
+            this.TabGuest.Location = new System.Drawing.Point(351, 195);
             this.TabGuest.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.TabGuest.Name = "TabGuest";
             this.TabGuest.SelectedIndex = 0;
@@ -998,7 +1022,7 @@ namespace Hotel
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.TxtReservationIDRS);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.DataRequestServicesGuest);
             this.groupBox4.Controls.Add(this.BtnEditGuest);
@@ -1017,6 +1041,27 @@ namespace Hotel
             this.groupBox4.Size = new System.Drawing.Size(2366, 1544);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
+            // 
+            // TxtReservationIDRS
+            // 
+            this.TxtReservationIDRS.Location = new System.Drawing.Point(675, 392);
+            this.TxtReservationIDRS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtReservationIDRS.Name = "TxtReservationIDRS";
+            this.TxtReservationIDRS.Size = new System.Drawing.Size(805, 44);
+            this.TxtReservationIDRS.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Location = new System.Drawing.Point(291, 392);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(317, 44);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Reservation ID : ";
             // 
             // DataRequestServicesGuest
             // 
@@ -1324,26 +1369,249 @@ namespace Hotel
             this.label1.TabIndex = 16;
             this.label1.Text = "Hotel && Resort";
             // 
-            // textBox1
+            // PageViewRoomGuest
             // 
-            this.textBox1.Location = new System.Drawing.Point(675, 392);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(805, 44);
-            this.textBox1.TabIndex = 11;
+            this.PageViewRoomGuest.BackgroundImage = global::Hotel.Properties.Resources._7a86fbeeb9b812b527f0e07d5ff3f0c1;
+            this.PageViewRoomGuest.Controls.Add(this.groupBox3);
+            this.PageViewRoomGuest.Controls.Add(this.BtnSubmitVR);
+            this.PageViewRoomGuest.Controls.Add(this.CmbRoomTypeVR);
+            this.PageViewRoomGuest.Controls.Add(this.label2);
+            this.PageViewRoomGuest.Controls.Add(this.LblViewRoomGuest);
+            this.PageViewRoomGuest.Location = new System.Drawing.Point(8, 51);
+            this.PageViewRoomGuest.Name = "PageViewRoomGuest";
+            this.PageViewRoomGuest.Padding = new System.Windows.Forms.Padding(3);
+            this.PageViewRoomGuest.Size = new System.Drawing.Size(2376, 1556);
+            this.PageViewRoomGuest.TabIndex = 5;
+            this.PageViewRoomGuest.Text = "View Room";
+            this.PageViewRoomGuest.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // LblViewRoomGuest
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(291, 392);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(317, 44);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Reservation ID : ";
+            this.LblViewRoomGuest.BackColor = System.Drawing.Color.Transparent;
+            this.LblViewRoomGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblViewRoomGuest.ForeColor = System.Drawing.Color.Transparent;
+            this.LblViewRoomGuest.Image = global::Hotel.Properties.Resources.icons8_hotel_room_50;
+            this.LblViewRoomGuest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblViewRoomGuest.Location = new System.Drawing.Point(817, 83);
+            this.LblViewRoomGuest.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblViewRoomGuest.Name = "LblViewRoomGuest";
+            this.LblViewRoomGuest.Size = new System.Drawing.Size(853, 104);
+            this.LblViewRoomGuest.TabIndex = 1;
+            this.LblViewRoomGuest.Text = "View Room";
+            this.LblViewRoomGuest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CmbRoomTypeVR
+            // 
+            this.CmbRoomTypeVR.FormattingEnabled = true;
+            this.CmbRoomTypeVR.Location = new System.Drawing.Point(935, 262);
+            this.CmbRoomTypeVR.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.CmbRoomTypeVR.Name = "CmbRoomTypeVR";
+            this.CmbRoomTypeVR.Size = new System.Drawing.Size(938, 45);
+            this.CmbRoomTypeVR.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(553, 270);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(220, 37);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Room Type : ";
+            // 
+            // BtnSubmitVR
+            // 
+            this.BtnSubmitVR.Location = new System.Drawing.Point(1149, 385);
+            this.BtnSubmitVR.Name = "BtnSubmitVR";
+            this.BtnSubmitVR.Size = new System.Drawing.Size(175, 57);
+            this.BtnSubmitVR.TabIndex = 5;
+            this.BtnSubmitVR.Text = "Submit";
+            this.BtnSubmitVR.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.LblIncludedServices);
+            this.groupBox3.Controls.Add(this.LblBathroomType);
+            this.groupBox3.Controls.Add(this.LblAmenities);
+            this.groupBox3.Controls.Add(this.LblCapacityRoom);
+            this.groupBox3.Controls.Add(this.LblAvailableRooms);
+            this.groupBox3.Controls.Add(this.LblBedType);
+            this.groupBox3.Controls.Add(this.LblNameRoom);
+            this.groupBox3.Controls.Add(this.LblSubmitPassWordRegister);
+            this.groupBox3.Controls.Add(this.LblAddressRegister);
+            this.groupBox3.Controls.Add(this.LblPhoneNumberRegister);
+            this.groupBox3.Controls.Add(this.LblDateOfBirthRegister);
+            this.groupBox3.Controls.Add(this.LblGenderRegister);
+            this.groupBox3.Controls.Add(this.LnkRegister);
+            this.groupBox3.Controls.Add(this.LblUserNameRegister);
+            this.groupBox3.Controls.Add(this.LblPassWordRegister);
+            this.groupBox3.Location = new System.Drawing.Point(560, 522);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.groupBox3.Size = new System.Drawing.Size(1313, 916);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            // 
+            // LblSubmitPassWordRegister
+            // 
+            this.LblSubmitPassWordRegister.AutoSize = true;
+            this.LblSubmitPassWordRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSubmitPassWordRegister.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LblSubmitPassWordRegister.Location = new System.Drawing.Point(133, 348);
+            this.LblSubmitPassWordRegister.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblSubmitPassWordRegister.Name = "LblSubmitPassWordRegister";
+            this.LblSubmitPassWordRegister.Size = new System.Drawing.Size(301, 37);
+            this.LblSubmitPassWordRegister.TabIndex = 21;
+            this.LblSubmitPassWordRegister.Text = "Available Rooms : ";
+            // 
+            // LblAddressRegister
+            // 
+            this.LblAddressRegister.AutoSize = true;
+            this.LblAddressRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddressRegister.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LblAddressRegister.Location = new System.Drawing.Point(133, 800);
+            this.LblAddressRegister.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblAddressRegister.Name = "LblAddressRegister";
+            this.LblAddressRegister.Size = new System.Drawing.Size(313, 37);
+            this.LblAddressRegister.TabIndex = 16;
+            this.LblAddressRegister.Text = "Included Services : ";
+            // 
+            // LblPhoneNumberRegister
+            // 
+            this.LblPhoneNumberRegister.AutoSize = true;
+            this.LblPhoneNumberRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPhoneNumberRegister.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LblPhoneNumberRegister.Location = new System.Drawing.Point(133, 690);
+            this.LblPhoneNumberRegister.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblPhoneNumberRegister.Name = "LblPhoneNumberRegister";
+            this.LblPhoneNumberRegister.Size = new System.Drawing.Size(279, 37);
+            this.LblPhoneNumberRegister.TabIndex = 14;
+            this.LblPhoneNumberRegister.Text = "Bathroom Type : ";
+            // 
+            // LblDateOfBirthRegister
+            // 
+            this.LblDateOfBirthRegister.AutoSize = true;
+            this.LblDateOfBirthRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDateOfBirthRegister.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LblDateOfBirthRegister.Location = new System.Drawing.Point(133, 583);
+            this.LblDateOfBirthRegister.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblDateOfBirthRegister.Name = "LblDateOfBirthRegister";
+            this.LblDateOfBirthRegister.Size = new System.Drawing.Size(196, 37);
+            this.LblDateOfBirthRegister.TabIndex = 12;
+            this.LblDateOfBirthRegister.Text = "Amenities : ";
+            // 
+            // LblGenderRegister
+            // 
+            this.LblGenderRegister.AutoSize = true;
+            this.LblGenderRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblGenderRegister.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LblGenderRegister.Location = new System.Drawing.Point(133, 466);
+            this.LblGenderRegister.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblGenderRegister.Name = "LblGenderRegister";
+            this.LblGenderRegister.Size = new System.Drawing.Size(190, 37);
+            this.LblGenderRegister.TabIndex = 7;
+            this.LblGenderRegister.Text = "Bed Type : ";
+            // 
+            // LnkRegister
+            // 
+            this.LnkRegister.AutoSize = true;
+            this.LnkRegister.LinkColor = System.Drawing.Color.OliveDrab;
+            this.LnkRegister.Location = new System.Drawing.Point(396, 415);
+            this.LnkRegister.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LnkRegister.Name = "LnkRegister";
+            this.LnkRegister.Size = new System.Drawing.Size(0, 37);
+            this.LnkRegister.TabIndex = 4;
+            // 
+            // LblUserNameRegister
+            // 
+            this.LblUserNameRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUserNameRegister.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LblUserNameRegister.Location = new System.Drawing.Point(133, 105);
+            this.LblUserNameRegister.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblUserNameRegister.Name = "LblUserNameRegister";
+            this.LblUserNameRegister.Size = new System.Drawing.Size(333, 65);
+            this.LblUserNameRegister.TabIndex = 4;
+            this.LblUserNameRegister.Text = "Name : ";
+            // 
+            // LblPassWordRegister
+            // 
+            this.LblPassWordRegister.AutoSize = true;
+            this.LblPassWordRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPassWordRegister.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LblPassWordRegister.Location = new System.Drawing.Point(133, 221);
+            this.LblPassWordRegister.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblPassWordRegister.Name = "LblPassWordRegister";
+            this.LblPassWordRegister.Size = new System.Drawing.Size(179, 37);
+            this.LblPassWordRegister.TabIndex = 4;
+            this.LblPassWordRegister.Text = "Capacity : ";
+            // 
+            // LblNameRoom
+            // 
+            this.LblNameRoom.AutoSize = true;
+            this.LblNameRoom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblNameRoom.Location = new System.Drawing.Point(582, 105);
+            this.LblNameRoom.Name = "LblNameRoom";
+            this.LblNameRoom.Size = new System.Drawing.Size(0, 37);
+            this.LblNameRoom.TabIndex = 22;
+            // 
+            // LblBedType
+            // 
+            this.LblBedType.AutoSize = true;
+            this.LblBedType.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblBedType.Location = new System.Drawing.Point(582, 466);
+            this.LblBedType.Name = "LblBedType";
+            this.LblBedType.Size = new System.Drawing.Size(0, 37);
+            this.LblBedType.TabIndex = 23;
+            // 
+            // LblAvailableRooms
+            // 
+            this.LblAvailableRooms.AutoSize = true;
+            this.LblAvailableRooms.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblAvailableRooms.Location = new System.Drawing.Point(582, 348);
+            this.LblAvailableRooms.Name = "LblAvailableRooms";
+            this.LblAvailableRooms.Size = new System.Drawing.Size(0, 37);
+            this.LblAvailableRooms.TabIndex = 24;
+            // 
+            // LblCapacityRoom
+            // 
+            this.LblCapacityRoom.AutoSize = true;
+            this.LblCapacityRoom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblCapacityRoom.Location = new System.Drawing.Point(582, 221);
+            this.LblCapacityRoom.Name = "LblCapacityRoom";
+            this.LblCapacityRoom.Size = new System.Drawing.Size(0, 37);
+            this.LblCapacityRoom.TabIndex = 25;
+            // 
+            // LblAmenities
+            // 
+            this.LblAmenities.AutoSize = true;
+            this.LblAmenities.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblAmenities.Location = new System.Drawing.Point(582, 583);
+            this.LblAmenities.Name = "LblAmenities";
+            this.LblAmenities.Size = new System.Drawing.Size(0, 37);
+            this.LblAmenities.TabIndex = 26;
+            // 
+            // LblBathroomType
+            // 
+            this.LblBathroomType.AutoSize = true;
+            this.LblBathroomType.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblBathroomType.Location = new System.Drawing.Point(582, 690);
+            this.LblBathroomType.Name = "LblBathroomType";
+            this.LblBathroomType.Size = new System.Drawing.Size(0, 37);
+            this.LblBathroomType.TabIndex = 27;
+            // 
+            // LblIncludedServices
+            // 
+            this.LblIncludedServices.AutoSize = true;
+            this.LblIncludedServices.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblIncludedServices.Location = new System.Drawing.Point(582, 800);
+            this.LblIncludedServices.Name = "LblIncludedServices";
+            this.LblIncludedServices.Size = new System.Drawing.Size(0, 37);
+            this.LblIncludedServices.TabIndex = 28;
             // 
             // GuestForm
             // 
@@ -1398,6 +1666,10 @@ namespace Hotel
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagerDataSet9BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource)).EndInit();
+            this.PageViewRoomGuest.ResumeLayout(false);
+            this.PageViewRoomGuest.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1514,7 +1786,28 @@ namespace Hotel
         private System.Windows.Forms.Button BtnLogoutGF;
         private System.Windows.Forms.Label LblRoleGF;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtReservationIDRS;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TabPage PageViewRoomGuest;
+        private System.Windows.Forms.Label LblViewRoomGuest;
+        private System.Windows.Forms.Button BtnSubmitVR;
+        private System.Windows.Forms.ComboBox CmbRoomTypeVR;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label LblSubmitPassWordRegister;
+        private System.Windows.Forms.Label LblAddressRegister;
+        private System.Windows.Forms.Label LblPhoneNumberRegister;
+        private System.Windows.Forms.Label LblDateOfBirthRegister;
+        private System.Windows.Forms.Label LblGenderRegister;
+        private System.Windows.Forms.LinkLabel LnkRegister;
+        private System.Windows.Forms.Label LblUserNameRegister;
+        private System.Windows.Forms.Label LblPassWordRegister;
+        private System.Windows.Forms.Label LblIncludedServices;
+        private System.Windows.Forms.Label LblBathroomType;
+        private System.Windows.Forms.Label LblAmenities;
+        private System.Windows.Forms.Label LblCapacityRoom;
+        private System.Windows.Forms.Label LblAvailableRooms;
+        private System.Windows.Forms.Label LblBedType;
+        private System.Windows.Forms.Label LblNameRoom;
     }
 }
