@@ -168,6 +168,9 @@
             this.LblRoleRF = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.LblNameRF = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BtnSearchVR = new System.Windows.Forms.Button();
+            this.TxtSearchVR = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationsBindingSource)).BeginInit();
@@ -454,7 +457,7 @@
             this.PageBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.PageBookingRf.Name = "PageBookingRf";
             this.PageBookingRf.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.PageBookingRf.Size = new System.Drawing.Size(2045, 1250);
+            this.PageBookingRf.Size = new System.Drawing.Size(2045, 1265);
             this.PageBookingRf.TabIndex = 1;
             this.PageBookingRf.Text = "Booking";
             this.PageBookingRf.UseVisualStyleBackColor = true;
@@ -646,7 +649,7 @@
             this.PageBookingManagementRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.PageBookingManagementRf.Name = "PageBookingManagementRf";
             this.PageBookingManagementRf.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.PageBookingManagementRf.Size = new System.Drawing.Size(2045, 1250);
+            this.PageBookingManagementRf.Size = new System.Drawing.Size(2045, 1265);
             this.PageBookingManagementRf.TabIndex = 3;
             this.PageBookingManagementRf.Text = "Booking Management";
             // 
@@ -848,6 +851,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.BtnSearchVR);
+            this.groupBox3.Controls.Add(this.TxtSearchVR);
             this.groupBox3.Controls.Add(this.DataViewRoomRf);
             this.groupBox3.Controls.Add(this.LblViewRoomRf);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -963,7 +969,7 @@
             this.PageRequestServicesRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.PageRequestServicesRf.Name = "PageRequestServicesRf";
             this.PageRequestServicesRf.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.PageRequestServicesRf.Size = new System.Drawing.Size(2045, 1250);
+            this.PageRequestServicesRf.Size = new System.Drawing.Size(2045, 1265);
             this.PageRequestServicesRf.TabIndex = 4;
             this.PageRequestServicesRf.Text = "Request Services";
             this.PageRequestServicesRf.UseVisualStyleBackColor = true;
@@ -984,7 +990,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.groupBox4.Size = new System.Drawing.Size(2033, 1234);
+            this.groupBox4.Size = new System.Drawing.Size(2033, 1249);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             // 
@@ -1615,6 +1621,39 @@
             this.LblNameRF.TabIndex = 15;
             this.LblNameRF.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label4.Location = new System.Drawing.Point(412, 324);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 37);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Search";
+            // 
+            // BtnSearchVR
+            // 
+            this.BtnSearchVR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearchVR.ForeColor = System.Drawing.Color.SteelBlue;
+            this.BtnSearchVR.Image = global::Hotel.Properties.Resources.icons8_search_30;
+            this.BtnSearchVR.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSearchVR.Location = new System.Drawing.Point(1573, 321);
+            this.BtnSearchVR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnSearchVR.Name = "BtnSearchVR";
+            this.BtnSearchVR.Size = new System.Drawing.Size(197, 47);
+            this.BtnSearchVR.TabIndex = 6;
+            this.BtnSearchVR.Text = "Search";
+            this.BtnSearchVR.UseVisualStyleBackColor = true;
+            // 
+            // TxtSearchVR
+            // 
+            this.TxtSearchVR.Location = new System.Drawing.Point(552, 321);
+            this.TxtSearchVR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtSearchVR.Name = "TxtSearchVR";
+            this.TxtSearchVR.Size = new System.Drawing.Size(937, 44);
+            this.TxtSearchVR.TabIndex = 5;
+            // 
             // ReceptionistForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -1656,6 +1695,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataBookingManagementRf)).EndInit();
             this.PageViewRoomRf.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataViewRoomRf)).EndInit();
             this.PageRequestServicesRf.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -1818,5 +1858,8 @@
         private System.Windows.Forms.Label LblRoleRF;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label LblNameRF;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button BtnSearchVR;
+        private System.Windows.Forms.TextBox TxtSearchVR;
     }
 }
