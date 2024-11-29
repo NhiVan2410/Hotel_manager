@@ -78,18 +78,6 @@
       <Association Name="Room_Reservation" Member="Room" ThisKey="RoomID" OtherKey="RoomID" Type="Room" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Services" Member="Services">
-    <Type Name="Service">
-      <Column Name="ServiceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ServiceName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="ServicePrice" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
-      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Quanity" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Service_ReservationService" Member="ReservationServices" ThisKey="ServiceID" OtherKey="ServiceID" Type="ReservationService" />
-    </Type>
-  </Table>
   <Table Name="dbo.ReservationServices" Member="ReservationServices">
     <Type Name="ReservationService">
       <Column Name="ReservationServiceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -104,6 +92,18 @@
       <Association Name="Guest_ReservationService" Member="Guest" ThisKey="GuestID" OtherKey="ID" Type="Guest" IsForeignKey="true" />
       <Association Name="Reservation_ReservationService" Member="Reservation" ThisKey="ReservationID" OtherKey="ReservationID" Type="Reservation" IsForeignKey="true" />
       <Association Name="Service_ReservationService" Member="Service" ThisKey="ServiceID" OtherKey="ServiceID" Type="Service" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Services" Member="Services">
+    <Type Name="Service">
+      <Column Name="ServiceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ServicePrice" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Service_ReservationService" Member="ReservationServices" ThisKey="ServiceID" OtherKey="ServiceID" Type="ReservationService" />
     </Type>
   </Table>
 </Database>

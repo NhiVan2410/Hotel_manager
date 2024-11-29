@@ -690,5 +690,26 @@
   <ItemGroup>
     <None Include="Resources\icons8-receptionist-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\979950569c2327eb4325eaa6138b0d23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-management-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8507b718c98dfc5e2fc676dbe6202d64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41c913dabb4e9274af9385b42801d99a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a09977712fec12b4fc43eeca06b8958.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a09977712fec12b4fc43eeca06b89581.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd8eb741052299db0e6c688acad9334c.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
