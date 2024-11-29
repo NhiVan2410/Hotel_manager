@@ -38,8 +38,29 @@
             this.hotel_ManagerDataSet13 = new Hotel.Hotel_ManagerDataSet13();
             this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hotel_ManagerDataSet14 = new Hotel.Hotel_ManagerDataSet14();
-            this.TabRequestServicesRf = new System.Windows.Forms.TabControl();
+            this.TabReceiptionist = new System.Windows.Forms.TabControl();
             this.PageCustomerInformationRf = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnCancelCustomerRf = new System.Windows.Forms.Button();
+            this.BtnEditCustomerrf = new System.Windows.Forms.Button();
+            this.BtnAddGuestRf = new System.Windows.Forms.Button();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.GrBoxGender = new System.Windows.Forms.GroupBox();
+            this.RadOther = new System.Windows.Forms.RadioButton();
+            this.RadFemale = new System.Windows.Forms.RadioButton();
+            this.RadMale = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.TxtAddress = new System.Windows.Forms.TextBox();
+            this.TxtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.TxtUserName = new System.Windows.Forms.TextBox();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.LblAddress = new System.Windows.Forms.Label();
+            this.LblPhoneNumber = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LblDate = new System.Windows.Forms.Label();
+            this.LblUserName = new System.Windows.Forms.Label();
+            this.LblGuestInformation = new System.Windows.Forms.Label();
             this.PageCustomerManagemetRf = new System.Windows.Forms.TabPage();
             this.LblSearchRf = new System.Windows.Forms.Label();
             this.LblCustomerManagementRf = new System.Windows.Forms.Label();
@@ -60,19 +81,6 @@
             this.guestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hotel_ManagerDataSet12 = new Hotel.Hotel_ManagerDataSet12();
             this.PageBookingRf = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnEditBookingRf = new System.Windows.Forms.Button();
-            this.BtnCancelBooking = new System.Windows.Forms.Button();
-            this.BtnAddBookingRf = new System.Windows.Forms.Button();
-            this.DtpCheckInBookingRf = new System.Windows.Forms.DateTimePicker();
-            this.DtpCheckOutBookingRf = new System.Windows.Forms.DateTimePicker();
-            this.CmbRoomBookingRf = new System.Windows.Forms.ComboBox();
-            this.CmbCustomerBookingRf = new System.Windows.Forms.ComboBox();
-            this.LblRoomBookingRf = new System.Windows.Forms.Label();
-            this.LblCheckInBookingRf = new System.Windows.Forms.Label();
-            this.LblCheckOutBookingRf = new System.Windows.Forms.Label();
-            this.LblCustomerBookingRf = new System.Windows.Forms.Label();
-            this.LblBookingRf = new System.Windows.Forms.Label();
             this.PageBookingManagementRf = new System.Windows.Forms.TabPage();
             this.BtnCancelBkMNRf = new System.Windows.Forms.Button();
             this.BtnEditStatusBkMNRf = new System.Windows.Forms.Button();
@@ -94,6 +102,9 @@
             this.LblBookingManagementRf = new System.Windows.Forms.Label();
             this.PageViewRoomRf = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BtnSearchVR = new System.Windows.Forms.Button();
+            this.TxtSearchVR = new System.Windows.Forms.TextBox();
             this.DataViewRoomRf = new System.Windows.Forms.DataGridView();
             this.roomIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -143,48 +154,38 @@
             this.reservationServicesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.reservationServicesTableAdapter1 = new Hotel.Hotel_ManagerDataSet19TableAdapters.ReservationServicesTableAdapter();
             this.reservationServicesTableAdapter2 = new Hotel.Hotel_ManagerDataSet20TableAdapters.ReservationServicesTableAdapter();
-            this.LblGuestInformation = new System.Windows.Forms.Label();
-            this.LblUserName = new System.Windows.Forms.Label();
-            this.LblDate = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.LblPhoneNumber = new System.Windows.Forms.Label();
-            this.LblAddress = new System.Windows.Forms.Label();
-            this.LblEmail = new System.Windows.Forms.Label();
-            this.TxtUserName = new System.Windows.Forms.TextBox();
-            this.TxtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.TxtAddress = new System.Windows.Forms.TextBox();
-            this.TxtEmail = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.GrBoxGender = new System.Windows.Forms.GroupBox();
-            this.RadMale = new System.Windows.Forms.RadioButton();
-            this.RadFemale = new System.Windows.Forms.RadioButton();
-            this.RadOther = new System.Windows.Forms.RadioButton();
-            this.BtnDelete = new System.Windows.Forms.Button();
-            this.BtnAddGuestRf = new System.Windows.Forms.Button();
-            this.BtnEditCustomerrf = new System.Windows.Forms.Button();
-            this.BtnCancelCustomerRf = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnLogoutRF = new System.Windows.Forms.Button();
             this.LblRoleRF = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.LblNameRF = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.BtnSearchVR = new System.Windows.Forms.Button();
-            this.TxtSearchVR = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LblBookingRf = new System.Windows.Forms.Label();
+            this.LblCustomerBookingRf = new System.Windows.Forms.Label();
+            this.LblCheckOutBookingRf = new System.Windows.Forms.Label();
+            this.LblCheckInBookingRf = new System.Windows.Forms.Label();
+            this.LblRoomBookingRf = new System.Windows.Forms.Label();
+            this.CmbCustomerBookingRf = new System.Windows.Forms.ComboBox();
+            this.CmbRoomBookingRf = new System.Windows.Forms.ComboBox();
+            this.DtpCheckOutBookingRf = new System.Windows.Forms.DateTimePicker();
+            this.DtpCheckInBookingRf = new System.Windows.Forms.DateTimePicker();
+            this.BtnAddBookingRf = new System.Windows.Forms.Button();
+            this.BtnEditBookingRf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet14)).BeginInit();
-            this.TabRequestServicesRf.SuspendLayout();
+            this.TabReceiptionist.SuspendLayout();
             this.PageCustomerInformationRf.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.GrBoxGender.SuspendLayout();
             this.PageCustomerManagemetRf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataCustomerManagementRf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet12)).BeginInit();
             this.PageBookingRf.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.PageBookingManagementRf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataBookingManagementRf)).BeginInit();
             this.PageViewRoomRf.SuspendLayout();
@@ -203,8 +204,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource1)).BeginInit();
-            this.GrBoxGender.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // reservationServicesBindingSource2
@@ -237,22 +236,22 @@
             this.hotel_ManagerDataSet14.DataSetName = "Hotel_ManagerDataSet14";
             this.hotel_ManagerDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // TabRequestServicesRf
+            // TabReceiptionist
             // 
-            this.TabRequestServicesRf.Controls.Add(this.PageCustomerInformationRf);
-            this.TabRequestServicesRf.Controls.Add(this.PageCustomerManagemetRf);
-            this.TabRequestServicesRf.Controls.Add(this.PageBookingRf);
-            this.TabRequestServicesRf.Controls.Add(this.PageBookingManagementRf);
-            this.TabRequestServicesRf.Controls.Add(this.PageViewRoomRf);
-            this.TabRequestServicesRf.Controls.Add(this.PageRequestServicesRf);
-            this.TabRequestServicesRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TabRequestServicesRf.ItemSize = new System.Drawing.Size(500, 34);
-            this.TabRequestServicesRf.Location = new System.Drawing.Point(267, 196);
-            this.TabRequestServicesRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.TabRequestServicesRf.Name = "TabRequestServicesRf";
-            this.TabRequestServicesRf.SelectedIndex = 0;
-            this.TabRequestServicesRf.Size = new System.Drawing.Size(2061, 1315);
-            this.TabRequestServicesRf.TabIndex = 2;
+            this.TabReceiptionist.Controls.Add(this.PageCustomerInformationRf);
+            this.TabReceiptionist.Controls.Add(this.PageCustomerManagemetRf);
+            this.TabReceiptionist.Controls.Add(this.PageBookingRf);
+            this.TabReceiptionist.Controls.Add(this.PageBookingManagementRf);
+            this.TabReceiptionist.Controls.Add(this.PageViewRoomRf);
+            this.TabReceiptionist.Controls.Add(this.PageRequestServicesRf);
+            this.TabReceiptionist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TabReceiptionist.ItemSize = new System.Drawing.Size(500, 34);
+            this.TabReceiptionist.Location = new System.Drawing.Point(267, 196);
+            this.TabReceiptionist.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.TabReceiptionist.Name = "TabReceiptionist";
+            this.TabReceiptionist.SelectedIndex = 0;
+            this.TabReceiptionist.Size = new System.Drawing.Size(2061, 1315);
+            this.TabReceiptionist.TabIndex = 2;
             // 
             // PageCustomerInformationRf
             // 
@@ -267,6 +266,269 @@
             this.PageCustomerInformationRf.Size = new System.Drawing.Size(2045, 1265);
             this.PageCustomerInformationRf.TabIndex = 0;
             this.PageCustomerInformationRf.Text = "Add Customer";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.AutoSize = true;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.BtnCancelCustomerRf);
+            this.groupBox1.Controls.Add(this.BtnEditCustomerrf);
+            this.groupBox1.Controls.Add(this.BtnAddGuestRf);
+            this.groupBox1.Controls.Add(this.BtnDelete);
+            this.groupBox1.Controls.Add(this.GrBoxGender);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.TxtEmail);
+            this.groupBox1.Controls.Add(this.TxtAddress);
+            this.groupBox1.Controls.Add(this.TxtPhoneNumber);
+            this.groupBox1.Controls.Add(this.TxtUserName);
+            this.groupBox1.Controls.Add(this.LblEmail);
+            this.groupBox1.Controls.Add(this.LblAddress);
+            this.groupBox1.Controls.Add(this.LblPhoneNumber);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.LblDate);
+            this.groupBox1.Controls.Add(this.LblUserName);
+            this.groupBox1.Controls.Add(this.LblGuestInformation);
+            this.groupBox1.Location = new System.Drawing.Point(6, 42);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.groupBox1.Size = new System.Drawing.Size(2508, 1517);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            // 
+            // BtnCancelCustomerRf
+            // 
+            this.BtnCancelCustomerRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelCustomerRf.ForeColor = System.Drawing.Color.Black;
+            this.BtnCancelCustomerRf.Location = new System.Drawing.Point(1359, 1083);
+            this.BtnCancelCustomerRf.Name = "BtnCancelCustomerRf";
+            this.BtnCancelCustomerRf.Size = new System.Drawing.Size(217, 39);
+            this.BtnCancelCustomerRf.TabIndex = 7;
+            this.BtnCancelCustomerRf.Text = "Cancel";
+            this.BtnCancelCustomerRf.UseVisualStyleBackColor = true;
+            // 
+            // BtnEditCustomerrf
+            // 
+            this.BtnEditCustomerrf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditCustomerrf.ForeColor = System.Drawing.Color.Black;
+            this.BtnEditCustomerrf.Location = new System.Drawing.Point(830, 1083);
+            this.BtnEditCustomerrf.Name = "BtnEditCustomerrf";
+            this.BtnEditCustomerrf.Size = new System.Drawing.Size(217, 39);
+            this.BtnEditCustomerrf.TabIndex = 7;
+            this.BtnEditCustomerrf.Text = "Edit";
+            this.BtnEditCustomerrf.UseVisualStyleBackColor = true;
+            // 
+            // BtnAddGuestRf
+            // 
+            this.BtnAddGuestRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddGuestRf.ForeColor = System.Drawing.Color.Black;
+            this.BtnAddGuestRf.Location = new System.Drawing.Point(359, 1083);
+            this.BtnAddGuestRf.Name = "BtnAddGuestRf";
+            this.BtnAddGuestRf.Size = new System.Drawing.Size(217, 39);
+            this.BtnAddGuestRf.TabIndex = 7;
+            this.BtnAddGuestRf.Text = "Add";
+            this.BtnAddGuestRf.UseVisualStyleBackColor = true;
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.BtnDelete.ForeColor = System.Drawing.Color.Black;
+            this.BtnDelete.Image = global::Hotel.Properties.Resources.icons8_delete_24;
+            this.BtnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnDelete.Location = new System.Drawing.Point(2212, 1395);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(284, 69);
+            this.BtnDelete.TabIndex = 1;
+            this.BtnDelete.Text = " Delete ";
+            this.BtnDelete.UseVisualStyleBackColor = false;
+            // 
+            // GrBoxGender
+            // 
+            this.GrBoxGender.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.GrBoxGender.Controls.Add(this.RadOther);
+            this.GrBoxGender.Controls.Add(this.RadFemale);
+            this.GrBoxGender.Controls.Add(this.RadMale);
+            this.GrBoxGender.ForeColor = System.Drawing.SystemColors.Window;
+            this.GrBoxGender.Location = new System.Drawing.Point(778, 309);
+            this.GrBoxGender.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.GrBoxGender.Name = "GrBoxGender";
+            this.GrBoxGender.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.GrBoxGender.Size = new System.Drawing.Size(726, 83);
+            this.GrBoxGender.TabIndex = 5;
+            this.GrBoxGender.TabStop = false;
+            // 
+            // RadOther
+            // 
+            this.RadOther.AutoSize = true;
+            this.RadOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadOther.ForeColor = System.Drawing.Color.Black;
+            this.RadOther.Location = new System.Drawing.Point(522, 34);
+            this.RadOther.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.RadOther.Name = "RadOther";
+            this.RadOther.Size = new System.Drawing.Size(102, 30);
+            this.RadOther.TabIndex = 6;
+            this.RadOther.TabStop = true;
+            this.RadOther.Text = "Other";
+            this.RadOther.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RadOther.UseVisualStyleBackColor = true;
+            // 
+            // RadFemale
+            // 
+            this.RadFemale.AutoSize = true;
+            this.RadFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadFemale.ForeColor = System.Drawing.Color.Black;
+            this.RadFemale.Location = new System.Drawing.Point(266, 35);
+            this.RadFemale.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.RadFemale.Name = "RadFemale";
+            this.RadFemale.Size = new System.Drawing.Size(122, 30);
+            this.RadFemale.TabIndex = 6;
+            this.RadFemale.TabStop = true;
+            this.RadFemale.Text = "Female";
+            this.RadFemale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RadFemale.UseVisualStyleBackColor = true;
+            // 
+            // RadMale
+            // 
+            this.RadMale.AutoSize = true;
+            this.RadMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadMale.ForeColor = System.Drawing.Color.Black;
+            this.RadMale.Location = new System.Drawing.Point(36, 34);
+            this.RadMale.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.RadMale.Name = "RadMale";
+            this.RadMale.Size = new System.Drawing.Size(94, 30);
+            this.RadMale.TabIndex = 6;
+            this.RadMale.TabStop = true;
+            this.RadMale.Text = "Male";
+            this.RadMale.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.RadMale.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(781, 505);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(721, 32);
+            this.dateTimePicker1.TabIndex = 4;
+            // 
+            // TxtEmail
+            // 
+            this.TxtEmail.Location = new System.Drawing.Point(781, 912);
+            this.TxtEmail.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(721, 44);
+            this.TxtEmail.TabIndex = 2;
+            // 
+            // TxtAddress
+            // 
+            this.TxtAddress.Location = new System.Drawing.Point(781, 751);
+            this.TxtAddress.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.TxtAddress.Name = "TxtAddress";
+            this.TxtAddress.Size = new System.Drawing.Size(721, 44);
+            this.TxtAddress.TabIndex = 2;
+            // 
+            // TxtPhoneNumber
+            // 
+            this.TxtPhoneNumber.Location = new System.Drawing.Point(781, 613);
+            this.TxtPhoneNumber.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.TxtPhoneNumber.Name = "TxtPhoneNumber";
+            this.TxtPhoneNumber.Size = new System.Drawing.Size(721, 44);
+            this.TxtPhoneNumber.TabIndex = 2;
+            // 
+            // TxtUserName
+            // 
+            this.TxtUserName.Location = new System.Drawing.Point(781, 181);
+            this.TxtUserName.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.TxtUserName.Name = "TxtUserName";
+            this.TxtUserName.Size = new System.Drawing.Size(721, 44);
+            this.TxtUserName.TabIndex = 2;
+            // 
+            // LblEmail
+            // 
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.ForeColor = System.Drawing.Color.Olive;
+            this.LblEmail.Location = new System.Drawing.Point(336, 915);
+            this.LblEmail.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(132, 37);
+            this.LblEmail.TabIndex = 1;
+            this.LblEmail.Text = "Email : ";
+            // 
+            // LblAddress
+            // 
+            this.LblAddress.AutoSize = true;
+            this.LblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddress.ForeColor = System.Drawing.Color.Olive;
+            this.LblAddress.Location = new System.Drawing.Point(336, 757);
+            this.LblAddress.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblAddress.Name = "LblAddress";
+            this.LblAddress.Size = new System.Drawing.Size(172, 37);
+            this.LblAddress.TabIndex = 1;
+            this.LblAddress.Text = "Address : ";
+            // 
+            // LblPhoneNumber
+            // 
+            this.LblPhoneNumber.AutoSize = true;
+            this.LblPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPhoneNumber.ForeColor = System.Drawing.Color.Olive;
+            this.LblPhoneNumber.Location = new System.Drawing.Point(336, 643);
+            this.LblPhoneNumber.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblPhoneNumber.Name = "LblPhoneNumber";
+            this.LblPhoneNumber.Size = new System.Drawing.Size(275, 37);
+            this.LblPhoneNumber.TabIndex = 1;
+            this.LblPhoneNumber.Text = "Phone Number : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Olive;
+            this.label2.Location = new System.Drawing.Point(336, 344);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(159, 37);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Gender : ";
+            // 
+            // LblDate
+            // 
+            this.LblDate.AutoSize = true;
+            this.LblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDate.ForeColor = System.Drawing.Color.Olive;
+            this.LblDate.Location = new System.Drawing.Point(336, 505);
+            this.LblDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblDate.Name = "LblDate";
+            this.LblDate.Size = new System.Drawing.Size(225, 37);
+            this.LblDate.TabIndex = 1;
+            this.LblDate.Text = "Date of birth :";
+            // 
+            // LblUserName
+            // 
+            this.LblUserName.AutoSize = true;
+            this.LblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUserName.ForeColor = System.Drawing.Color.Olive;
+            this.LblUserName.Location = new System.Drawing.Point(354, 187);
+            this.LblUserName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblUserName.Name = "LblUserName";
+            this.LblUserName.Size = new System.Drawing.Size(137, 37);
+            this.LblUserName.TabIndex = 1;
+            this.LblUserName.Text = "Name : ";
+            // 
+            // LblGuestInformation
+            // 
+            this.LblGuestInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblGuestInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.LblGuestInformation.Image = global::Hotel.Properties.Resources.icons8_receptionist_48;
+            this.LblGuestInformation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblGuestInformation.Location = new System.Drawing.Point(617, 61);
+            this.LblGuestInformation.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblGuestInformation.Name = "LblGuestInformation";
+            this.LblGuestInformation.Size = new System.Drawing.Size(996, 109);
+            this.LblGuestInformation.TabIndex = 0;
+            this.LblGuestInformation.Text = "Guest Information";
+            this.LblGuestInformation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PageCustomerManagemetRf
             // 
@@ -452,7 +714,17 @@
             // 
             this.PageBookingRf.BackgroundImage = global::Hotel.Properties.Resources._8507b718c98dfc5e2fc676dbe6202d64;
             this.PageBookingRf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PageBookingRf.Controls.Add(this.groupBox2);
+            this.PageBookingRf.Controls.Add(this.BtnEditBookingRf);
+            this.PageBookingRf.Controls.Add(this.LblBookingRf);
+            this.PageBookingRf.Controls.Add(this.BtnAddBookingRf);
+            this.PageBookingRf.Controls.Add(this.LblCustomerBookingRf);
+            this.PageBookingRf.Controls.Add(this.DtpCheckInBookingRf);
+            this.PageBookingRf.Controls.Add(this.LblCheckOutBookingRf);
+            this.PageBookingRf.Controls.Add(this.DtpCheckOutBookingRf);
+            this.PageBookingRf.Controls.Add(this.LblCheckInBookingRf);
+            this.PageBookingRf.Controls.Add(this.CmbRoomBookingRf);
+            this.PageBookingRf.Controls.Add(this.LblRoomBookingRf);
+            this.PageBookingRf.Controls.Add(this.CmbCustomerBookingRf);
             this.PageBookingRf.Location = new System.Drawing.Point(8, 42);
             this.PageBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.PageBookingRf.Name = "PageBookingRf";
@@ -461,178 +733,6 @@
             this.PageBookingRf.TabIndex = 1;
             this.PageBookingRf.Text = "Booking";
             this.PageBookingRf.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.BtnEditBookingRf);
-            this.groupBox2.Controls.Add(this.BtnCancelBooking);
-            this.groupBox2.Controls.Add(this.BtnAddBookingRf);
-            this.groupBox2.Controls.Add(this.DtpCheckInBookingRf);
-            this.groupBox2.Controls.Add(this.DtpCheckOutBookingRf);
-            this.groupBox2.Controls.Add(this.CmbRoomBookingRf);
-            this.groupBox2.Controls.Add(this.CmbCustomerBookingRf);
-            this.groupBox2.Controls.Add(this.LblRoomBookingRf);
-            this.groupBox2.Controls.Add(this.LblCheckInBookingRf);
-            this.groupBox2.Controls.Add(this.LblCheckOutBookingRf);
-            this.groupBox2.Controls.Add(this.LblCustomerBookingRf);
-            this.groupBox2.Controls.Add(this.LblBookingRf);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.groupBox2.Location = new System.Drawing.Point(6, 43);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.groupBox2.Size = new System.Drawing.Size(2041, 1207);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            // 
-            // BtnEditBookingRf
-            // 
-            this.BtnEditBookingRf.BackColor = System.Drawing.Color.White;
-            this.BtnEditBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditBookingRf.ForeColor = System.Drawing.Color.Black;
-            this.BtnEditBookingRf.Image = global::Hotel.Properties.Resources.icons8_edit_26;
-            this.BtnEditBookingRf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEditBookingRf.Location = new System.Drawing.Point(1386, 1028);
-            this.BtnEditBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.BtnEditBookingRf.Name = "BtnEditBookingRf";
-            this.BtnEditBookingRf.Size = new System.Drawing.Size(263, 57);
-            this.BtnEditBookingRf.TabIndex = 4;
-            this.BtnEditBookingRf.Text = "Edit";
-            this.BtnEditBookingRf.UseVisualStyleBackColor = false;
-            // 
-            // BtnCancelBooking
-            // 
-            this.BtnCancelBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BtnCancelBooking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnCancelBooking.Image = global::Hotel.Properties.Resources.icons8_delete_24;
-            this.BtnCancelBooking.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCancelBooking.Location = new System.Drawing.Point(2040, 1158);
-            this.BtnCancelBooking.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.BtnCancelBooking.Name = "BtnCancelBooking";
-            this.BtnCancelBooking.Size = new System.Drawing.Size(464, 105);
-            this.BtnCancelBooking.TabIndex = 4;
-            this.BtnCancelBooking.Text = "Cancel";
-            this.BtnCancelBooking.UseVisualStyleBackColor = false;
-            // 
-            // BtnAddBookingRf
-            // 
-            this.BtnAddBookingRf.BackColor = System.Drawing.Color.White;
-            this.BtnAddBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddBookingRf.ForeColor = System.Drawing.Color.Black;
-            this.BtnAddBookingRf.Image = global::Hotel.Properties.Resources.icons8_add_24;
-            this.BtnAddBookingRf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAddBookingRf.Location = new System.Drawing.Point(720, 1044);
-            this.BtnAddBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.BtnAddBookingRf.Name = "BtnAddBookingRf";
-            this.BtnAddBookingRf.Size = new System.Drawing.Size(263, 57);
-            this.BtnAddBookingRf.TabIndex = 4;
-            this.BtnAddBookingRf.Text = "Add";
-            this.BtnAddBookingRf.UseVisualStyleBackColor = false;
-            // 
-            // DtpCheckInBookingRf
-            // 
-            this.DtpCheckInBookingRf.CustomFormat = "dd/MM/yyyy hh : mm : ss";
-            this.DtpCheckInBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpCheckInBookingRf.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtpCheckInBookingRf.Location = new System.Drawing.Point(808, 687);
-            this.DtpCheckInBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.DtpCheckInBookingRf.Name = "DtpCheckInBookingRf";
-            this.DtpCheckInBookingRf.Size = new System.Drawing.Size(757, 38);
-            this.DtpCheckInBookingRf.TabIndex = 3;
-            this.DtpCheckInBookingRf.Value = new System.DateTime(2024, 11, 28, 20, 0, 12, 0);
-            // 
-            // DtpCheckOutBookingRf
-            // 
-            this.DtpCheckOutBookingRf.CustomFormat = "dd/MM/yyyy hh : mm : ss";
-            this.DtpCheckOutBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpCheckOutBookingRf.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtpCheckOutBookingRf.Location = new System.Drawing.Point(808, 884);
-            this.DtpCheckOutBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.DtpCheckOutBookingRf.Name = "DtpCheckOutBookingRf";
-            this.DtpCheckOutBookingRf.Size = new System.Drawing.Size(757, 38);
-            this.DtpCheckOutBookingRf.TabIndex = 3;
-            this.DtpCheckOutBookingRf.Value = new System.DateTime(2024, 11, 28, 20, 0, 12, 0);
-            // 
-            // CmbRoomBookingRf
-            // 
-            this.CmbRoomBookingRf.FormattingEnabled = true;
-            this.CmbRoomBookingRf.Location = new System.Drawing.Point(808, 484);
-            this.CmbRoomBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.CmbRoomBookingRf.Name = "CmbRoomBookingRf";
-            this.CmbRoomBookingRf.Size = new System.Drawing.Size(757, 45);
-            this.CmbRoomBookingRf.TabIndex = 2;
-            // 
-            // CmbCustomerBookingRf
-            // 
-            this.CmbCustomerBookingRf.FormattingEnabled = true;
-            this.CmbCustomerBookingRf.Location = new System.Drawing.Point(799, 328);
-            this.CmbCustomerBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.CmbCustomerBookingRf.Name = "CmbCustomerBookingRf";
-            this.CmbCustomerBookingRf.Size = new System.Drawing.Size(757, 45);
-            this.CmbCustomerBookingRf.TabIndex = 2;
-            // 
-            // LblRoomBookingRf
-            // 
-            this.LblRoomBookingRf.AutoSize = true;
-            this.LblRoomBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRoomBookingRf.ForeColor = System.Drawing.Color.Black;
-            this.LblRoomBookingRf.Location = new System.Drawing.Point(416, 511);
-            this.LblRoomBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblRoomBookingRf.Name = "LblRoomBookingRf";
-            this.LblRoomBookingRf.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.LblRoomBookingRf.Size = new System.Drawing.Size(136, 37);
-            this.LblRoomBookingRf.TabIndex = 1;
-            this.LblRoomBookingRf.Text = "Room : ";
-            // 
-            // LblCheckInBookingRf
-            // 
-            this.LblCheckInBookingRf.AutoSize = true;
-            this.LblCheckInBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCheckInBookingRf.ForeColor = System.Drawing.Color.Black;
-            this.LblCheckInBookingRf.Location = new System.Drawing.Point(416, 696);
-            this.LblCheckInBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblCheckInBookingRf.Name = "LblCheckInBookingRf";
-            this.LblCheckInBookingRf.Size = new System.Drawing.Size(180, 37);
-            this.LblCheckInBookingRf.TabIndex = 1;
-            this.LblCheckInBookingRf.Text = "Check In : ";
-            // 
-            // LblCheckOutBookingRf
-            // 
-            this.LblCheckOutBookingRf.AutoSize = true;
-            this.LblCheckOutBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCheckOutBookingRf.ForeColor = System.Drawing.Color.Black;
-            this.LblCheckOutBookingRf.Location = new System.Drawing.Point(416, 893);
-            this.LblCheckOutBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblCheckOutBookingRf.Name = "LblCheckOutBookingRf";
-            this.LblCheckOutBookingRf.Size = new System.Drawing.Size(207, 37);
-            this.LblCheckOutBookingRf.TabIndex = 1;
-            this.LblCheckOutBookingRf.Text = "Check Out : ";
-            // 
-            // LblCustomerBookingRf
-            // 
-            this.LblCustomerBookingRf.AutoSize = true;
-            this.LblCustomerBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
-            this.LblCustomerBookingRf.ForeColor = System.Drawing.Color.Black;
-            this.LblCustomerBookingRf.Location = new System.Drawing.Point(416, 336);
-            this.LblCustomerBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblCustomerBookingRf.Name = "LblCustomerBookingRf";
-            this.LblCustomerBookingRf.Size = new System.Drawing.Size(184, 37);
-            this.LblCustomerBookingRf.TabIndex = 1;
-            this.LblCustomerBookingRf.Text = "Customer :";
-            // 
-            // LblBookingRf
-            // 
-            this.LblBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblBookingRf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LblBookingRf.Image = global::Hotel.Properties.Resources.icons8_booking_48;
-            this.LblBookingRf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblBookingRf.Location = new System.Drawing.Point(727, 85);
-            this.LblBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblBookingRf.Name = "LblBookingRf";
-            this.LblBookingRf.Size = new System.Drawing.Size(609, 109);
-            this.LblBookingRf.TabIndex = 0;
-            this.LblBookingRf.Text = "Booking";
-            this.LblBookingRf.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PageBookingManagementRf
             // 
@@ -657,7 +757,7 @@
             // 
             this.BtnCancelBkMNRf.Image = global::Hotel.Properties.Resources.icons8_cancel_24;
             this.BtnCancelBkMNRf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCancelBkMNRf.Location = new System.Drawing.Point(671, 457);
+            this.BtnCancelBkMNRf.Location = new System.Drawing.Point(712, 385);
             this.BtnCancelBkMNRf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnCancelBkMNRf.Name = "BtnCancelBkMNRf";
             this.BtnCancelBkMNRf.Size = new System.Drawing.Size(222, 45);
@@ -669,7 +769,7 @@
             // 
             this.BtnEditStatusBkMNRf.Image = global::Hotel.Properties.Resources.icons8_edit_26;
             this.BtnEditStatusBkMNRf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEditStatusBkMNRf.Location = new System.Drawing.Point(1072, 453);
+            this.BtnEditStatusBkMNRf.Location = new System.Drawing.Point(1113, 381);
             this.BtnEditStatusBkMNRf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnEditStatusBkMNRf.Name = "BtnEditStatusBkMNRf";
             this.BtnEditStatusBkMNRf.Size = new System.Drawing.Size(218, 53);
@@ -679,7 +779,7 @@
             // 
             // TxtReservationIDRf
             // 
-            this.TxtReservationIDRf.Location = new System.Drawing.Point(639, 328);
+            this.TxtReservationIDRf.Location = new System.Drawing.Point(680, 256);
             this.TxtReservationIDRf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtReservationIDRf.Name = "TxtReservationIDRf";
             this.TxtReservationIDRf.Size = new System.Drawing.Size(922, 44);
@@ -689,7 +789,7 @@
             // 
             this.LblReservationIDRf.AutoSize = true;
             this.LblReservationIDRf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.LblReservationIDRf.Location = new System.Drawing.Point(363, 331);
+            this.LblReservationIDRf.Location = new System.Drawing.Point(404, 259);
             this.LblReservationIDRf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblReservationIDRf.Name = "LblReservationIDRf";
             this.LblReservationIDRf.Size = new System.Drawing.Size(252, 37);
@@ -725,14 +825,14 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataBookingManagementRf.DefaultCellStyle = dataGridViewCellStyle1;
             this.DataBookingManagementRf.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.DataBookingManagementRf.Location = new System.Drawing.Point(81, 651);
+            this.DataBookingManagementRf.Location = new System.Drawing.Point(132, 462);
             this.DataBookingManagementRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.DataBookingManagementRf.Name = "DataBookingManagementRf";
             this.DataBookingManagementRf.RowHeadersVisible = false;
             this.DataBookingManagementRf.RowHeadersWidth = 62;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataBookingManagementRf.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataBookingManagementRf.Size = new System.Drawing.Size(1878, 794);
+            this.DataBookingManagementRf.Size = new System.Drawing.Size(1771, 760);
             this.DataBookingManagementRf.TabIndex = 1;
             // 
             // reservationIDDataGridViewTextBoxColumn
@@ -865,6 +965,39 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label4.Location = new System.Drawing.Point(412, 324);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 37);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Search";
+            // 
+            // BtnSearchVR
+            // 
+            this.BtnSearchVR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearchVR.ForeColor = System.Drawing.Color.SteelBlue;
+            this.BtnSearchVR.Image = global::Hotel.Properties.Resources.icons8_search_30;
+            this.BtnSearchVR.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSearchVR.Location = new System.Drawing.Point(1573, 321);
+            this.BtnSearchVR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnSearchVR.Name = "BtnSearchVR";
+            this.BtnSearchVR.Size = new System.Drawing.Size(197, 47);
+            this.BtnSearchVR.TabIndex = 6;
+            this.BtnSearchVR.Text = "Search";
+            this.BtnSearchVR.UseVisualStyleBackColor = true;
+            // 
+            // TxtSearchVR
+            // 
+            this.TxtSearchVR.Location = new System.Drawing.Point(552, 321);
+            this.TxtSearchVR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtSearchVR.Name = "TxtSearchVR";
+            this.TxtSearchVR.Size = new System.Drawing.Size(937, 44);
+            this.TxtSearchVR.TabIndex = 5;
+            // 
             // DataViewRoomRf
             // 
             this.DataViewRoomRf.AutoGenerateColumns = false;
@@ -976,6 +1109,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.DataRequestServicesRf);
             this.groupBox4.Controls.Add(this.BtnEditRequestServicesRf);
             this.groupBox4.Controls.Add(this.BtnAddServicesRf);
@@ -1316,269 +1451,6 @@
             // 
             this.reservationServicesTableAdapter2.ClearBeforeFill = true;
             // 
-            // LblGuestInformation
-            // 
-            this.LblGuestInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblGuestInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.LblGuestInformation.Image = global::Hotel.Properties.Resources.icons8_receptionist_48;
-            this.LblGuestInformation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblGuestInformation.Location = new System.Drawing.Point(617, 61);
-            this.LblGuestInformation.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblGuestInformation.Name = "LblGuestInformation";
-            this.LblGuestInformation.Size = new System.Drawing.Size(996, 109);
-            this.LblGuestInformation.TabIndex = 0;
-            this.LblGuestInformation.Text = "Guest Information";
-            this.LblGuestInformation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LblUserName
-            // 
-            this.LblUserName.AutoSize = true;
-            this.LblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUserName.ForeColor = System.Drawing.Color.Olive;
-            this.LblUserName.Location = new System.Drawing.Point(354, 187);
-            this.LblUserName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblUserName.Name = "LblUserName";
-            this.LblUserName.Size = new System.Drawing.Size(137, 37);
-            this.LblUserName.TabIndex = 1;
-            this.LblUserName.Text = "Name : ";
-            // 
-            // LblDate
-            // 
-            this.LblDate.AutoSize = true;
-            this.LblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDate.ForeColor = System.Drawing.Color.Olive;
-            this.LblDate.Location = new System.Drawing.Point(336, 505);
-            this.LblDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblDate.Name = "LblDate";
-            this.LblDate.Size = new System.Drawing.Size(225, 37);
-            this.LblDate.TabIndex = 1;
-            this.LblDate.Text = "Date of birth :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Olive;
-            this.label2.Location = new System.Drawing.Point(336, 344);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Gender : ";
-            // 
-            // LblPhoneNumber
-            // 
-            this.LblPhoneNumber.AutoSize = true;
-            this.LblPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPhoneNumber.ForeColor = System.Drawing.Color.Olive;
-            this.LblPhoneNumber.Location = new System.Drawing.Point(336, 643);
-            this.LblPhoneNumber.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblPhoneNumber.Name = "LblPhoneNumber";
-            this.LblPhoneNumber.Size = new System.Drawing.Size(275, 37);
-            this.LblPhoneNumber.TabIndex = 1;
-            this.LblPhoneNumber.Text = "Phone Number : ";
-            // 
-            // LblAddress
-            // 
-            this.LblAddress.AutoSize = true;
-            this.LblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddress.ForeColor = System.Drawing.Color.Olive;
-            this.LblAddress.Location = new System.Drawing.Point(336, 757);
-            this.LblAddress.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblAddress.Name = "LblAddress";
-            this.LblAddress.Size = new System.Drawing.Size(172, 37);
-            this.LblAddress.TabIndex = 1;
-            this.LblAddress.Text = "Address : ";
-            // 
-            // LblEmail
-            // 
-            this.LblEmail.AutoSize = true;
-            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.ForeColor = System.Drawing.Color.Olive;
-            this.LblEmail.Location = new System.Drawing.Point(336, 915);
-            this.LblEmail.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(132, 37);
-            this.LblEmail.TabIndex = 1;
-            this.LblEmail.Text = "Email : ";
-            // 
-            // TxtUserName
-            // 
-            this.TxtUserName.Location = new System.Drawing.Point(781, 181);
-            this.TxtUserName.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.TxtUserName.Name = "TxtUserName";
-            this.TxtUserName.Size = new System.Drawing.Size(721, 44);
-            this.TxtUserName.TabIndex = 2;
-            // 
-            // TxtPhoneNumber
-            // 
-            this.TxtPhoneNumber.Location = new System.Drawing.Point(781, 613);
-            this.TxtPhoneNumber.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.TxtPhoneNumber.Name = "TxtPhoneNumber";
-            this.TxtPhoneNumber.Size = new System.Drawing.Size(721, 44);
-            this.TxtPhoneNumber.TabIndex = 2;
-            // 
-            // TxtAddress
-            // 
-            this.TxtAddress.Location = new System.Drawing.Point(781, 751);
-            this.TxtAddress.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.TxtAddress.Name = "TxtAddress";
-            this.TxtAddress.Size = new System.Drawing.Size(721, 44);
-            this.TxtAddress.TabIndex = 2;
-            // 
-            // TxtEmail
-            // 
-            this.TxtEmail.Location = new System.Drawing.Point(781, 912);
-            this.TxtEmail.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(721, 44);
-            this.TxtEmail.TabIndex = 2;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(781, 505);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(721, 32);
-            this.dateTimePicker1.TabIndex = 4;
-            // 
-            // GrBoxGender
-            // 
-            this.GrBoxGender.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.GrBoxGender.Controls.Add(this.RadOther);
-            this.GrBoxGender.Controls.Add(this.RadFemale);
-            this.GrBoxGender.Controls.Add(this.RadMale);
-            this.GrBoxGender.ForeColor = System.Drawing.SystemColors.Window;
-            this.GrBoxGender.Location = new System.Drawing.Point(778, 309);
-            this.GrBoxGender.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.GrBoxGender.Name = "GrBoxGender";
-            this.GrBoxGender.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.GrBoxGender.Size = new System.Drawing.Size(726, 83);
-            this.GrBoxGender.TabIndex = 5;
-            this.GrBoxGender.TabStop = false;
-            // 
-            // RadMale
-            // 
-            this.RadMale.AutoSize = true;
-            this.RadMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadMale.ForeColor = System.Drawing.Color.Black;
-            this.RadMale.Location = new System.Drawing.Point(36, 34);
-            this.RadMale.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.RadMale.Name = "RadMale";
-            this.RadMale.Size = new System.Drawing.Size(94, 30);
-            this.RadMale.TabIndex = 6;
-            this.RadMale.TabStop = true;
-            this.RadMale.Text = "Male";
-            this.RadMale.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.RadMale.UseVisualStyleBackColor = true;
-            // 
-            // RadFemale
-            // 
-            this.RadFemale.AutoSize = true;
-            this.RadFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadFemale.ForeColor = System.Drawing.Color.Black;
-            this.RadFemale.Location = new System.Drawing.Point(266, 35);
-            this.RadFemale.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.RadFemale.Name = "RadFemale";
-            this.RadFemale.Size = new System.Drawing.Size(122, 30);
-            this.RadFemale.TabIndex = 6;
-            this.RadFemale.TabStop = true;
-            this.RadFemale.Text = "Female";
-            this.RadFemale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.RadFemale.UseVisualStyleBackColor = true;
-            // 
-            // RadOther
-            // 
-            this.RadOther.AutoSize = true;
-            this.RadOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadOther.ForeColor = System.Drawing.Color.Black;
-            this.RadOther.Location = new System.Drawing.Point(522, 34);
-            this.RadOther.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.RadOther.Name = "RadOther";
-            this.RadOther.Size = new System.Drawing.Size(102, 30);
-            this.RadOther.TabIndex = 6;
-            this.RadOther.TabStop = true;
-            this.RadOther.Text = "Other";
-            this.RadOther.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RadOther.UseVisualStyleBackColor = true;
-            // 
-            // BtnDelete
-            // 
-            this.BtnDelete.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.BtnDelete.ForeColor = System.Drawing.Color.Black;
-            this.BtnDelete.Image = global::Hotel.Properties.Resources.icons8_delete_24;
-            this.BtnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnDelete.Location = new System.Drawing.Point(2212, 1395);
-            this.BtnDelete.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(284, 69);
-            this.BtnDelete.TabIndex = 1;
-            this.BtnDelete.Text = " Delete ";
-            this.BtnDelete.UseVisualStyleBackColor = false;
-            // 
-            // BtnAddGuestRf
-            // 
-            this.BtnAddGuestRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddGuestRf.ForeColor = System.Drawing.Color.Black;
-            this.BtnAddGuestRf.Location = new System.Drawing.Point(359, 1083);
-            this.BtnAddGuestRf.Name = "BtnAddGuestRf";
-            this.BtnAddGuestRf.Size = new System.Drawing.Size(217, 39);
-            this.BtnAddGuestRf.TabIndex = 7;
-            this.BtnAddGuestRf.Text = "Add";
-            this.BtnAddGuestRf.UseVisualStyleBackColor = true;
-            // 
-            // BtnEditCustomerrf
-            // 
-            this.BtnEditCustomerrf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditCustomerrf.ForeColor = System.Drawing.Color.Black;
-            this.BtnEditCustomerrf.Location = new System.Drawing.Point(830, 1083);
-            this.BtnEditCustomerrf.Name = "BtnEditCustomerrf";
-            this.BtnEditCustomerrf.Size = new System.Drawing.Size(217, 39);
-            this.BtnEditCustomerrf.TabIndex = 7;
-            this.BtnEditCustomerrf.Text = "Edit";
-            this.BtnEditCustomerrf.UseVisualStyleBackColor = true;
-            // 
-            // BtnCancelCustomerRf
-            // 
-            this.BtnCancelCustomerRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelCustomerRf.ForeColor = System.Drawing.Color.Black;
-            this.BtnCancelCustomerRf.Location = new System.Drawing.Point(1359, 1083);
-            this.BtnCancelCustomerRf.Name = "BtnCancelCustomerRf";
-            this.BtnCancelCustomerRf.Size = new System.Drawing.Size(217, 39);
-            this.BtnCancelCustomerRf.TabIndex = 7;
-            this.BtnCancelCustomerRf.Text = "Cancel";
-            this.BtnCancelCustomerRf.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.AutoSize = true;
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.BtnCancelCustomerRf);
-            this.groupBox1.Controls.Add(this.BtnEditCustomerrf);
-            this.groupBox1.Controls.Add(this.BtnAddGuestRf);
-            this.groupBox1.Controls.Add(this.BtnDelete);
-            this.groupBox1.Controls.Add(this.GrBoxGender);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.TxtEmail);
-            this.groupBox1.Controls.Add(this.TxtAddress);
-            this.groupBox1.Controls.Add(this.TxtPhoneNumber);
-            this.groupBox1.Controls.Add(this.TxtUserName);
-            this.groupBox1.Controls.Add(this.LblEmail);
-            this.groupBox1.Controls.Add(this.LblAddress);
-            this.groupBox1.Controls.Add(this.LblPhoneNumber);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.LblDate);
-            this.groupBox1.Controls.Add(this.LblUserName);
-            this.groupBox1.Controls.Add(this.LblGuestInformation);
-            this.groupBox1.Location = new System.Drawing.Point(6, 42);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.groupBox1.Size = new System.Drawing.Size(2508, 1517);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            // 
             // BtnLogoutRF
             // 
             this.BtnLogoutRF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -1621,38 +1493,161 @@
             this.LblNameRF.TabIndex = 15;
             this.LblNameRF.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label4
+            // label6
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label4.Location = new System.Drawing.Point(412, 324);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 37);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Search";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Sienna;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Location = new System.Drawing.Point(324, 494);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(317, 44);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Reservation ID : ";
             // 
-            // BtnSearchVR
+            // textBox1
             // 
-            this.BtnSearchVR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSearchVR.ForeColor = System.Drawing.Color.SteelBlue;
-            this.BtnSearchVR.Image = global::Hotel.Properties.Resources.icons8_search_30;
-            this.BtnSearchVR.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSearchVR.Location = new System.Drawing.Point(1573, 321);
-            this.BtnSearchVR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BtnSearchVR.Name = "BtnSearchVR";
-            this.BtnSearchVR.Size = new System.Drawing.Size(197, 47);
-            this.BtnSearchVR.TabIndex = 6;
-            this.BtnSearchVR.Text = "Search";
-            this.BtnSearchVR.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(759, 494);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(906, 44);
+            this.textBox1.TabIndex = 9;
             // 
-            // TxtSearchVR
+            // LblBookingRf
             // 
-            this.TxtSearchVR.Location = new System.Drawing.Point(552, 321);
-            this.TxtSearchVR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtSearchVR.Name = "TxtSearchVR";
-            this.TxtSearchVR.Size = new System.Drawing.Size(937, 44);
-            this.TxtSearchVR.TabIndex = 5;
+            this.LblBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblBookingRf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LblBookingRf.Image = global::Hotel.Properties.Resources.icons8_booking_48;
+            this.LblBookingRf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblBookingRf.Location = new System.Drawing.Point(793, 107);
+            this.LblBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblBookingRf.Name = "LblBookingRf";
+            this.LblBookingRf.Size = new System.Drawing.Size(609, 109);
+            this.LblBookingRf.TabIndex = 0;
+            this.LblBookingRf.Text = "Booking";
+            this.LblBookingRf.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblCustomerBookingRf
+            // 
+            this.LblCustomerBookingRf.AutoSize = true;
+            this.LblCustomerBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
+            this.LblCustomerBookingRf.ForeColor = System.Drawing.Color.Black;
+            this.LblCustomerBookingRf.Location = new System.Drawing.Point(482, 358);
+            this.LblCustomerBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblCustomerBookingRf.Name = "LblCustomerBookingRf";
+            this.LblCustomerBookingRf.Size = new System.Drawing.Size(184, 37);
+            this.LblCustomerBookingRf.TabIndex = 1;
+            this.LblCustomerBookingRf.Text = "Customer :";
+            // 
+            // LblCheckOutBookingRf
+            // 
+            this.LblCheckOutBookingRf.AutoSize = true;
+            this.LblCheckOutBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCheckOutBookingRf.ForeColor = System.Drawing.Color.Black;
+            this.LblCheckOutBookingRf.Location = new System.Drawing.Point(482, 915);
+            this.LblCheckOutBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblCheckOutBookingRf.Name = "LblCheckOutBookingRf";
+            this.LblCheckOutBookingRf.Size = new System.Drawing.Size(207, 37);
+            this.LblCheckOutBookingRf.TabIndex = 1;
+            this.LblCheckOutBookingRf.Text = "Check Out : ";
+            // 
+            // LblCheckInBookingRf
+            // 
+            this.LblCheckInBookingRf.AutoSize = true;
+            this.LblCheckInBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCheckInBookingRf.ForeColor = System.Drawing.Color.Black;
+            this.LblCheckInBookingRf.Location = new System.Drawing.Point(482, 718);
+            this.LblCheckInBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblCheckInBookingRf.Name = "LblCheckInBookingRf";
+            this.LblCheckInBookingRf.Size = new System.Drawing.Size(180, 37);
+            this.LblCheckInBookingRf.TabIndex = 1;
+            this.LblCheckInBookingRf.Text = "Check In : ";
+            // 
+            // LblRoomBookingRf
+            // 
+            this.LblRoomBookingRf.AutoSize = true;
+            this.LblRoomBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRoomBookingRf.ForeColor = System.Drawing.Color.Black;
+            this.LblRoomBookingRf.Location = new System.Drawing.Point(482, 533);
+            this.LblRoomBookingRf.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblRoomBookingRf.Name = "LblRoomBookingRf";
+            this.LblRoomBookingRf.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LblRoomBookingRf.Size = new System.Drawing.Size(136, 37);
+            this.LblRoomBookingRf.TabIndex = 1;
+            this.LblRoomBookingRf.Text = "Room : ";
+            // 
+            // CmbCustomerBookingRf
+            // 
+            this.CmbCustomerBookingRf.FormattingEnabled = true;
+            this.CmbCustomerBookingRf.Location = new System.Drawing.Point(865, 350);
+            this.CmbCustomerBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.CmbCustomerBookingRf.Name = "CmbCustomerBookingRf";
+            this.CmbCustomerBookingRf.Size = new System.Drawing.Size(757, 45);
+            this.CmbCustomerBookingRf.TabIndex = 2;
+            // 
+            // CmbRoomBookingRf
+            // 
+            this.CmbRoomBookingRf.FormattingEnabled = true;
+            this.CmbRoomBookingRf.Location = new System.Drawing.Point(874, 506);
+            this.CmbRoomBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.CmbRoomBookingRf.Name = "CmbRoomBookingRf";
+            this.CmbRoomBookingRf.Size = new System.Drawing.Size(757, 45);
+            this.CmbRoomBookingRf.TabIndex = 2;
+            // 
+            // DtpCheckOutBookingRf
+            // 
+            this.DtpCheckOutBookingRf.CustomFormat = "dd/MM/yyyy hh : mm : ss";
+            this.DtpCheckOutBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DtpCheckOutBookingRf.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtpCheckOutBookingRf.Location = new System.Drawing.Point(874, 906);
+            this.DtpCheckOutBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.DtpCheckOutBookingRf.Name = "DtpCheckOutBookingRf";
+            this.DtpCheckOutBookingRf.Size = new System.Drawing.Size(757, 38);
+            this.DtpCheckOutBookingRf.TabIndex = 3;
+            this.DtpCheckOutBookingRf.Value = new System.DateTime(2024, 11, 28, 20, 0, 12, 0);
+            // 
+            // DtpCheckInBookingRf
+            // 
+            this.DtpCheckInBookingRf.CustomFormat = "dd/MM/yyyy hh : mm : ss";
+            this.DtpCheckInBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DtpCheckInBookingRf.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtpCheckInBookingRf.Location = new System.Drawing.Point(874, 709);
+            this.DtpCheckInBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.DtpCheckInBookingRf.Name = "DtpCheckInBookingRf";
+            this.DtpCheckInBookingRf.Size = new System.Drawing.Size(757, 38);
+            this.DtpCheckInBookingRf.TabIndex = 3;
+            this.DtpCheckInBookingRf.Value = new System.DateTime(2024, 11, 28, 20, 0, 12, 0);
+            // 
+            // BtnAddBookingRf
+            // 
+            this.BtnAddBookingRf.BackColor = System.Drawing.Color.White;
+            this.BtnAddBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddBookingRf.ForeColor = System.Drawing.Color.Black;
+            this.BtnAddBookingRf.Image = global::Hotel.Properties.Resources.icons8_add_24;
+            this.BtnAddBookingRf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAddBookingRf.Location = new System.Drawing.Point(655, 1050);
+            this.BtnAddBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.BtnAddBookingRf.Name = "BtnAddBookingRf";
+            this.BtnAddBookingRf.Size = new System.Drawing.Size(263, 57);
+            this.BtnAddBookingRf.TabIndex = 4;
+            this.BtnAddBookingRf.Text = "Add";
+            this.BtnAddBookingRf.UseVisualStyleBackColor = false;
+            // 
+            // BtnEditBookingRf
+            // 
+            this.BtnEditBookingRf.BackColor = System.Drawing.Color.White;
+            this.BtnEditBookingRf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditBookingRf.ForeColor = System.Drawing.Color.Black;
+            this.BtnEditBookingRf.Image = global::Hotel.Properties.Resources.icons8_edit_26;
+            this.BtnEditBookingRf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnEditBookingRf.Location = new System.Drawing.Point(1127, 1050);
+            this.BtnEditBookingRf.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.BtnEditBookingRf.Name = "BtnEditBookingRf";
+            this.BtnEditBookingRf.Size = new System.Drawing.Size(263, 57);
+            this.BtnEditBookingRf.TabIndex = 4;
+            this.BtnEditBookingRf.Text = "Edit";
+            this.BtnEditBookingRf.UseVisualStyleBackColor = false;
             // 
             // ReceptionistForm
             // 
@@ -1667,7 +1662,7 @@
             this.Controls.Add(this.LblReceptionistName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TabRequestServicesRf);
+            this.Controls.Add(this.TabReceiptionist);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ReceptionistForm";
@@ -1679,17 +1674,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet14)).EndInit();
-            this.TabRequestServicesRf.ResumeLayout(false);
+            this.TabReceiptionist.ResumeLayout(false);
             this.PageCustomerInformationRf.ResumeLayout(false);
             this.PageCustomerInformationRf.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.GrBoxGender.ResumeLayout(false);
+            this.GrBoxGender.PerformLayout();
             this.PageCustomerManagemetRf.ResumeLayout(false);
             this.PageCustomerManagemetRf.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataCustomerManagementRf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet12)).EndInit();
             this.PageBookingRf.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.PageBookingRf.PerformLayout();
             this.PageBookingManagementRf.ResumeLayout(false);
             this.PageBookingManagementRf.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataBookingManagementRf)).EndInit();
@@ -1711,10 +1709,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource1)).EndInit();
-            this.GrBoxGender.ResumeLayout(false);
-            this.GrBoxGender.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1737,20 +1731,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label LblViewRoomRf;
         private System.Windows.Forms.TabPage PageBookingRf;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button BtnEditBookingRf;
-        private System.Windows.Forms.Button BtnCancelBooking;
-        private System.Windows.Forms.Button BtnAddBookingRf;
-        private System.Windows.Forms.DateTimePicker DtpCheckOutBookingRf;
-        private System.Windows.Forms.ComboBox CmbRoomBookingRf;
-        private System.Windows.Forms.ComboBox CmbCustomerBookingRf;
-        private System.Windows.Forms.Label LblRoomBookingRf;
-        private System.Windows.Forms.Label LblCheckInBookingRf;
-        private System.Windows.Forms.Label LblCheckOutBookingRf;
-        private System.Windows.Forms.Label LblCustomerBookingRf;
-        private System.Windows.Forms.Label LblBookingRf;
         private System.Windows.Forms.TabPage PageCustomerInformationRf;
-        private System.Windows.Forms.TabControl TabRequestServicesRf;
+        private System.Windows.Forms.TabControl TabReceiptionist;
         private Hotel_ManagerDataSet11 hotel_ManagerDataSet11;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -1801,7 +1783,6 @@
         private System.Windows.Forms.Button BtnEditRequestServicesRf;
         private Hotel_ManagerDataSet15 hotel_ManagerDataSet15;
         private Hotel_ManagerDataSet16 hotel_ManagerDataSet16;
-        private System.Windows.Forms.DateTimePicker DtpCheckInBookingRf;
         private System.Windows.Forms.DataGridView DataViewRoomRf;
         private System.Windows.Forms.DataGridViewTextBoxColumn roomIDDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn roomTypeDataGridViewTextBoxColumn;
@@ -1861,5 +1842,18 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnSearchVR;
         private System.Windows.Forms.TextBox TxtSearchVR;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button BtnEditBookingRf;
+        private System.Windows.Forms.Label LblBookingRf;
+        private System.Windows.Forms.Button BtnAddBookingRf;
+        private System.Windows.Forms.Label LblCustomerBookingRf;
+        private System.Windows.Forms.DateTimePicker DtpCheckInBookingRf;
+        private System.Windows.Forms.Label LblCheckOutBookingRf;
+        private System.Windows.Forms.DateTimePicker DtpCheckOutBookingRf;
+        private System.Windows.Forms.Label LblCheckInBookingRf;
+        private System.Windows.Forms.ComboBox CmbRoomBookingRf;
+        private System.Windows.Forms.Label LblRoomBookingRf;
+        private System.Windows.Forms.ComboBox CmbCustomerBookingRf;
     }
 }
