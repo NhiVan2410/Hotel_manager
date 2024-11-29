@@ -130,6 +130,13 @@
             this.DataRoomManagementFM = new System.Windows.Forms.DataGridView();
             this.LblRoomManagement = new System.Windows.Forms.Label();
             this.LblNameFM = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.LblReturnReservationID = new System.Windows.Forms.Label();
+            this.LblReturnRoomID = new System.Windows.Forms.Label();
+            this.LblReturnServiceID = new System.Windows.Forms.Label();
             this.TabBookingManagement.SuspendLayout();
             this.Dashboard.SuspendLayout();
             this.PageEmployeeManagement.SuspendLayout();
@@ -524,6 +531,13 @@
             // 
             this.PageCustomerManagement.BackColor = System.Drawing.Color.Transparent;
             this.PageCustomerManagement.BackgroundImage = global::Hotel.Properties.Resources._7289886605e7feb613a7cacd38360849;
+            this.PageCustomerManagement.Controls.Add(this.LblReturnServiceID);
+            this.PageCustomerManagement.Controls.Add(this.LblReturnRoomID);
+            this.PageCustomerManagement.Controls.Add(this.LblReturnReservationID);
+            this.PageCustomerManagement.Controls.Add(this.label6);
+            this.PageCustomerManagement.Controls.Add(this.label5);
+            this.PageCustomerManagement.Controls.Add(this.label4);
+            this.PageCustomerManagement.Controls.Add(this.label2);
             this.PageCustomerManagement.Controls.Add(this.LblSearchManagement);
             this.PageCustomerManagement.Controls.Add(this.LblCustomerManagement);
             this.PageCustomerManagement.Controls.Add(this.BtnSearchManagenment);
@@ -617,13 +631,13 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataCustometManagement.DefaultCellStyle = dataGridViewCellStyle4;
-            this.DataCustometManagement.Location = new System.Drawing.Point(26, 267);
+            this.DataCustometManagement.Location = new System.Drawing.Point(26, 338);
             this.DataCustometManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DataCustometManagement.Name = "DataCustometManagement";
             this.DataCustometManagement.RowHeadersVisible = false;
             this.DataCustometManagement.RowHeadersWidth = 62;
             this.DataCustometManagement.RowTemplate.Height = 28;
-            this.DataCustometManagement.Size = new System.Drawing.Size(1870, 931);
+            this.DataCustometManagement.Size = new System.Drawing.Size(1870, 860);
             this.DataCustometManagement.TabIndex = 0;
             // 
             // guestsBindingSource
@@ -1212,6 +1226,86 @@
             this.LblNameFM.TabIndex = 18;
             this.LblNameFM.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.PeachPuff;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label2.Location = new System.Drawing.Point(19, 286);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(142, 37);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Result : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label4.Location = new System.Drawing.Point(165, 286);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(259, 37);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "ReservationID : ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label5.Location = new System.Drawing.Point(860, 286);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 37);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "RoomID : ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label6.Location = new System.Drawing.Point(1454, 286);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(191, 37);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "ServiceID : ";
+            // 
+            // LblReturnReservationID
+            // 
+            this.LblReturnReservationID.AutoSize = true;
+            this.LblReturnReservationID.Location = new System.Drawing.Point(462, 286);
+            this.LblReturnReservationID.Name = "LblReturnReservationID";
+            this.LblReturnReservationID.Size = new System.Drawing.Size(0, 37);
+            this.LblReturnReservationID.TabIndex = 9;
+            // 
+            // LblReturnRoomID
+            // 
+            this.LblReturnRoomID.AutoSize = true;
+            this.LblReturnRoomID.Location = new System.Drawing.Point(1068, 286);
+            this.LblReturnRoomID.Name = "LblReturnRoomID";
+            this.LblReturnRoomID.Size = new System.Drawing.Size(0, 37);
+            this.LblReturnRoomID.TabIndex = 10;
+            // 
+            // LblReturnServiceID
+            // 
+            this.LblReturnServiceID.AutoSize = true;
+            this.LblReturnServiceID.Location = new System.Drawing.Point(1685, 286);
+            this.LblReturnServiceID.Name = "LblReturnServiceID";
+            this.LblReturnServiceID.Size = new System.Drawing.Size(0, 37);
+            this.LblReturnServiceID.TabIndex = 11;
+            // 
             // FormManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -1352,5 +1446,12 @@
         private System.Windows.Forms.DataGridView DataRoomManagementFM;
         private System.Windows.Forms.Label LblRoomManagement;
         private System.Windows.Forms.Label LblNameFM;
+        private System.Windows.Forms.Label LblReturnReservationID;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblReturnServiceID;
+        private System.Windows.Forms.Label LblReturnRoomID;
     }
 }
