@@ -142,6 +142,10 @@ namespace Hotel
             this.reservationServicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservationServicesTableAdapter = new Hotel.Hotel_ManagerDataSet21TableAdapters.ReservationServicesTableAdapter();
             this.reservationServicesTableAdapter1 = new Hotel.Hotel_ManagerDataSet22TableAdapters.ReservationServicesTableAdapter();
+            this.LblNameGF = new System.Windows.Forms.Label();
+            this.BtnLogoutGF = new System.Windows.Forms.Button();
+            this.LblRoleGF = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.TabRequestServicesGuest.SuspendLayout();
             this.PageCustomerInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -185,7 +189,7 @@ namespace Hotel
             this.TabRequestServicesGuest.Controls.Add(this.PageBookingHistoryGuest);
             this.TabRequestServicesGuest.Controls.Add(this.PageRequestServicesGuest);
             this.TabRequestServicesGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TabRequestServicesGuest.Location = new System.Drawing.Point(288, 115);
+            this.TabRequestServicesGuest.Location = new System.Drawing.Point(338, 195);
             this.TabRequestServicesGuest.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.TabRequestServicesGuest.Name = "TabRequestServicesGuest";
             this.TabRequestServicesGuest.SelectedIndex = 0;
@@ -1280,12 +1284,61 @@ namespace Hotel
             // 
             this.reservationServicesTableAdapter1.ClearBeforeFill = true;
             // 
+            // LblNameGF
+            // 
+            this.LblNameGF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNameGF.Location = new System.Drawing.Point(2247, 90);
+            this.LblNameGF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblNameGF.Name = "LblNameGF";
+            this.LblNameGF.Size = new System.Drawing.Size(475, 36);
+            this.LblNameGF.TabIndex = 19;
+            this.LblNameGF.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // BtnLogoutGF
+            // 
+            this.BtnLogoutGF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnLogoutGF.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnLogoutGF.Location = new System.Drawing.Point(2604, 187);
+            this.BtnLogoutGF.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnLogoutGF.Name = "BtnLogoutGF";
+            this.BtnLogoutGF.Size = new System.Drawing.Size(114, 38);
+            this.BtnLogoutGF.TabIndex = 18;
+            this.BtnLogoutGF.Text = "Log out";
+            this.BtnLogoutGF.UseVisualStyleBackColor = false;
+            // 
+            // LblRoleGF
+            // 
+            this.LblRoleGF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRoleGF.Location = new System.Drawing.Point(2464, 135);
+            this.LblRoleGF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblRoleGF.Name = "LblRoleGF";
+            this.LblRoleGF.Size = new System.Drawing.Size(254, 44);
+            this.LblRoleGF.TabIndex = 17;
+            this.LblRoleGF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(340, 126);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(391, 63);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Hotel && Resort";
+            // 
             // GuestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(3011, 1879);
+            this.Controls.Add(this.LblNameGF);
+            this.Controls.Add(this.BtnLogoutGF);
+            this.Controls.Add(this.LblRoleGF);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.TabRequestServicesGuest);
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "GuestForm";
@@ -1330,6 +1383,7 @@ namespace Hotel
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagerDataSet21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationServicesBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1440,5 +1494,9 @@ namespace Hotel
         private System.Windows.Forms.DataGridViewTextBoxColumn reservationIDDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn serviceIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label LblNameGF;
+        private System.Windows.Forms.Button BtnLogoutGF;
+        private System.Windows.Forms.Label LblRoleGF;
+        private System.Windows.Forms.Label label1;
     }
 }
