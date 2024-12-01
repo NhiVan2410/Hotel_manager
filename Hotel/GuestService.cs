@@ -26,7 +26,7 @@ namespace Hotel
             _context.SubmitChanges();
         }
 
-        public void DeleteGuest(int guestId)
+        public void DeleteGuest(string guestId)
         {
             var guest = _context.Guests.FirstOrDefault(g => g.ID == guestId);
             if (guest != null)

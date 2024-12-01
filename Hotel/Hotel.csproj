@@ -85,6 +85,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HotelDb.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Hotel_ManagerDataSet.cs">
+      <DependentUpon>Hotel_ManagerDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Hotel_ManagerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Hotel_ManagerDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel_ManagerDataSet11.cs">
+      <DependentUpon>Hotel_ManagerDataSet11.xsd</DependentUpon>
     </Compile>
     <Compile Include="Hotel_ManagerDataSet11.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -301,6 +307,7 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram2.cd" />
     <None Include="HotelDb.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>HotelDb.designer.cs</LastGenOutput>

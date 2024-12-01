@@ -1,81 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Hotel_Manager" Class="HotelDbContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\ProjectModels;Initial Catalog=Hotel_Manager;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False" SettingsObjectName="Hotel.Properties.Settings" SettingsPropertyName="Hotel_ManagerConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Room" Member="Rooms">
-    <Type Name="Room">
-      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="RoomType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="RoomPrice" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
-      <Column Name="IsAvailable" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Room_Reservation" Member="Reservations" ThisKey="RoomID" OtherKey="RoomID" Type="Reservation" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Person" Member="Persons">
-    <Type Name="Person">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Gender" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Person_Employee" Member="Employee" ThisKey="ID" OtherKey="ID" Type="Employee" Cardinality="One" />
-      <Association Name="Person_Guest" Member="Guest" ThisKey="ID" OtherKey="ID" Type="Guest" Cardinality="One" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Employees" Member="Employees">
-    <Type Name="Employee">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="ContactInfo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Person_Employee" Member="Person" ThisKey="ID" OtherKey="ID" Type="Person" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Guests" Member="Guests">
-    <Type Name="Guest">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Gender" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="[User]" Member="User" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Association Name="Guest_ReservationService" Member="ReservationServices" ThisKey="ID" OtherKey="GuestID" Type="ReservationService" />
-      <Association Name="Person_Guest" Member="Person" ThisKey="ID" OtherKey="ID" Type="Person" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.ReservationServices" Member="ReservationServices">
-    <Type Name="ReservationService">
-      <Column Name="ReservationServiceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ReservationID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ServiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="GuestID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Bill" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Guest_ReservationService" Member="Guest" ThisKey="GuestID" OtherKey="ID" Type="Guest" IsForeignKey="true" />
-      <Association Name="Service_ReservationService" Member="Service" ThisKey="ServiceID" OtherKey="ServiceID" Type="Service" IsForeignKey="true" />
-      <Association Name="Reservation_ReservationService" Member="Reservation" ThisKey="ReservationID" OtherKey="ReservationID" Type="Reservation" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.Services" Member="Services">
     <Type Name="Service">
       <Column Name="ServiceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -105,6 +29,88 @@
       <Column Name="[Price ]" Member="Price_" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Reservation_ReservationService" Member="ReservationServices" ThisKey="ReservationID" OtherKey="ReservationID" Type="ReservationService" />
       <Association Name="Room_Reservation" Member="Room" ThisKey="RoomID" OtherKey="RoomID" Type="Room" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Room" Member="Rooms">
+    <Type Name="Room">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoomType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RoomPrice" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="IsAvailable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GuestID" Type="System.String" DbType="NChar(250)" CanBeNull="true" />
+      <Association Name="Room_Reservation" Member="Reservations" ThisKey="RoomID" OtherKey="RoomID" Type="Reservation" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReservationServices" Member="ReservationServices">
+    <Type Name="ReservationService">
+      <Column Name="ReservationServiceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReservationID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ServiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GuestID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bill" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Reservation_ReservationService" Member="Reservation" ThisKey="ReservationID" OtherKey="ReservationID" Type="Reservation" IsForeignKey="true" />
+      <Association Name="Service_ReservationService" Member="Service" ThisKey="ServiceID" OtherKey="ServiceID" Type="Service" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoomDetail" Member="RoomDetails">
+    <Type Name="RoomDetail">
+      <Column Name="[Room Type]" Member="Room_Type" Type="System.String" DbType="NVarChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Bed Type]" Member="Bed_Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amenities" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="[Bathroom Type]" Member="Bathroom_Type" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="[Included Services]" Member="Included_Services" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Person" Member="Persons">
+    <Type Name="Person">
+      <Column Name="ID" Type="System.String" DbType="NChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Guests" Member="Guests">
+    <Type Name="Guest">
+      <Column Name="ID" Type="System.String" DbType="NChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[User]" Member="User" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employees" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="ID" Type="System.String" DbType="NChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactInfo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CreatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UpdatedAt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

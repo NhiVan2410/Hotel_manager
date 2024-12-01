@@ -15,7 +15,7 @@ namespace Hotel
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public bool IsDeleted { get; set; } = false;
-        public int GuestID { get; set; }
+        public string  GuestID { get; set; }
         public int Bill { get; set; }
 
         // kết nối 

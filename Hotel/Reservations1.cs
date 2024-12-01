@@ -9,7 +9,7 @@ namespace Hotel
     public class Reservations1
     {
         public int ReservationID { get; set; }
-        public int GuestID { get; set; }
+        public string  GuestID { get; set; }
         public int RoomID { get; set; }
         public DateTime BookingDate { get; set; }
         public DateTime CheckInDate { get; set; }

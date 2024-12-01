@@ -98,7 +98,7 @@ namespace Hotel
             }
         }
         // xóa mềm nhân viên
-        public void DeleteEmployee(int employeeId)
+        public void DeleteEmployee(string employeeId)
         {
             using (var context = new HotelDbContext())
             {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-   public class Room1
+    public class Room1
     {
         public int RoomID { get; set; }
         public string RoomType { get; set; }
@@ -15,5 +15,6 @@ namespace Hotel
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public bool IsDeleted { get; set; } = false;
+        public string GuestID { get; set;}
     }
 }
